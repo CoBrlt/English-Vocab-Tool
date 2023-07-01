@@ -1,31 +1,95 @@
 import tkinter as tk
 from tkinter import Menu, ttk
+from bs4 import BeautifulSoup
+import requests
+from word import Word
+
+url = "https://www.deepl.com/fr/translator#en/fr/"
+
+
+def getArrayVocab():
+    fichier = open("./english_words.txt", "r")
+    contenu = fichier.read()
+    fichier.close()
+    contenu = contenu.split("\n")
+
+    while "" in contenu:
+        contenu.remove("")
+    
+    return contenu
+
+def getTranslationByDeepl(words):
+    for word in words:
+        if not ";" in word:
+            url_word = url + word
+            response = requests.get(url_word)
+            print(url_word)
+            parseHtml(response)
+            
+    return
+
+def parseHtml(response):
+    soup = BeautifulSoup(response.content, 'html.parser')
+    div = soup.select('[data-testid="translator-dict-content"]')
+    print(soup)
+    fichier = open("data.html", "a", encoding="utf-8")
+    fichier.write(str(soup))
+    fichier.close()
+    if "translator-dict-content" in soup:
+        print("i")
+    exit()
+    txt = ""
+    return txt
+
+
 
 def create_table():
     table = ttk.Treeview(root, columns=("English", "French"), show="headings")
     table.heading("English", text="English")
     table.heading("French", text="French")
-    table.pack()
 
-    # Ajouter des données au tableau
-    table.insert("", "end", values=("Hello", "Bonjour"))
-    table.insert("", "end", values=("Goodbye", "Au revoir"))
-    table.insert("", "end", values=("Yes", "Oui"))
-    table.insert("", "end", values=("No", "Non"))
+    words = getArrayVocab()
 
-root = tk.Tk()
-root.title("Tableau multilingue")
-root.geometry("400x300")
+    font_style = ("Helvetica", 12)
+    table.tag_configure("centered", font=font_style, anchor="center")
 
-# Créer un menu
-menu_bar = Menu(root)
-root.config(menu=menu_bar)
+    for word in words:
+        table.insert("", "end", values=(word, ""), tags="centered")
 
-file_menu = Menu(menu_bar, tearoff=0)
-menu_bar.add_cascade(label="Fichier", menu=file_menu)
-file_menu.add_command(label="Quitter", command=root.quit)
+    table.pack(expand=True, fill="both")
 
-# Créer le tableau
-create_table()
+def remove_all_widgets(root):
+    for widget in root.winfo_children():
+        widget.destroy()
 
-root.mainloop()
+def button():
+    # bouton = tk.Button(root, text="Cliquez ici")
+    # bb = tk.Button(root, text="salut")
+
+    # def action_bouton():
+    #     print("Bouton cliqué !")
+
+    # bouton.config(command=action_bouton)
+    # bb.config(command=action_bouton)
+
+    # bouton.pack()
+    # bb.pack()
+    return
+
+def main():
+    root = tk.Tk()
+    root.title("English Vocab Tool")
+    root.geometry("1100x900")
+    create_table()
+    remove_all_widgets(root)
+    root.mainloop()
+    return
+
+# main()
+# print(getTranslationByDeepl(getArrayVocab()))
+word = Word("stay on top of")
+word.search_translation()
+print(word.get_fr_words())
+print(word.get_examples())
+
+#C:\Users\coren\AppData\Local\Programs\Python\Python310\python.exe app.py
