@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnglishVocabTool</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Guess English</a></li>
+            <li><a href="#">Add English Words</a></li>
+        </ul>
+    </nav>
+
+    <div class="table-container">
+        <table id="table_trad">
+            <tr>
+                <th class="higher">French</th>
+                <th class="higher">English</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Bonjour</td>
+                <td>Hello</td>
+                <td><a href="#wordEnglish">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Merci</td>
+                <td>Thank you</td>
+                <td><a href="#wordEnglish">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Oui</td>
+                <td>Yes</td>
+                <td><a href="#wordEnglish">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Non</td>
+                <td>No</td>
+                <td><a href="#wordEnglish">Delete</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <form name="foo" method="post" enctype="multipart/form-data">
+        <input type="file" value="./english_words.txt">
+    </form>
+
+
+
+</body>
+
+</html>
