@@ -8,7 +8,7 @@ url = "https://www.deepl.com/fr/translator#en/fr/"
 
 
 def readFile():
-    fichier = open("./english_words.txt", "r")
+    fichier = open("./fichier.txt", "r", encoding="utf-8")
     contenu = fichier.read()
     fichier.close()
     contenu = contenu.split("\n")
@@ -24,7 +24,7 @@ def readFile():
 
 
 def writeFile(tab_words):
-    with open('fichier.txt', 'w') as f:
+    with open('fichier.txt', 'w', encoding="utf-8") as f:
         for word in tab_words:
             f.write(word.toStringForSave()+"\n")
     return

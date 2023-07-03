@@ -23,7 +23,7 @@ def getSoup(en_word):
     # time.sleep(10)
 
     # Récupérer le code HTML de la page
-    time.sleep(3)
+    time.sleep(1)
     html = driver.page_source
     driver.quit()
 
