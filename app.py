@@ -7,7 +7,7 @@ from word import Word
 url = "https://www.deepl.com/fr/translator#en/fr/"
 
 
-def getArrayVocab():
+def readFile():
     fichier = open("./english_words.txt", "r")
     contenu = fichier.read()
     fichier.close()
@@ -16,30 +16,30 @@ def getArrayVocab():
     while "" in contenu:
         contenu.remove("")
     
-    return contenu
+    tab_words = []
+    for word in contenu:
+        tab_words.append(Word(word))
+    
+    return tab_words
+
+
+def writeFile(tab_words):
+    with open('fichier.txt', 'w') as f:
+        for word in tab_words:
+            f.write(word.toStringForSave()+"\n")
+    return
+
 
 def getTranslationByDeepl(words):
     for word in words:
-        if not ";" in word:
-            url_word = url + word
-            response = requests.get(url_word)
-            print(url_word)
-            parseHtml(response)
-            
+        if word.get_fr_words() == []:
+            print("Translating "+ word.get_en_word() + "...")
+            word.search_translation()
+            print("Translating "+ word.get_en_word() + " : Success")
+            writeFile(words)
     return
 
-def parseHtml(response):
-    soup = BeautifulSoup(response.content, 'html.parser')
-    div = soup.select('[data-testid="translator-dict-content"]')
-    print(soup)
-    fichier = open("data.html", "a", encoding="utf-8")
-    fichier.write(str(soup))
-    fichier.close()
-    if "translator-dict-content" in soup:
-        print("i")
-    exit()
-    txt = ""
-    return txt
+
 
 
 
@@ -85,11 +85,12 @@ def main():
     root.mainloop()
     return
 
+
 # main()
-# print(getTranslationByDeepl(getArrayVocab()))
-word = Word("stay on top of")
-word.search_translation()
-print(word.get_fr_words())
-print(word.get_examples())
+
+t = readFile()
+getTranslationByDeepl(t)
+writeFile(t)
+
 
 #C:\Users\coren\AppData\Local\Programs\Python\Python310\python.exe app.py

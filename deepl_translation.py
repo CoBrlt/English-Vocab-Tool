@@ -23,14 +23,18 @@ def getSoup(en_word):
     # time.sleep(10)
 
     # Récupérer le code HTML de la page
-    # time.sleep(10)
+    time.sleep(3)
     html = driver.page_source
     driver.quit()
 
     soup = BeautifulSoup(html, 'html.parser')
 
-    #print()
-    # print(html)
+    return soup
+
+
+
+
+def getDetailsTranslation(soup):
     soup = soup.select('[data-testid="translator-dict-content"]')
     #print(soup)
     if len(soup) >= 1:
@@ -57,3 +61,7 @@ def search_translation_words(soup):
     for a in parent_as_with_text:
         tab.append(a.text)
     return tab
+
+def getSimpleTraduction(soup):
+    element = soup.find(attrs={"_d-id": "8"})
+    return element.text

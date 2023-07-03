@@ -2,9 +2,24 @@ import deepl_translation as Translate
 
 class Word:
     def __init__(self, en_word):
-        self.en_word = en_word
-        self.fr_words = []
-        self.examples = {}
+
+        if not ";" in en_word:
+            self.en_word = en_word
+            self.fr_words = []
+            self.examples = {}
+        else:
+            self.fr_words = []
+            self.examples = {}
+
+            tab = en_word.split(";")
+            self.en_word = tab[0]
+            self.fr_words = tab[1].split("|")
+
+            if len(tab) >= 3:
+                tmp = tab[2].split("|")
+                for i in range(len(tmp)):
+                    tmp[i] = tmp[i].split(":")
+                    self.examples[tmp[i][0]] = tmp[i][1]
 
     def get_en_word(self):
         return self.en_word
@@ -31,9 +46,36 @@ class Word:
         self.examples[fr_word] = en_example
 
     def search_translation(self):
-        soup = Translate.getSoup(self.en_word)
+        all_soup = Translate.getSoup(self.en_word)
+        soup = Translate.getDetailsTranslation(all_soup)
 
         if soup != [] :
             self.examples = Translate.search_translation_examples(soup)
             self.fr_words = Translate.search_translation_words(soup)
+        else:
+            self.fr_words.append(Translate.getSimpleTraduction(all_soup))
         return
+    
+    def toStringForSave(self):
+        string = ""
+        string += self.en_word
+
+        if len(self.en_word) != 0:
+            string += ";"
+        
+        for word in self.fr_words:
+            string += word + "|"
+        
+        if len(self.fr_words) != 0:
+            string = string[:-1]
+
+        if len(self.examples) != 0:
+            string += ";"
+        
+        for example in self.examples:
+            string += example + ":" + self.examples[example]+"|"
+        
+        if len(self.examples) != 0:
+            string = string[:-1]
+
+        return string
