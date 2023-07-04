@@ -95,6 +95,17 @@ def on_key_press(event):
             texte_droite.config(text=choosen.toStringForPrint())
         count_tap += 1
 
+
+def translate_submit():
+    getTranslationByDeepl(all_words_tab)
+
+def save_submit():
+    writeFile(all_words_tab)
+
+def input_submit():
+    all_words_tab.append(Word(input_text.get()))
+    input_text.delete(0, tk.END)
+
 def main(t):
     global all_words_tab
     all_words_tab = t
@@ -125,12 +136,25 @@ def main(t):
     texte_nb_word = tk.Label(frame1, text="0 / "+str(len(all_words_tab)), font=("Arial", 14))
     texte_nb_word.place(relx=0, rely=0, anchor="nw")
     
+    global input_text
+    input_text = tk.Entry(root)
+    input_text.place(relx=0, rely=0.05, anchor="nw")
+
+    submit_button = tk.Button(root, text="Submit", command=input_submit)
+    submit_button.place(relx=0.07, rely=0.045, anchor="nw")
+
+    save_button = tk.Button(root, text="Save", command=save_submit)
+    save_button.place(relx=0, rely=0.08, anchor="nw")
+
+    translate_button = tk.Button(root, text="Translate", command=translate_submit)
+    translate_button.place(relx=0.07, rely=0.08, anchor="nw")
 
     #create_table()
     root.bind("<Key>", on_key_press)
     # Texte à gauche de la séparation
     root.mainloop()
     return
+
 
 
 

@@ -97,8 +97,11 @@ class Word:
         if len(self.examples) != 0:
             string += "--------------------\n"
         
+        i = 0
         for example in self.examples:
-            string += example + "\n" + self.examples[example]+"\n\n\n"
+            if i < 5 :
+                string += example + "\n" + self.examples[example]+"\n\n\n"
+                i += 1
         
         if len(self.examples) != 0:
             string = string[:-1]
