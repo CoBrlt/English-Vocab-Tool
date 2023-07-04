@@ -23,7 +23,7 @@ class Word:
                 tmp = tab[2].split("|")
                 for i in range(len(tmp)):
                     tmp[i] = tmp[i].split(":")
-                    print(tab)
+                    # print(tab)
                     self.examples[tmp[i][0]] = tmp[i][1]
 
     def get_en_word(self):
@@ -87,3 +87,23 @@ class Word:
             string = string[:-1]
 
         return string
+    
+    def toStringForPrint(self):
+        string = ""
+
+        for word in self.fr_words:
+            string += "- " + word.capitalize() + "\n"
+        
+        if len(self.examples) != 0:
+            string += "--------------------\n"
+        
+        for example in self.examples:
+            string += example + "\n" + self.examples[example]+"\n\n\n"
+        
+        if len(self.examples) != 0:
+            string = string[:-1]
+            string = string[:-1]
+            string = string[:-1]
+        
+        return string
+            
