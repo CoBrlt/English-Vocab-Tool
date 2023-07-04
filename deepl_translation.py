@@ -49,7 +49,7 @@ def search_translation_examples(soup):
     parent_spans_with_text_fr = soup.find_all('span', text=True, lang="fr") #les exemples
 
     for i in range(len(parent_spans_with_text_en)):
-        dit[parent_spans_with_text_en[i].text] = parent_spans_with_text_fr[i].text
+        dit[parent_spans_with_text_en[i].text.replace("\n", "")] = parent_spans_with_text_fr[i].text.replace("\n", "")
     
     return dit
 
@@ -59,9 +59,9 @@ def search_translation_words(soup):
 
     # Afficher les éléments récupérés
     for a in parent_as_with_text:
-        tab.append(a.text)
+        tab.append(a.text.replace("\n", ""))
     return tab
 
 def getSimpleTraduction(soup):
     element = soup.find(attrs={"_d-id": "8"})
-    return element.text
+    return element.text.replace("\n", "")

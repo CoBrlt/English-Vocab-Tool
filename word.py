@@ -26,8 +26,6 @@ class Word:
                     print(tab)
                     self.examples[tmp[i][0]] = tmp[i][1]
 
-            print(self.fr_words, self.examples)
-
     def get_en_word(self):
         return self.en_word
 
