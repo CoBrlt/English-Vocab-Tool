@@ -62,6 +62,9 @@ class Word:
         
         if self.fr_words == []:
             self.fr_words.append(Translate.getSimpleTraduction(all_soup))
+        
+        #print(self.fr_words)
+        
         return
     
     def toStringForSave(self):

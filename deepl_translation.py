@@ -23,7 +23,7 @@ def getSoup(en_word):
     # time.sleep(10)
 
     # Récupérer le code HTML de la page
-    time.sleep(1)
+    time.sleep(2)
     html = driver.page_source
     driver.quit()
 
@@ -36,7 +36,6 @@ def getSoup(en_word):
 
 def getDetailsTranslation(soup):
     soup = soup.select('[data-testid="translator-dict-content"]')
-    #print(soup)
     if len(soup) >= 1:
         return soup[0]
     return []
