@@ -3,6 +3,7 @@ from tkinter import Menu, ttk
 from bs4 import BeautifulSoup
 import requests
 from word import Word
+import os
 import random
 
 url = "https://www.deepl.com/fr/translator#en/fr/"
@@ -12,7 +13,7 @@ root = tk.Tk()
 
 
 def readFile():
-    fichier = open("./fichier.txt", "r", encoding="utf-8")
+    fichier = open("./vocab_files/"+ fileName +".txt", "r", encoding="utf-8")
     contenu = fichier.read()
     fichier.close()
     contenu = contenu.split("\n")
@@ -20,16 +21,20 @@ def readFile():
     while "" in contenu:
         contenu.remove("")
     
-    tab_words = []
+    global all_words_tab
+    all_words_tab = []
     for word in contenu:
-        tab_words.append(Word(word))
+        all_words_tab.append(Word(word))
     
-    return tab_words
+    
+    
+    # all_words_tab = tab_words
+    #return tab_words
 
 
-def writeFile(tab_words):
-    with open('fichier.txt', 'w', encoding="utf-8") as f:
-        for word in tab_words:
+def writeFile():
+    with open("./vocab_files/"+ fileName +".txt", 'w', encoding="utf-8") as f:
+        for word in all_words_tab:
             f.write(word.toStringForSave()+"\n")
     return
 
@@ -106,13 +111,8 @@ def input_submit():
     all_words_tab.append(Word(input_text.get()))
     input_text.delete(0, tk.END)
 
-def main(t):
-    global all_words_tab
-    all_words_tab = t
-    root.title("English Vocab Tool")
-    root.geometry("1200x900")
-    remove_all_widgets(root)
-    # Créer les deux sous-fenêtres (Frames)
+
+def create_frame():
     global frame1
     global frame2
     frame1 = tk.Frame(root, width=550, height=900)
@@ -120,12 +120,12 @@ def main(t):
     seperate = tk.Frame(root, bg='black', width=5, height=900)
     seperate_top = tk.Frame(root, bg='black', width=1100, height=5)
 
-    # Positionner les sous-fenêtres dans la fenêtre principale
     seperate_top.pack(side="top", fill="x")
     frame1.pack(side='left', fill='y')
     seperate.pack(side='left', fill='y')
     frame2.pack(side='right', fill='y')
 
+def text_field():
     global texte_droite
     global texte_gauche
     global texte_nb_word
@@ -135,7 +135,8 @@ def main(t):
     texte_droite.place(relx=0.5, rely=0.5, anchor="center")
     texte_nb_word = tk.Label(frame1, text="0 / "+str(len(all_words_tab)), font=("Arial", 14))
     texte_nb_word.place(relx=0, rely=0, anchor="nw")
-    
+
+def input_add_text():
     global input_text
     input_text = tk.Entry(root)
     input_text.place(relx=0, rely=0.05, anchor="nw")
@@ -149,19 +150,65 @@ def main(t):
     translate_button = tk.Button(root, text="Translate", command=translate_submit)
     translate_button.place(relx=0.07, rely=0.08, anchor="nw")
 
-    #create_table()
-    root.bind("<Key>", on_key_press)
-    # Texte à gauche de la séparation
-    root.mainloop()
+def get_all_vocab_files():
+    
+    list_files = []
+    path = './vocab_files/'
+    
+    files = os.listdir(path)
+    for name in files:
+        list_files.append(name.replace(".txt", ""))
+    
+    return list_files
+
+def changeFile(event):
+    global fileName
+    fileName = listeCombo.get()
+    readFile()
+
+def input_select_input():
+    global fileName
+    global listeCombo
+
+    listeFiles=get_all_vocab_files()
+    listeCombo = ttk.Combobox(root, values=listeFiles)
+    
+    if len(listeFiles) != 0:
+        listeCombo.current(0)
+        fileName = listeFiles[0]
+        readFile()
+
+
+    listeCombo.place(relx=0.15, rely=0.05, anchor="nw")
+    listeCombo.bind("<<ComboboxSelected>>", changeFile)
+
     return
 
 
 
+def main():
+    global all_words_tab
+    
 
-t = readFile()
-getTranslationByDeepl(t)
-writeFile(t)
-main(t)
+
+    root.title("English Vocab Tool")
+    root.geometry("1200x900")
+    remove_all_widgets(root)
+
+    create_frame()
+
+    input_select_input()
+    
+    text_field()
+    input_add_text()
+
+    root.bind("<Key>", on_key_press)
+
+    root.mainloop()
+    return
+
+
+main()
 
 
 #C:\Users\coren\AppData\Local\Programs\Python\Python310\python.exe app.py
