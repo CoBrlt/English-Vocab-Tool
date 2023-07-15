@@ -45,7 +45,7 @@ def getTranslationByDeepl(words):
             print("Translating "+ word.get_en_word() + "...")
             word.search_translation()
             print("Translating "+ word.get_en_word() + " : Success")
-            writeFile(words)
+            writeFile()
     return
 
 
@@ -105,7 +105,7 @@ def translate_submit():
     getTranslationByDeepl(all_words_tab)
 
 def save_submit():
-    writeFile(all_words_tab)
+    writeFile()
 
 def input_submit():
     all_words_tab.append(Word(input_text.get()))
