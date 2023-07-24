@@ -5,6 +5,8 @@ import requests
 from word import Word
 import os
 import random
+import xxx as xxx
+import tools as Tools
 
 url = "https://www.deepl.com/fr/translator#en/fr/"
 all_words_tab = []
@@ -25,11 +27,7 @@ def readFile():
     all_words_tab = []
     for word in contenu:
         all_words_tab.append(Word(word))
-    
-    
-    
-    # all_words_tab = tab_words
-    #return tab_words
+
 
 
 def writeFile():
@@ -67,23 +65,6 @@ def create_table():
 
     table.pack(expand=True, fill="both")
 
-def remove_all_widgets(root):
-    for widget in root.winfo_children():
-        widget.destroy()
-
-def button():
-    # bouton = tk.Button(root, text="Cliquez ici")
-    # bb = tk.Button(root, text="salut")
-
-    # def action_bouton():
-    #     print("Bouton cliqué !")
-
-    # bouton.config(command=action_bouton)
-    # bb.config(command=action_bouton)
-
-    # bouton.pack()
-    # bb.pack()
-    return
 
 def on_key_press(event):
     global count_tap
@@ -150,27 +131,22 @@ def input_add_text():
     translate_button = tk.Button(root, text="Translate", command=translate_submit)
     translate_button.place(relx=0.07, rely=0.08, anchor="nw")
 
-def get_all_vocab_files():
-    
-    list_files = []
-    path = './vocab_files/'
-    
-    files = os.listdir(path)
-    for name in files:
-        list_files.append(name.replace(".txt", ""))
-    
-    return list_files
+
 
 def changeFile(event):
     global fileName
     fileName = listeCombo.get()
+    if fileName == "xxx":
+        xxx.display(root)
+        return
     readFile()
 
 def input_select_input():
     global fileName
     global listeCombo
 
-    listeFiles=get_all_vocab_files()
+    listeFiles=Tools.get_all_vocab_files()
+    listeFiles.append("xxx")
     listeCombo = ttk.Combobox(root, values=listeFiles)
     
     if len(listeFiles) != 0:
@@ -193,7 +169,7 @@ def main():
 
     root.title("English Vocab Tool")
     root.geometry("1200x900")
-    remove_all_widgets(root)
+    Tools.remove_all_widgets(root)
 
     create_frame()
 
