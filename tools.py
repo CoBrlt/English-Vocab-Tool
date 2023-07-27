@@ -41,3 +41,6 @@ def get_all_vocab_files():
         list_files.append(name.replace(".txt", ""))
     
     return list_files
+
+def changeFile(event):
+    print("ok")    

@@ -5,7 +5,7 @@ import requests
 from word import Word
 import os
 import random
-import xxx as xxx
+import grammar as Grammar
 import tools as Tools
 
 url = "https://www.deepl.com/fr/translator#en/fr/"
@@ -18,6 +18,11 @@ def readFile():
     fichier = open("./vocab_files/"+ fileName +".txt", "r", encoding="utf-8")
     contenu = fichier.read()
     fichier.close()
+
+    if "#!grammar!#" in contenu:
+        Grammar.display(root, contenu)
+        return
+
     contenu = contenu.split("\n")
 
     while "" in contenu:
@@ -136,9 +141,6 @@ def input_add_text():
 def changeFile(event):
     global fileName
     fileName = listeCombo.get()
-    if fileName == "xxx":
-        xxx.display(root)
-        return
     readFile()
 
 def input_select_input():
@@ -165,8 +167,6 @@ def input_select_input():
 def main():
     global all_words_tab
     
-
-
     root.title("English Vocab Tool")
     root.geometry("1200x900")
     Tools.remove_all_widgets(root)
