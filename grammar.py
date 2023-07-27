@@ -1,6 +1,9 @@
 import tools as Tools
 import tkinter as tk
 from tkinter import font, ttk
+from cursor import Cursor
+
+
 
 
 def display(root, text):
@@ -18,6 +21,8 @@ def display(root, text):
     listeCombo = Tools.init_combobox(root, Tools.get_all_vocab_files())
     Tools.display_combobox(listeCombo)
     listeCombo.bind("<<ComboboxSelected>>", Tools.changeFile)
+
+    apply_front(text)
     
 
     
@@ -41,3 +46,8 @@ def display(root, text):
     label.tag_add("bold", "1.41", "1.45")
 
     label.config(state=tk.DISABLED)
+
+
+def apply_front(text):
+    cursor = Cursor(text)
+    return text
