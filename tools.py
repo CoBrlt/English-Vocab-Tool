@@ -8,10 +8,12 @@ def remove_all_widgets(root):
         widget.destroy()
 
 def init_fonts(label):
-    label.tag_configure("blue", foreground="blue")# hexa : foreground="#FFFFFF"
+    label.tag_configure("green", foreground="#00FF00")# hexa : foreground="#FFFFFF"
     label.tag_configure("center", justify='center')
+    label.tag_configure("strong", font=("Arial", 12, "bold"))
     label.tag_configure("big", font=("Arial Black", 16))
     label.tag_configure("bold", font=("Arial Black", 12, "bold"))
+    label.tag_configure("underline", font=("Arial", 12, "underline"))
     return
 
 def init_label(root, text):
