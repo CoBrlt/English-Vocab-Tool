@@ -1,120 +1,120 @@
-stir
-boil
-plot
-also
-moreover
-what is more
-not only
-besides
-as well as
-above all
-indeed
-in contrast to
-on the other hand
-nevertheless
-in spite of
-whereas
-even if
-althought
-though
-the thought
-the slump
-the lift
-thus
-as a result
-therefore
-as
-since
-because of
-due to
-incentive
-pace
-so that
-so as to
-in order to
-afford
-afford it
-smudge
-ensure
-so as not to
-result in
-injury
-fair
-attend
-seldom
-appear
-a second term
-at the moment
-the supplies
-achieve
-reps
-physician
-nurse
-health
-insurance
-medication
-prescription
-outbreak
-checkup
-illness
-injury
-headache
-blood pressure
-sibling
-ointment
-sick leave
-relapse
-flu
-syrup
-sustain
-seemed to
-ill-equipped
-surgery
-wound
-frame
-eyesight
-lenses
-eyeglasses
-drill
-tooth decay
-physical therapy
-surgeon
-operating theater
-emergency services
-dietician
-reasearcher
-refer to
-spectacles
-to suit
-wisdom teeth
-thorough
-thoroughly
-relieve
-pain
-leaflet
-closely
-ankle
-swollen
-breakthrough
-elbow
-potent
-toothpast
-drugstore
-swell
-harmful
-heartburn
-harmless
-ankward
-stamina
-well-being
-balanced diet
-health hazard
-counseling
-resilient
-impaired
-keep fit
-witness
-entiled to
-cope
-robbery
-undergo
+stir=attiser|émouvoir|stimuler|bouger|activer|agitation|sensation|retentissement|émoi=The cook stirred the soup with a wooden spoon.:Le cuisinier remuait la soupe avec une cuillère en bois.|The strange painting stirred the visitors' curiosity.:L'étrange tableau attisait la curiosité des visiteurs.|The scientist's discovery stirred controversy.:La découverte du scientifique a provoqué la controverse.|The star's arrival caused a stir in our village.:L'arrivée de la star a causé de l'agitation dans notre village.
+boil=bouillir|furoncle=Water turns into steam when it boils.:L'eau se transforme en vapeur lorsqu'elle bout.|The water in the pot is boiling.:L'eau qui est dans la casserole bout.|My sister boiled water to prepare tea.:Ma sœur a fait bouillir de l'eau pour préparer du thé.
+plot=parcelle|terrain|intrigue|complot|machination|concession|graphique|tracé|trame|diagramme|graphe|conspiration|conjuration|caveau|ruse|lot|tracer|comploter|déterminer|planifier|conspirer=The farmer will grow wheat on his new plot.:Le fermier va faire pousser du blé sur sa nouvelle parcelle.|My parents bought a large plot to build a house.:Mes parents ont acheté un grand terrain pour construire une maison.|The film's plot is based on a famous novel.:L'intrigue du film est basée sur un roman célèbre.|The author tries to interweave the elements of the plot.:L'auteur essaie d'imbriquer les éléments de l'intrigue.|The plot against the king was foiled.:Le complot monté contre le roi a été déjoué.|The spy foiled a plot against the government.:L'espion a déjoué une machination contre le gouvernement.|My brother wants to build a house on this plot.:Mon frère veut bâtir une maison sur cette concession.|The course was plotted on the map with a red pen.:Le parcours a été tracé au stylo rouge sur la carte.|The king's rival was plotting to take his throne.:Le rival du roi complotait de lui prendre son trône.|The rebels were plotting a coup.:Les rebelles préparaient un coup d'État.
+also=également|aussi|de même=I have a brother and also a sister.:J'ai un frère et une sœur aussi.|The application can also be submitted via e-mail.:La candidature peut également être soumise par e-mail.|The printer can also scan and copy documents.:L'imprimante peut aussi scanner et photocopier des documents.
+moreover=de plus|d'ailleurs=Apples are delicious and, moreover, great for your health.:Les pommes sont délicieuses et, de plus, bonnes pour la santé.
+what is more=de plus|en outre|par ailleurs|de surcroît|qui plus est=I am tired. What is more, I have to work early tomorrow.:Je suis fatigué. En outre, je dois travailler tôt demain.
+not only=non seulement
+besides=outre|en plus de|excepté|hormis|d'ailleurs|de plus|à part|du reste=Nobody wanted ice cream besides my little brother.:Personne ne voulait de glace, excepté mon petit frère.|I am overqualified for the job, and besides, I have another offer. :Je suis surqualifié pour cet emploi et j'ai d'ailleurs reçu une autre offre.|It is too early to sleep; besides, I am not tired.:Il est trop tôt pour dormir ; de plus, je ne suis pas fatiguée.
+as well as=aussi|également|ainsi que|aussi bien que|de même que=The external members participated in the meeting as well.:Les membres externes ont également participé à la réunion.|I will invite my friends as well as my family.:J'inviterai mes amis ainsi que ma famille.|We need to be able to say yes as well as no.:Il faut être capable de dire oui aussi bien que non.
+above all=surtout|avant tout|par dessus tout|principalement|d'abord|particulièrement|essentiellement|spécialement|plus que tout|pour l'essentiel=The team must, above all, stay united.:L'équipe doit surtout rester unie.|Above all, we need competent staff.:Avant tout, il nous faut du personnel compétent.|Above all, I want to be famous.:Par dessus tout, je veux être célèbre.
+indeed=Eh bien !|Bien sûr !|En effet !|en effet|effectivement|en fait|d'ailleurs|vraiment|réellement|bel et bien|certainement=This offer is indeed a great opportunity. :En effet, cette offre représente une grande opportunité.|He says I like milk, and I do indeed.:Il dit que j'aime le lait, et c'est effectivement le cas.|I really like cats; indeed, I love them.:J'aime beaucoup les chats ; en fait, je les adore.
+in contrast to=au contraire|par contre|en contraste|par contraste|en revanche|par opposition|a contrario|contrairement à|à l'inverse de
+on the other hand=d'autre part=On the one hand, I'm tired; but on the other hand, I want to watch a film.:D'une part, je suis fatigué ; mais d'autre part, je veux regarder un film.
+nevertheless=néanmoins|cependant|toutefois|pourtant|seulement voilà|malgré tout=The team did not play well; nevertheless, it won the match.:L'équipe n'a pas bien joué ; elle a néanmoins remporté le match.|There were setbacks but we nevertheless made progress.:Il y a eu des contretemps mais nous avons cependant progressé.|She is tired; nevertheless, she continues to work.:Elle est fatiguée, toutefois elle continue à travailler.
+in spite of=malgré=I went for a walk in spite of the bad weather.:Je suis allé me promener malgré le mauvais temps.
+whereas=alors que|tandis que|mais|bien que=I wanted to eat pizza, whereas he wanted to eat pasta.:Je voulais manger de la pizza, alors qu'il voulait manger des pâtes.|My brother became an engineer, whereas I became a singer.:Mon frère est devenu ingénieur, tandis que je suis devenu chanteur.
+even if=même si=Even if she arrives unexpectedly, she will be welcomed.:Même si elle arrive à l'improviste, elle sera bien accueillie.|I believe in fairies even if I do not see them.:Je crois aux fées même si je ne les vois pas.
+althought=bien que
+though=cependant|pourtant|toutefois|néanmoins|quoique=The restaurant was not expensive. The dinner, though, was delicious.:Le restaurant n'était pas cher. Le dîner, cependant, était délicieux.|I ate a lot; I was not very hungry, though.:J'ai beaucoup mangé ; je n'avais pourtant pas très faim.|Your explanation is very clear. I have a few questions, though.:Ton explication est très claire. J'ai toutefois quelques questions.|The journey was lovely, though exhausting.:Le trajet a été agréable, mais néanmoins épuisant.|The journey was incredible, though tiring.:Le voyage a été incroyable, quoique fatigant.
+the thought=la pensée
+the slump=le marasme
+the lift=l'ascenseur
+thus=ainsi|donc|alors|par conséquent|désormais|du coup|dorénavant=The student passed the final exam, thus completing the course.:L'étudiant a réussi l'examen final, terminant ainsi le cours.|The team scored a goal, thus winning the match.:L'équipe a marqué un but et a donc gagné le match.
+as a result=résultat
+therefore=donc|par conséquent|alors|c'est pourquoi=The tools are rusted and must therefore be changed.:Les outils sont rouillés et doivent donc être changés.|My sister can sew, therefore she makes her own clothes.:Ma sœur sait coudre, donc elle fait ses propres vêtements.|It rained all week and therefore the match was called off.:Il a plu toute la semaine et par conséquent le match a été annulé.
+as=comme|en tant que|alors que|comme|puisque=She works as a nurse in the hospital.:Elle travaille comme infirmière à l'hôpital.|I registered as a bone marrow donor.:Je me suis inscrit comme donneur de moelle osseuse.|As the elder brother, he makes most of the decisions.:En tant que frère aîné, il prend la plupart des décisions.|He accepted his appointment as chairman.:Il a accepté sa nomination en tant que président.|It started raining as I was leaving the house.:Il a commencé à pleuvoir alors que je quittais la maison.
+since=depuis|dès|puisque|depuis que|parce que|car=I have not smoked since 2005.:Je n'ai pas fumé depuis 2005.|The country has moved forward since the last century.:Le pays a progressé depuis le siècle dernier.|The students went to the restaurant since they were hungry.:Les étudiants sont allés au restaurant puisqu'ils avaient faim.|Apparently, my interview went well since I received a job offer.:Apparemment, mon entretien s'est bien passé puisque j'ai reçu une offre d'emploi.|Since I lost weight, I always have to pull up my pants.:Depuis que j'ai maigri, je dois toujours remonter mon pantalon.|My company has been doing well since sales picked up.:Ma société prospère depuis que les ventes se sont rétablies.
+because of=à cause de|en raison de=I had to wear a coat because of the cold.:J'ai dû mettre un manteau à cause du froid.|Her ice cream melted because of the heat.:Sa glace a fondu à cause de la chaleur.
+due to=exigible|payable|voulu|requis|nécessaire|prévu|attendu|utile|approprié|convenable|officiel|cotisation|à cause de|en raison de|suite à=I received an invoice due next week.:J'ai reçu une facture payable la semaine prochaine. |We will send you the document in due time.:Nous vous enverrons le document en temps voulu.|The public announcement will be made in due time.:L'annonce publique sera faite en temps voulu.|A safety inspection is due before work can start.:Une inspection de sécurité est requise avant que les travaux puissent commencer.|The picnic was postponed due to the rain.:Le pique-nique a été reporté à cause de la pluie.|Oil prices suffered a steep fall due to the crisis.:Les prix du pétrole ont subi une forte baisse à cause de la crise.|The flight was delayed due to bad weather.:Le vol a été retardé en raison du mauvais temps.|Due to the technical nature of the task, I need an expert.:En raison de la nature technique de la tâche, j'ai besoin d'un expert.
+incentive=incitation|motivation|encouragement|stimulus|aiguillon|incitatif=The year-end bonus is an incentive to work hard.:Le bonus de fin d'année est une incitation à travailler dur.|Bonuses are a good incentive for salespeople.:Les primes sont une bonne motivation pour les vendeurs.
+pace=rythme|allure|cadence|progression|pas|vitesse|tempo|ton|train|faire les cent pas|n'en déplaise à=I was so fast that my son could not keep pace with me.:J'étais si rapide que mon fils ne pouvait pas suivre mon rythme.|Society is changing at an unprecedented pace.:La société évolue à un rythme sans précédent.|The train moves at a steady pace.:Le train se déplace à une allure constante.|If he maintains this pace, he will win the race.:S'il maintient cette cadence, il gagnera la course.|The man was running at a frantic pace.:L'homme courait à une cadence frénétique.|The parties are pleased with the pace of the negotiations.:Les parties sont satisfaites de la progression des négociations. |He paced the living room, waiting for a phone call.:Il faisait les cent pas dans le salon en attendant un coup de téléphone.
+so that=de sorte que|de manière à ce que|afin que|qui|ce|cette|lequel|ça|ces|cela|que|si=I adjusted my diet so that I would lose weight.:J'ai modifié mon régime de manière à perdre du poids.|I heard an eerie sound that scared me.:J'ai entendu un bruit inquiétant qui m'a fait peur.|The woman wore a veil that covered her face.:La femme portait un voile qui couvrait son visage.|That was a difficult task, but I managed it.:Ce fut une tâche difficile, mais je l'ai menée à bien.|They could buy everything that they desired.:Ils pouvaient acheter tout ce qu'ils désiraient.|That new haircut softens her angular face.:Cette nouvelle coupe de cheveux adoucit son visage anguleux.|The horse that I bet on won the race.:Le cheval sur lequel j'ai parié a gagné la course. |My alibi is proof that I am innocent.:Mon alibi est la preuve que je suis innocent.|I concede that I made a mistake.:Je concède que j'ai fait une erreur.
+so as to=comme|en tant que|alors que|comme|puisque|afin de|de manière à=She works as a nurse in the hospital.:Elle travaille comme infirmière à l'hôpital.|I registered as a bone marrow donor.:Je me suis inscrit comme donneur de moelle osseuse.|As the elder brother, he makes most of the decisions.:En tant que frère aîné, il prend la plupart des décisions.|He accepted his appointment as chairman.:Il a accepté sa nomination en tant que président.|It started raining as I was leaving the house.:Il a commencé à pleuvoir alors que je quittais la maison.
+in order to=pour|afin de|dans le but de|en vue de=He works hard in order to get good grades.:Il travaille dur pour obtenir de bonnes notes.|Our team needs to score in order to win.:Notre équipe doit marquer un but pour gagner.|He kept calm in order not to start a scrap.:Il est resté calme afin de ne pas déclencher une bagarre.|The military intervened in order to restore order.:L'armée est intervenue afin de rétablir l'ordre.
+afford=se permettre|fournir=He received a raise and can afford to buy a new car.:Il a reçu une augmentation et peut se permettre d'acheter une nouvelle voiture.|Thanks to my health insurance,  I can afford the cost of medications.:Grâce à mon assurance santé, je peux assumer le coût des médicaments. 
+afford it=se le permettre
+smudge=bavure|tache|tache floue|souillure|salir|tacher|faire des taches
+ensure=assurer|garantir|veiller|vérifier=The software ensures the machine works properly.:Le logiciel assure le bon fonctionnement de la machine.|Regulations are important to ensure safety.:Les règlements sont importants pour assurer la sécurité.|A balanced diet ensures healthy growth.:Un régime équilibré garantit une croissance saine. |The website ensures the protection of personal data.:Le site web garantit la protection des données personnelles.
+so as not to=afin de ne pas
+result in=se traduisent par=The paper jam resulted in an error message.:Le bourrage papier a entraîné un message d'erreur.|Using the telephone may result in additional charges.:L'utilisation du téléphone peut donner lieu à des frais supplémentaires.
+injury=blessure|lésion|dommage|traumatisme|préjudice|tort|dégât=The player has a minor injury, but he continues to play.:Le joueur a une blessure mineure, mais il continue à jouer.|She had to drop out of the race due to an injury.:Elle a dû abandonner la course à cause d'une blessure.|Fortunately, my fall did not cause any brain injury.:Heureusement, ma chute n'a pas entraîné de lésion cérébrale.|My insurance covers bodily injuries.:Mon assurance couvre les dommages corporels.
+fair=salon|foire|fête foraine|exposition|marché|kermesse|équitable|juste|honnête|loyal|clair|beau|impartial|blond|équitables|raisonnable|passable|objective=I go to the book fair to meet authors.:Je vais au salon du livre pour rencontrer des auteurs.|There were many interesting stands at the book fair.:Il y avait beaucoup de stands intéressants au salon du livre.|The farmer brought his best cow to the agricultural fair.:Le fermier a amené sa plus belle vache à la foire agricole.|The children enjoy the rides at the fair.:Les enfants apprécient les attractions à la fête foraine. |The appraisal system must be fair and transparent.:Le système d'évaluation doit être honnête et transparent.|The appraisal system is fair and transparent.:Le système d'évaluation est juste et transparent.|The boxing match was brutal but fair.:Le match de boxe était brutal mais juste.|A fair opponent never cheats.:Un adversaire loyal ne triche jamais.|The elf had pointed ears and fair skin.:L'elfe avait les oreilles pointues et la peau claire.|We are expecting fair summer days. :Nous attendons de beaux jours d'été. |The defendant has the right to a fair trial.:L'accusé a droit à un procès impartial.|The little girl had fair hair and blue eyes.:La petite fille avait les cheveux blonds et les yeux bleus. 
+attend=soigner=The hotel receptionist attends to the guests' requests.:Le réceptionniste de l'hôtel s'occupe des demandes des clients.|The host attended to his guests during the meal.:L'hôte s'est occupé de ses invités pendant le repas.|All employees must attend the meetings.:Tous les employés doivent assister aux réunions.|I attended a lecture at the museum.:J'ai assisté à une conférence au musée.|All employees must attend a yearly training session.:Tous les employés doivent suivre une séance de formation annuelle.|The nurses attended to the patient with great dedication.:Les infirmières ont soigné le patient avec un grand dévouement.
+seldom=rare|rarement|peu|presque jamais|presque plus|presque pas|quasiment jamais=The manager is seldom absent from the office.:Le directeur est rarement absent du bureau.
+appear=apparaître|figurer|se présenter|sembler|comparaître|avoir l'air|paraître|s'afficher|surgir|survenir|émerger=The new road does not appear on the old map.:La nouvelle route n'apparaît pas sur l'ancien plan.|The company's legal name appears in the certificate of incorporation.:Le nom juridique de l'entreprise apparaît dans le certificat de constitution.|His full name appears on his passport.:Son nom complet figure sur son passeport.|The actress did not appear at the award ceremony.:L'actrice ne s'est pas présentée à la cérémonie de remise de prix.|The new medication appears to be very effective.:Le nouveau médicament semble être très efficace.|The burglar will appear in court tomorrow. :Le cambrioleur comparaîtra demain devant la cour. |The actor appeared nervous on stage.:L'acteur avait l'air nerveux sur la scène.
+a second term=deuxième mandat|second mandat|second terme|deuxième semestre
+at the moment=actuellement|pour l'instant|pour le moment|à l'heure actuelle|présentement|pour l'heure|au moment présent|au moment où je vous parle=The product is not available at the moment.:Le produit n'est pas disponible actuellement.|I am busy at the moment, I will call you later.:Je suis occupé pour l'instant, je vous rappellerai.
+the supplies=les fournitures
+achieve=atteindre|réaliser|accomplir|parvenir|achever|effectuer=I have achieved my goals.:J'ai atteint mes objectifs.|Being stubborn may help to achieve an objective.:Être têtu peut aider à atteindre un objectif.|Our team achieved the best score today.:Notre équipe a réalisé le meilleur score aujourd'hui.|Due to the merger, we can achieve economies of scale.:La fusion nous permet de réaliser des économies d'échelle.|She achieved her goal of becoming a photographer.:Elle a accompli son objectif de devenir photographe.
+reps=représentants|répertoires|représentant|répertoire
+physician=médecin|docteur|praticien=The patient described his symptoms to the physician.:Le patient a décrit ses symptômes au médecin.|He has to ask his referring physician about his new treatment.:Il doit consulter son médecin traitant à propos de son nouveau traitement.
+nurse=infirmière|infirmier|nourrice|allaiter=The nurse who takes care of my father at the hospital is very nice.:L'infirmière qui s'occupe de mon père à l'hôpital est très agréable. |The nurse bandaged the patient's arm.:L'infirmière a bandé le bras du patient.|My mother nursed me back to health.:Ma mère m'a soigné jusqu'à mon rétablissement.|The ewe is nursing her lambs.:La brebis allaite ses agneaux.|Babies have to be nursed regularly.:Les bébés doivent être nourris régulièrement.
+health=santé|de santé|sanitaire|médical=The doctor says that I am in good health.:Le docteur dit que je suis en bonne santé.|The city's health infrastructure includes two hospitals.:L'infrastructure sanitaire de la ville comprend deux hôpitaux.|The insurance policy provides several health benefits.:La police d'assurance offre plusieurs avantages médicaux.
+insurance=assurance=My car is covered by my insurance in case of theft.:Ma voiture est couverte par mon assurance en cas de vol.
+medication=médicament|traitement|traitement médical|médocs=This medication has several side effects.:Ce médicament a plusieurs effets secondaires.|The doctor gave me a prescription for the medication.:Le médecin m'a donné une ordonnance pour le médicament.
+prescription=prescription|ordonnance|recette=The doctor gave me a prescription for the medication.:Le médecin m'a donné une ordonnance pour le médicament.
+outbreak=épidémie|flambée|déclenchement|éruption|poussée|explosion|débordement|tir par rafales
+checkup=examen|vérification|monitoring
+illness=maladie|indisposition|affection|pathologie|malade|malades|mauvais|souffrant|atteint|nocif|indisposé=My illness is not contagious.:Ma maladie n'est pas contagieuse.|The consultant is an expert in rare illnesses.:Le médecin spécialiste est expert en maladies rares. |He fully recovered after a brief illness.:Il s'est entièrement remis d'une indisposition passagère.|My son was ill yesterday, but he feels better today.:Mon fils était malade hier, mais il se sent mieux aujourd'hui.
+injury=blessure|lésion|dommage|traumatisme|préjudice|tort|dégât=The player has a minor injury, but he continues to play.:Le joueur a une blessure mineure, mais il continue à jouer.|She had to drop out of the race due to an injury.:Elle a dû abandonner la course à cause d'une blessure.|Fortunately, my fall did not cause any brain injury.:Heureusement, ma chute n'a pas entraîné de lésion cérébrale.|My insurance covers bodily injuries.:Mon assurance couvre les dommages corporels.
+headache=casse-tête|mal de tête|céphalée|migraine|problème|souci|névralgie=Hiring a new team leader is a real headache.:L'embauche d'un nouveau chef d'équipe est un vrai casse-tête.|I took aspirin to get rid of my headache.:J'ai pris de l'aspirine pour soigner mon mal de tête.|I am taking medication to relieve my headache.:Je prends des médicaments pour soulager mon mal de tête.
+blood pressure=tension artérielle|pression artérielle|pression sanguine|hypertonie=My mother takes medicine to lower her blood pressure.:Ma mère prend des médicaments pour baisser sa tension artérielle.
+sibling=frère|sœur|fraternelle|fraternel
+ointment=onguent|pommade|baume|embrocation=I must apply an ointment to protect my skin. :Je dois appliquer un onguent pour protéger ma peau.|The doctor prescribed an antibiotic ointment for my cut.:Le médecin a prescrit une pommade antibiotique pour ma coupure.|The doctor prescribed a special ointment for my burn.:Le médecin m'a prescrit un baume spécial pour ma brûlure.
+sick leave=congé maladie|congé de maladie|arrêt de travail|arrêt maladie|absentéisme pour maladie=The employee is filling in for a colleague on sick leave.:L'employé remplace un collègue en congé maladie.
+relapse=rechute|récidive|récidiver|rechuter|faire une rechute|retomber=Infections can relapse if they are not treated properly.:Les infections peuvent récidiver si elles ne sont pas correctement soignées.
+flu=grippe=The flu is a seasonal virus that spreads in the winter.:La grippe est un virus saisonnier qui se propage l'hiver.|Vaccination helps prevent the flu. :La vaccination aide à prévenir la grippe. |I was able to recover quickly after the flu.:J'ai pu récupérer rapidement après une grippe.
+syrup=sirop|mélasse
+sustain=subir|supporter|recevoir|accepter|éprouver=The government sustains the development of the agricultural sector.:Le gouvernement soutient le développement du secteur agricole.|The company wants to sustain its good market position.:L'entreprise veut maintenir sa bonne position sur le marché.|The manager wants to sustain a good market position.:Le manager veut entretenir une bonne position sur le marché.|The athlete sustained a minor injury.:L'athlète a subi une blessure légère.|The farming industry sustains almost half of the population.:L'industrie agricole alimente presque la moitié de la population.
+seemed to=sembler|paraître|apparaître|avoir l'air=The little boy yawns a lot, he seems to be tired.:Le petit garçon bâille beaucoup, il semble fatigué.|The undisputed champion seemed invincible.:Le champion incontesté semblait invincible.|The task seemed insurmountable but I kept trying. :La tâche paraissait insurmontable mais j'ai persévéré.
+ill-equipped=mal équipé
+surgery=chirurgie|intervention|opération|consultation=After my surgery, I am finally capable of working.:Après ma chirurgie, je suis enfin apte à travailler.|Everyone was happy when he regained consciousness after his surgery. :Tout le monde était heureux lorsqu'il a repris conscience après son opération. |The patient must fast before the surgery.:Le patient doit jeûner avant l'opération.|The doctor holds surgeries every morning.:Le médecin est en consultation tous les matins.
+wound=plaie|blessure|lésion|enroulé|bobiné|enrouler|remonter|serpenter|essouffler|tourner|détortiller|couper la respiration=My wound is healed and the pain is gone.:Ma plaie est guérie et la douleur a disparu.|Immediate flushing of the wound can help avoid infection.:Le rinçage immédiat de la plaie peut aider à éviter une infection.|The doctor used a dressing to protect the wound.:Le médecin a utilisé un pansement pour protéger la plaie.|The wound will heal if I do not move.:La blessure guérira si je ne bouge pas.|The nurse swabbed the wound before bandaging it.:L'infirmière a nettoyé la blessure avant de la bander.|Luckily, nobody was wounded in the crash.:Par chance, personne n'a été blessé dans l'accident.|The harsh critics wounded the filmmaker's pride.:Les critiques acerbes ont offensé la fierté du cinéaste.|I am winding the hose pipe onto the reel.:J'enroule le tuyau d'arrosage autour du dévidoir.|I wind my old pocket watch every day.:Je remonte ma vieille montre de gousset chaque jour.|The road winds through the mountains.:La route serpente à travers les montagnes.|The long race winded the athlete. :La longue course a essoufflé l'athlète.
+frame=cadre|châssis|armature|monture|dormant|structure|encadrement|bâti|charpente|image|trame|support|corps|carcasse|bloc|bordure|échafaud|encadrer|construire|formuler|élaborer=He bought a beautiful frame for the new painting. :Il a acheté un joli cadre pour le nouveau tableau.|The frame is perfect for the size of the photo.:Le cadre est parfait pour la dimension de la photo.|The car's frame was repaired after the accident.:Le châssis de la voiture a été réparé après l'accident.|The table has a sturdy steel frame.:La table a une armature en acier robuste.|The optician showed me several frames.:L'opticien m'a montré plusieurs montures.|The door frame is carved.:Le dormant de la porte est sculpté.|He framed the picture before hanging it on the wall.:Il a encadré la photo avant de l'accrocher au mur.
+eyesight=vue|vision=My grandfather cannot drive on account of his eyesight.:Mon grand-père ne peut pas conduire à cause de sa vue.
+lenses=lentilles|objectifs|verres|objectif|lentille|verre|cristallin=I prefer to wear contact lenses instead of glasses.:Je préfère porter des lentilles de contact au lieu des lunettes.|The front cover protects the camera's lens. :Le cache avant protège l'objectif de l'appareil photo. |The photographer focuses the lens before taking the shot.:Le photographe met l'objectif au point avant de prendre le cliché.
+eyeglasses=lunettes|monocle
+drill=perceuse|entraînement|simulation|exercice pratique|foret|foreuse|exercice|fraise|marche à suivre|forer|percer un trou= The drill is one of the noisiest tools.:La perceuse est un des outils les plus bruyants.|The chuck has broken on my old drill.:Le mandrin a cassé sur ma vieille perceuse.|The operation was a drill designed to train the soldiers.:L'opération était un entraînement destiné à former les soldats.|A drill was performed to test the evacuation procedures.:Une simulation a été réalisée pour tester les procédures d'évacuation.|Daily drills prepare the team for emergency situations.:Des exercices pratiques journaliers préparent l'équipe aux situations d'urgence.|My brother drilled the wall to hang up the shelf.:Mon frère a percé le mur pour accrocher l'étagère.|The geologists drilled holes in the rock to collect samples.:Les géologues ont foré des trous dans la roche pour recueillir des échantillons.
+tooth decay=carie|carie dentaire=Eating too many sweet foods may cause tooth decay.:Manger trop d'aliments sucrés peut provoquer des caries.
+physical therapy=kinésithérapie|physiothérapie|thérapie physique|traitement physique=Physical therapy helped me recover from the accident.:La physiothérapie m'a aidé à me remettre de l'accident.
+surgeon=chirurgien=The nurse assists the surgeon during the operation.:L'infirmière assiste le chirurgien pendant l'opération.|My doctor is a very competent surgeon.:Mon médecin est un chirurgien très compétent.
+operating theater=bloc opératoire
+emergency services=service d'urgence=I contacted the embassy's emergency service when I lost my passport.:J'ai contacté le service d'urgence de l'ambassade quand j'ai perdu mon passeport.
+dietician=diététiste|diététicien|diététicienne|nutritionniste
+reasearcher=chercheur
+refer to=référer|refuser|référer|se référer
+spectacles=lunettes|spectacle
+to suit=convenir|aller=A weekly Monday meeting suits me just fine.:Une réunion hebdomadaire le lundi me convient très bien.|A good solution should suit everyone.:Une bonne solution devrait convenir à tout le monde.|The blue shirt suited me more than the white one.:La chemise bleue m'allait mieux que la blanche.
+wisdom teeth=dents de sagesse
+thorough=complet|minutieux|attentif|approfondi|rigoureux|soigneux|précis|exhaustif|détaillé|total|méticuleux|poussé|consciencieux|systématique|entier|fouillée=We carried out a thorough examination of the goods.:Nous avons procédé à un examen minutieux des articles.|The mechanic performed a thorough inspection of the automobile.:Le mécanicien a procédé à une inspection attentive de la voiture.
+thoroughly=soigneusement|à fond|complètement|minutieusement|entièrement|profondément|totalement|vraiment|exhaustivement|méticuleusement|consciencieusement|rigoureusement|sérieusement|complet|minutieux|approfondi|attentif|rigoureux|soigneux|précis|exhaustif|détaillé|total|méticuleux|poussé|consciencieux|systématique|entier|fouillée=We carried out a thorough examination of the goods.:Nous avons procédé à un examen minutieux des articles.|The mechanic performed a thorough inspection of the automobile.:Le mécanicien a procédé à une inspection attentive de la voiture.
+relieve=alléger|relever=I am taking medication to relieve my headache.:Je prends des médicaments pour soulager mon mal de tête.|Meditation can help to relieve stress.:La méditation peut aider à soulager le stress.|I took some medicine to relieve my back pain.:J'ai pris des médicaments pour alléger mon mal de dos.|Studies show that exercise relieves stress.:Des études montrent que le sport atténue le stress.|My father tells jokes to relieve the tension during arguments.:Mon père raconte des blagues pour apaiser la tension pendant les disputes.|Another doctor will relieve me at the end of my shift.:Un autre docteur me relèvera à la fin de mon service.
+pain=douleur|chagrin|mal|souffrance=The doctor prescribed me pills to ease the pain.:Le médecin m'a prescrit des pilules pour soulager la douleur.|The doctor discovered the underlying cause of the pain.:Le médecin a découvert la cause sous-jacente de la douleur.|He felt a lot of pain when his dog died.:Il a eu beaucoup de chagrin quand son chien est mort.
+leaflet=dépliant|brochure|prospectus|tract|notice|feuillet|fascicule|imprimé|foliole|argumentaire=The company advertises with leaflets and posters.:L'entreprise fait de la publicité avec des brochures et des affiches.|The protesters printed and handed out leaflets.:Les manifestants ont imprimé et distribué des prospectus.|The candidates handed out leaflets before the elections.:Les candidats ont distribué des tracts avant les élections.
+closely=étroitement|en étroite collaboration|de près|intimement|attentivement|similairement|comparablement|semblablement|rigoureusement|fidèlement|proche|proches|étroit|intime|attentif|immédiate|semblable|rapproché|serré|voisin|privilégiés|similaire|comparable|clore|terminer|se fermer|achever|prendre fin=Our interests have become closely intertwined.:Nos intérêts sont devenus étroitement interdépendants.|Merchandising is closely linked to promotion.:Le marchandisage est étroitement lié à la promotion.|I feel very close to my brother.:Je me sens très proche de mon frère.|There is a close link between physical activity and good health.:Il existe un lien étroit entre l'activité physique et une bonne santé.|My sister has only invited close friends to her wedding.:Ma sœur n'a invité que des amis intimes à son mariage.|A close examination of the results allowed me to find the mistake.:Un examen attentif des résultats m'a permis de trouver l'erreur.|The hotel is in close proximity to the beach.:L'hôtel est à proximité immédiate de la plage.|His political views are close to mine. :Ses positions politiques sont semblables aux miennes.|I closed the window because it was raining.:J'ai fermé la fenêtre car il pleuvait.|Having come to the end of the agenda, they closed the meeting.:L'ordre du jour étant épuisé, ils ont clos la réunion.|They closed the ceremony with a song. :Ils ont terminé la cérémonie avec une chanson. 
+ankle=cheville=I twisted my ankle on a hike.:Je me suis tordu la cheville lors d'une randonnée.|I was limping because I hurt my ankle.:Je boitais parce que je me suis blessé à la cheville.|The ankle is the joint that connects the foot to the leg.:La cheville est l'articulation qui relie la jambe au pied.
+swollen=gonflé|enflé|boursouflé|tuméfié|en crue|gonfler|se gonfler|enfler|s'amplifier|se tuméfier|grossir|augmenter=Heavy rains swelled the river.:De fortes pluies ont gonflé la rivière.|My feet swell when I take the plane.:Mes pieds enflent lorsque je prends l'avion.|The music swelled during the romantic scene.:La musique s'est amplifiée pendant la scène romantique.
+breakthrough=percée|avancée|rupture|découverte|déblocage|découverte capitale|révolutionnaire|innovant=Sending a man into space was a scientific breakthrough.:L'envoi d'un homme dans l'espace a été une percée scientifique.|The computer was a breakthrough invention.:L'ordinateur était une invention révolutionnaire.
+elbow=coude
+potent=puissant|éloquent|fort=The medicine is very potent and should be taken with care.:Le médicament est très puissant et doit être pris avec précaution.|The president gave a potent and compelling speech.:Le président a donné un discours éloquent et convaincant. 
+toothpast=pâte à dent
+drugstore=pharmacie|droguerie|parapharmacie=I went to the drugstore to buy some cough syrup.:Je suis allé à la pharmacie acheter du sirop pour la toux.
+swell=houle|déferlement|remous|gonfler|enfler|s'amplifier|se tuméfier|se gonfler|grossir|augmenter=After the disaster, there was a swell of support from the community.:Après le désastre, il y a eu un déferlement de soutien de la part de la communauté. |Heavy rains swelled the river.:De fortes pluies ont gonflé la rivière.|My feet swell when I take the plane.:Mes pieds enflent lorsque je prends l'avion.|The music swelled during the romantic scene.:La musique s'est amplifiée pendant la scène romantique.
+harmful=nuisibles|nocif|néfaste|toxique|malfaisant|dangereux|dommageable|dommageables|nuisible|préjudiciables|préjudiciable|délétères|négatif|pernicieux=Our products do not contain any harmful substances.:Nos produits ne contiennent pas de substances toxiques.|The company's products do not contain harmful substances.:Les produits de l'entreprise ne contiennent pas de substances néfastes.|The cult had a harmful influence on its followers.:La secte avait une influence malfaisante sur ses fidèles.
+heartburn=brûlures d'estomac|aigreurs|pyrosis=Spicy food gives me heartburn.:La nourriture épicée me donne des brûlures d'estomac.
+harmless=inoffensif|bénin|innocent|sans danger|anodin|nuire|endommager=The medicine is harmless in small quantities. :Le médicament est inoffensif en petites quantités.|Fortunately, the treatment's side effects are harmless.:Heureusement, les effets secondaires du traitement sont bénins.|I am not angry; it was just a harmless joke.:Je ne suis pas fâché ; c'était juste une blague innocente.|The divide between employees and management harms productivity.:Le clivage entre les employés et la direction nuit à la productivité.|Misunderstandings may harm our teamwork.:Les malentendus peuvent nuire à notre travail d'équipe.|A magnetic field can harm electronic devices.:Un champ magnétique peut endommager les appareils électroniques.|I would never harm somebody on purpose.:Je ne blesserais jamais quelqu'un volontairement.
+ankward=maladroit
+stamina=endurance|résistance|vigueur|persévérance|ténacité=A runner needs good stamina.:Un coureur doit avoir une bonne endurance.
+well-being=bien-être=We take care of our guests' well-being.:Nous prenons soin du bien-être de nos clients.|Meditation brings me a sense of well-being and contentment.:La méditation m'apporte un sentiment de bien-être et de satisfaction.
+balanced diet=alimentation équilibrée|régime équilibré|diète équilibrée|équilibre alimentaire|régime alimentaire équilibré|régime sain|nutrition équilibrée=The benefits of a balanced diet are manifold.:Les bienfaits d'une alimentation équilibrée sont multiples.|A balanced diet ensures healthy growth.:Un régime équilibré garantit une croissance saine. 
+health hazard=risque pour la santé|risque sanitaire|danger pour la santé|danger sanitaire|problème sanitaire=Poor air quality presents a serious health hazard.:L'air de mauvaise qualité présente un risque sanitaire grave.
+counseling=conseil|service d'aide|recommander=The charity offers shelter and counseling to people in need.:L'association offre abri et conseil aux personnes dans le besoin.
+resilient=résilient|résistant|souples|solides|solide|robuste|tenace|endurant=Rubber is a resilient material.:Le caoutchouc est un matériau résilient.
+impaired=altéré|perturbé|réduit|diminué|déficient|amoindri|affaibli|diminuer|réduire|dégrader=A thick fog impaired visibility this morning.:Un épais brouillard réduisait la visibilité ce matin.|The rain is impairing the workers who are building my house.:La pluie perturbe les ouvriers qui construisent ma maison.|Listening to loud music can impair hearing.:Écouter de la musique forte peut dégrader l'ouïe.
+keep fit=garder la forme|rester en forme|se maintenir en forme
+witness=témoin|déposant|témoigner|être témoin=The judge asked the witness to speak.:Le juge a demandé au témoin de parler.|The police have interviewed the witness.:La police a interrogé le  témoin. |Those who witnessed the accident were able to lend a hand.:Ceux qui ont assisté à l'accident ont pu prêter main forte. |The people in the street witnessed the scene.:Les gens dans la rue ont assisté à la scène.|The doctor witnessed the effectiveness of the treatment.:Le médecin a constaté l'efficacité du traitement.
+entiled to=à l'égard de
+cope=se débrouiller|s'en sortir|réagir|chape=I want my children to learn to cope on their own.:Je veux que mes enfants apprennent à se débrouiller seuls.|When I have a problem, I always find a way to cope.:Quand j'ai un problème, je trouve toujours le moyen de m'en sortir.|Priests wear a cope during big religious celebrations.:Les prêtres portent une chape pour les grandes célébrations religieuses.
+robbery=vol|cambriolage|braquage|rapine|pillage|larcin|escroquerie=The snitch told the police the details of the  robbery.:Le mouchard a raconté à la police les détails du vol.|The man's involvement in the robbery is unclear. :L'implication de cet homme dans le cambriolage n'est pas claire.
+undergo=subir=The artist underwent heavy criticism before becoming a success.:L'artiste a subi de fortes critiques avant d'avoir du succès.|The property underwent a full conversion.:La propriété a subi une transformation complète.|Aircraft pilots undergo intensive training.:Les pilotes d'avion sont soumis à un entraînement intensif.
