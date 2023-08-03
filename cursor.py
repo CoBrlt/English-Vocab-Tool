@@ -6,7 +6,7 @@ class Cursor:
 
         self.global_char = 0 #prend en compte les balises
         self.paragraphe = 1 #numéro du paragraphe (ne prend pas en compte les balises)
-        self.paragraphe_char = 0 #numéro du charactère dans le paragraphe (ne prend pas en compte les balises)
+        self.paragraphe_char = -1 #numéro du charactère dans le paragraphe (ne prend pas en compte les balises)
         self.text = text
         self.balise_type = "" #trouver le type d'une balise
         self.into_balise = False #savoir si on est entre '<' et '>'
@@ -21,7 +21,7 @@ class Cursor:
     def reset(self):
         self.global_char = 0 #prend en compte les balises
         self.paragraphe = 1 #numéro du paragraphe (ne prend pas en compte les balises)
-        self.paragraphe_char = 0 #numéro du charactère dans le paragraphe (ne prend pas en compte les balises)
+        self.paragraphe_char = -1 #numéro du charactère dans le paragraphe (ne prend pas en compte les balises)
         self.balise_type = "" #trouver le type d'une balise
         self.into_balise = False #savoir si on est entre '<' et '>'
         self.begin_balise_location = "" #noter le paragraphe et caractère correspondant au début
@@ -40,11 +40,14 @@ class Cursor:
             self.global_char+=1
             self.into_balise = False
             return True
+
+        if self.into_balise:
+            self.global_char+=1
+            return True
         
         if self.text[self.global_char+1] == "<" or self.into_balise:
             self.into_balise = True
-            self.global_char+=1
-            return True
+
         
         if self.text[self.global_char] == "\n":
             self.paragraphe += 1
