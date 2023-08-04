@@ -1,0 +1,13 @@
+#!grammar!#
+#!br!#
+<strong>be used to + verbe en -ing</strong> ::: indique une habitude
+#!br!#
+négative : be not used to + verbe en <strong>-ing</strong>
+#!br!#
+question : be + sujet + used to + verbe en <strong>-ing</strong>
+#!br!##!br!#
+<strong>used to + base verbale</strong> ::: indique un passé révolu
+#!br!#
+négative : didn't use to + base verbale
+#!br!#
+question : did + sujet + use to + base verbale

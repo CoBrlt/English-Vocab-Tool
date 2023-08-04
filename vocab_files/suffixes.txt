@@ -1,0 +1,48 @@
+#!grammar!#
+
+<center>#!br!##!br!#
+adverbes :
+#!br!#
+-ly
+#!br!##!br!#
+verbes :
+#!br!#
+-ize
+#!br!#
+-fy
+#!br!#
+-ate
+#!br!#
+-en
+#!br!#
+#!br!#
+adjectifs :
+#!br!#
+-ous
+#!br!#
+-ful
+#!br!#
+-less
+#!br!#
+-y
+#!br!#
+-able/ible
+#!br!#
+-ive
+#!br!#
+-ant/ent
+#!br!#
+-ic
+#!br!#
+-ical
+#!br!##!br!#
+noms :#!br!#
+-er/or#!br!#
+-ee#!br!#
+-ment#!br!#
+-ity#!br!#
+-ness#!br!#
+-ship#!br!#
+-ance/ence#!br!#
+-tion/sion#!br!#
+</center>

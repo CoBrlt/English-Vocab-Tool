@@ -1,0 +1,12 @@
+#!grammar!#
+<center>#!br!##!br!#
+<strong>Some</strong> : Dans les phrases affirmatives pour indiquer une quantité indéfinie
+#!br!##!br!#
+<strong>Any</strong> : Dans les questions pour savoir si quelque chose est disponible ou possible
+#!br!##!br!#
+<strong>Any</strong> : Dans les négations pour dire qu'une quantité est nulle
+#!br!##!br!#
+<strong>Any</strong> : Dans les phrases affirmatives pour dire "n'importe quel" ou "tout"
+#!br!##!br!#
+<strong>No</strong> : Dans les phrases affirmatives pour indiquer "pas"
+</center>
