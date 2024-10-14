@@ -23,7 +23,8 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Group</th>
+                    <th>Groups</th>
+                    <th></th>
                     <th></th>
                     <th></th>
                     <th></th>
@@ -31,21 +32,55 @@
             </thead>
             <tbody id="file_list_table_body">
                 <tr>
+                    <td><input type="text" id="input_list_name_add" placeholder="Enter new list name"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button class="button button_Add" id="button_Add_list">Add</button></td>
+                </tr>
+                <tr>
                     <td><input type="text" value="Jean Dupont"></td>
                     <td><span>group1</span><span>group2</span></td>
                     <td><button class="button button_edit">Edit</button></td>
                     <td><button class="button button_groups">Groups</button></td>
+                    <td><button class="button button_groups">Copy</button></td>
                     <td><button class="button button_delete">Delete</button></td>
                 </tr>
                 <tr>
                     <td>Marie Curie</td>
-                    <td><input type="text" value="des groupes"></td>
-                    <td><button class="button">Edit</button></td>
-                    <td><button class="button">Groups</button></td>
-                    <td><button class="button">Delete</button></td>
+                    <td><span>group1</span><span>group3</span></td>
+                    <td><button class="button button_edit">Edit</button></td>
+                    <td><button class="button button_groups">Groups</button></td>
+                    <td><button class="button button_groups">Copy</button></td>
+                    <td><button class="button button_delete">Delete</button></td>
                 </tr>
             </tbody>
         </table>
+    </div>
+
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <div id="popup_checkbox">
+                <table id="table_popup">
+                    <tr>
+                        <td><input type="text" id="input_add_group" placeholder="Enter new group name"></td>
+                        <td><button class="button" id="button_add_group">Add</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="checkbox-1">
+                            <label for="checkbox-1"></label>
+                        </td>
+                        <td>tchoutchou</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="popup_button_confirm">
+                <button class="button" id="button_confirm_popup">Confirm</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

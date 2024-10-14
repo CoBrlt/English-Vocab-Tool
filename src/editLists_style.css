@@ -96,3 +96,128 @@ td input {
 .tools_bar .button_tool_bar {
     background-color: #6C63FF;
 }
+
+
+
+
+
+
+
+
+
+
+/* Style pour le fond de la modale */
+.popup {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(119, 119, 119, 0.5); /* Couleur de fond semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style pour le contenu de la modale */
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    height: 30%;
+    width: 30%;
+    text-align: center;
+}
+
+#popup_checkbox{
+    height: 75%;
+    overflow-y: auto;
+}
+
+/* Bouton de fermeture */
+.close-btn {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Personnaliser la scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Largeur de la scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+    background: #f1f1f1; /* Couleur de la piste */
+    border-radius: 10px; /* Coins arrondis de la piste */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Couleur du pouce */
+    border-radius: 10px; /* Coins arrondis du pouce */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Couleur du pouce au survol */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cacher la checkbox par défaut */
+input[type="checkbox"] {
+    display: none; /* ou opacity: 0; */
+}
+
+/* Style du label qui remplace la checkbox */
+label {
+    display: inline-block;
+    width: 20px; /* largeur de la checkbox */
+    height: 20px; /* hauteur de la checkbox */
+    background-color: #333; /* couleur de fond par défaut */
+    border: 2px solid #555; /* bordure de la checkbox */
+    border-radius: 5px; /* arrondi des coins */
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; /* transition pour un effet fluide */
+}
+
+/* Style pour le label lorsqu'il est coché */
+input[type="checkbox"]:checked + label {
+    background-color: #6C63FF; /* couleur de fond lorsqu'il est coché */
+    border-color: #574bdb; /* couleur de la bordure lorsqu'il est coché */
+}
+
+/* Créer une coche avec un pseudo-élément */
+input[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    left: 6px; /* position de la coche */
+    top: 2px; /* position de la coche */
+    width: 5px; /* largeur de la coche */
+    height: 10px; /* hauteur de la coche */
+    border: solid #f0f0f0; /* couleur de la coche */
+    border-width: 0 2px 2px 0; /* forme de la coche */
+    transform: rotate(45deg); /* rotation de la coche */
+}
