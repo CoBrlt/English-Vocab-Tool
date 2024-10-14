@@ -1,3 +1,0 @@
-data-testid="translator-dict-content" --> there is all content and differents form
-https://www.deepl.com/fr/translator#en/fr/[english_word]
-https://www.deepl.com/fr/translator#fr/en/[french_word]

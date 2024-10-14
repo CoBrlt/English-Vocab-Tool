@@ -1,0 +1,2707 @@
+{
+    "name": "vocab3",
+    "words": [
+        {
+            "english": "mind",
+            "french": [
+                "esprit",
+                "tête",
+                "avis",
+                "idée",
+                "raison",
+                "opinion",
+                "intelligence",
+                "intellect",
+                "écouter",
+                "prendre garde",
+                "obéir à"
+            ],
+            "examples": [
+                {
+                    "english": "Working out is healthy for body and mind. ",
+                    "french": "Faire de l'exercice est bon pour le corps et l'esprit."
+                },
+                {
+                    "english": "She has a brilliant mind.",
+                    "french": "Elle a un esprit brillant."
+                },
+                {
+                    "english": "To my mind, it is a good idea to start a company.",
+                    "french": "À mon avis, c'est une bonne idée de démarrer une entreprise."
+                },
+                {
+                    "english": "The children should mind the teacher's instructions.",
+                    "french": "Les enfants devraient écouter les consignes de l'instituteur."
+                },
+                {
+                    "english": "I always mind the gap between the platform and the train.",
+                    "french": "Je fais toujours attention à l'espace entre le quai et le train."
+                },
+                {
+                    "english": "Some parents hire a baby-sitter to mind their children.",
+                    "french": "Certains parents engagent une baby-sitter pour surveiller leurs enfants. \r"
+                }
+            ]
+        },
+        {
+            "english": "would mind",
+            "french": [
+                "serait attentif\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "whole",
+            "french": [
+                "ensemble",
+                "totalité",
+                "entier",
+                "complet",
+                "total",
+                "global",
+                "intégral",
+                "général",
+                "tout un"
+            ],
+            "examples": [
+                {
+                    "english": "The environment concerns society as a whole.",
+                    "french": "L'environnement concerne l'ensemble de la société."
+                },
+                {
+                    "english": "On the whole, the conference was interesting.",
+                    "french": "Dans l'ensemble, la conférence était intéressante."
+                },
+                {
+                    "english": "I ate the whole pizza because I was hungry.",
+                    "french": "J'ai mangé la pizza entière parce que j'avais faim."
+                },
+                {
+                    "english": "The president's whole speech is in our history book.",
+                    "french": "Le discours complet du président est dans notre livre d'histoire.\r"
+                }
+            ]
+        },
+        {
+            "english": "order form",
+            "french": [
+                "bon de commande",
+                "formulaire de commande",
+                "bulletin de commande",
+                "feuille de commande",
+                "bordereau de commande"
+            ],
+            "examples": [
+                {
+                    "english": "I filled out the order form and sent it to the suppliers.",
+                    "french": "J'ai rempli le bon de commande et je l'ai envoyé aux fournisseurs.\r"
+                }
+            ]
+        },
+        {
+            "english": "store layout",
+            "french": [
+                "agencement du magasin",
+                "aménagement du magasin",
+                "structure du magasin",
+                "présentation visuelle en magasin\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "stocktaking",
+            "french": [
+                "inventaire",
+                "récolement\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "tire",
+            "french": [
+                "pneu",
+                "pneumatique",
+                "fatiguer",
+                "se fatiguer"
+            ],
+            "examples": [
+                {
+                    "english": "I bought four new tires for my car.",
+                    "french": "J'ai acheté quatre nouveaux pneus pour ma voiture."
+                },
+                {
+                    "english": "The mechanic changed all four tires on my car.",
+                    "french": "Le mécanicien a changé les quatre pneumatiques de ma voiture."
+                },
+                {
+                    "english": "The long walk tired the old dog.",
+                    "french": "La longue promenade a fatigué le vieux chien.\r"
+                }
+            ]
+        },
+        {
+            "english": "refill",
+            "french": [
+                "recharge",
+                "rechargement",
+                "recharger",
+                "remplir à nouveau"
+            ],
+            "examples": [
+                {
+                    "english": "I refilled my prepaid card to make a phone call.",
+                    "french": "J'ai rechargé ma carte prépayée pour passer un appel téléphonique."
+                },
+                {
+                    "english": "The vendor refilled the beverage dispenser.",
+                    "french": "Le vendeur a refait le plein du distributeur de boisson.\r"
+                }
+            ]
+        },
+        {
+            "english": "hood",
+            "french": [
+                "hotte",
+                "capuche",
+                "capuchon",
+                "cagoule",
+                "chaperon",
+                "capot",
+                "quartier",
+                "capote",
+                "couvercle",
+                "housse",
+                "donner",
+                "passer"
+            ],
+            "examples": [
+                {
+                    "english": "A jacket with a hood is very practical in the winter.",
+                    "french": "Une veste à capuche est très pratique en hiver."
+                },
+                {
+                    "english": "The engine of a car is under the hood.",
+                    "french": "Le moteur d'une voiture se trouve sous le capot. "
+                },
+                {
+                    "english": "Everyone knows me in my hood.",
+                    "french": "Tout le monde me connaît dans mon quartier."
+                },
+                {
+                    "english": "The president handed a trophy to the winner of the race.",
+                    "french": "Le président a donné un trophée au gagnant de la course. \r"
+                }
+            ]
+        },
+        {
+            "english": "puncture",
+            "french": [
+                "perforation",
+                "ponction",
+                "crevaison",
+                "piqûre",
+                "percer",
+                "perforer"
+            ],
+            "examples": [
+                {
+                    "english": "A sharp object had punctured the patient's lung.",
+                    "french": "Un objet pointu avait perforé le poumon du patient.\r"
+                }
+            ]
+        },
+        {
+            "english": "labor",
+            "french": [
+                "travail",
+                "main-d'oeuvre",
+                "accouchement",
+                "boulot",
+                "labeur",
+                "ouvrier",
+                "peiner"
+            ],
+            "examples": [
+                {
+                    "english": "It was an easy birth, labor did not take long.",
+                    "french": "La naissance a été facile, l'accouchement s'est déroulé rapidement."
+                },
+                {
+                    "english": "The workers labored day and night to meet the deadline.",
+                    "french": "Les travailleurs ont peiné jour et nuit pour finir dans les délais.\r"
+                }
+            ]
+        },
+        {
+            "english": "winterize",
+            "french": [
+                "hiverner\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "wonder",
+            "french": [
+                "merveille",
+                "émerveillement",
+                "surprise",
+                "miracle",
+                "étonnement",
+                "prodige",
+                "admiration",
+                "splendeur",
+                "stupeur",
+                "se demander",
+                "réfléchir",
+                "s'étonner"
+            ],
+            "examples": [
+                {
+                    "english": "As a child, I wanted to discover all the wonders of the universe.",
+                    "french": "Quand j'étais petit, je voulais découvrir toutes les merveilles de l'univers."
+                },
+                {
+                    "english": "Our children watched the fireworks with wonder.",
+                    "french": "Nos enfants ont regardé le feu d'artifice avec émerveillement."
+                },
+                {
+                    "english": "My grandmother's recovery was a wonder to the whole family.",
+                    "french": "Le rétablissement de ma grand-mère était une surprise pour toute la famille.  "
+                },
+                {
+                    "english": "I wonder why he left without a word.",
+                    "french": "Je me demande pourquoi il est parti sans un mot."
+                },
+                {
+                    "english": "Observing the stars makes me wonder about my place in the universe.",
+                    "french": "Observer les étoiles me fait réfléchir à ma place dans l'univers.\r"
+                }
+            ]
+        },
+        {
+            "english": "heartburn",
+            "french": [
+                "brûlures d'estomac",
+                "aigreurs",
+                "pyrosis"
+            ],
+            "examples": [
+                {
+                    "english": "Spicy food gives me heartburn.",
+                    "french": "La nourriture épicée me donne des brûlures d'estomac.\r"
+                }
+            ]
+        },
+        {
+            "english": "suffer",
+            "french": [
+                "en souffrir",
+                "éprouver",
+                "essuyer"
+            ],
+            "examples": [
+                {
+                    "english": "The celebrity learned to suffer the presence of journalists.",
+                    "french": "La célébrité a appris à souffrir la présence des journalistes."
+                },
+                {
+                    "english": "Oil prices suffered a steep fall due to the crisis.",
+                    "french": "Les prix du pétrole ont subi une forte baisse à cause de la crise."
+                },
+                {
+                    "english": "The next morning, he suffered the aftermath of the party.",
+                    "french": "Le lendemain matin, il a subi le contrecoup de la fête."
+                },
+                {
+                    "english": "I suffered my brother's bad jokes all evening.",
+                    "french": "J'ai enduré les mauvaises blagues de mon frère toute la soirée."
+                },
+                {
+                    "english": "I do not have to suffer his selfishness.",
+                    "french": "Je n'ai pas à tolérer son égoïsme.\r"
+                }
+            ]
+        },
+        {
+            "english": "evening",
+            "french": [
+                "soir",
+                "soirée",
+                "nuit",
+                "de soirée"
+            ],
+            "examples": [
+                {
+                    "english": "Doctors recommend eating less in the evening.",
+                    "french": "Les médecins recommandent de moins manger le soir."
+                },
+                {
+                    "english": "The caretaker locks the school gate every evening.",
+                    "french": "Le gardien ferme le portail de l'école tous les soirs."
+                },
+                {
+                    "english": "We spent a lovely evening together.",
+                    "french": "Nous avons passé une délicieuse soirée ensemble. "
+                },
+                {
+                    "english": "We spent a nice evening at the restaurant.",
+                    "french": "Nous avons passé une soirée sympa au restaurant.\r"
+                }
+            ]
+        },
+        {
+            "english": "belt",
+            "french": [
+                "ceinture",
+                "courroie",
+                "tapis",
+                "région",
+                "coup",
+                "sangle",
+                "ceinturon"
+            ],
+            "examples": [
+                {
+                    "english": "I always buckle my seat belt in the car.",
+                    "french": "Je boucle toujours ma ceinture de sécurité dans la voiture."
+                },
+                {
+                    "english": "My belt is too long, I must add some notches.",
+                    "french": "Ma ceinture est trop longue, je dois rajouter des crans."
+                },
+                {
+                    "english": "The conveyor system consists of several belts.",
+                    "french": "Le système de convoyage se compose de plusieurs courroies."
+                },
+                {
+                    "english": "The conveyor belt moves products along the assembly line.",
+                    "french": "Le tapis roulant déplace des produits le long de la chaîne de montage."
+                },
+                {
+                    "english": "Most of the country's population live in the coastal belt.",
+                    "french": "La majorité de la population du pays vit dans la région côtière.\r"
+                }
+            ]
+        },
+        {
+            "english": "rear",
+            "french": [
+                "arrière",
+                "postérieur",
+                "de derrière",
+                "verso",
+                "queue",
+                "fesses",
+                "se cabrer"
+            ],
+            "examples": [
+                {
+                    "english": "The tired cyclists were at the rear of the pack.",
+                    "french": "Les cyclistes fatigués étaient en queue de peloton."
+                },
+                {
+                    "english": "The farmer mainly rears cattle.",
+                    "french": "Le fermier élève principalement du bétail.\r"
+                }
+            ]
+        },
+        {
+            "english": "label",
+            "french": [
+                "étiquette",
+                "label",
+                "marque",
+                "maison de disques",
+                "vignette",
+                "libellé",
+                "terme",
+                "écriteau",
+                "marqueur",
+                "étiqueter",
+                "marquer",
+                "caractériser",
+                "qualifier"
+            ],
+            "examples": [
+                {
+                    "english": "The ingredients are indicated on the label.",
+                    "french": "Les ingrédients sont indiqués sur l'étiquette."
+                },
+                {
+                    "english": "I stuck a label on the box to indicate its content.",
+                    "french": "J'ai collé une étiquette sur la boîte pour indiquer son contenu."
+                },
+                {
+                    "english": "The green label is a sign of the product's quality.",
+                    "french": "Le label vert est un gage de la qualité du produit."
+                },
+                {
+                    "english": "The retail chain has its own label.",
+                    "french": "La chaîne de distribution a sa propre marque."
+                },
+                {
+                    "english": "The singer signed on with a new label.",
+                    "french": "Le chanteur a signé avec une nouvelle maison de disques."
+                },
+                {
+                    "english": "I label my luggage when I travel.",
+                    "french": "J'étiquette mes bagages quand je voyage."
+                },
+                {
+                    "english": "I labelled the old products with a red cross.",
+                    "french": "J'ai marqué les anciens produits d'une croix rouge."
+                },
+                {
+                    "english": "It is difficult to label the artist's music.",
+                    "french": "Il est difficile de caractériser la musique de l'artiste.\r"
+                }
+            ]
+        },
+        {
+            "english": "hail",
+            "french": [
+                "grêle",
+                "pluie",
+                "grésil",
+                "charretée",
+                "grêler",
+                "héler"
+            ],
+            "examples": [
+                {
+                    "english": "So much hail fell that it looked like snow.",
+                    "french": "Il est tombé tellement de grêle qu'elle ressemblait à de la neige."
+                },
+                {
+                    "english": "The director hailed his employees' relentless work.",
+                    "french": "Le directeur a salué le travail acharné de ses employés."
+                },
+                {
+                    "english": "During the thunderstorm, it started to hail.",
+                    "french": "Pendant l'orage, il a commencé à grêler.\r"
+                }
+            ]
+        },
+        {
+            "english": "dish",
+            "french": [
+                "plat",
+                "antenne parabolique",
+                "assiette",
+                "parabole",
+                "mets",
+                "repas"
+            ],
+            "examples": [
+                {
+                    "english": "I made the new dish by following the recipe. ",
+                    "french": "J'ai préparé le nouveau plat en suivant la recette."
+                },
+                {
+                    "english": "The curry dishes are very spicy.",
+                    "french": "Les plats au curry sont très piquants."
+                },
+                {
+                    "english": "The dish gives me access to several television channels.",
+                    "french": "L'antenne parabolique me donne accès à plusieurs chaînes de télévision.\r"
+                }
+            ]
+        },
+        {
+            "english": "gate",
+            "french": [
+                "porte",
+                "portail",
+                "barrière",
+                "vanne",
+                "grille",
+                "portillon",
+                "portique"
+            ],
+            "examples": [
+                {
+                    "english": "We have to go through a wrought-iron gate to access the garden.",
+                    "french": "Il faut franchir un portail en fer forgé pour accéder au jardin."
+                },
+                {
+                    "english": "There was a big iron gate in front of the house.",
+                    "french": "Il y avait un grand portail de fer devant la maison."
+                },
+                {
+                    "english": "The caretaker locks the school gate every evening.",
+                    "french": "Le gardien ferme le portail de l'école tous les soirs."
+                },
+                {
+                    "english": "A gate prevents animals from running away.",
+                    "french": "Une barrière empêche les animaux de s'enfuir."
+                },
+                {
+                    "english": "I secured the gate with wire.",
+                    "french": "J'ai attaché la barrière avec du fil de fer.\r"
+                }
+            ]
+        },
+        {
+            "english": "customs",
+            "french": [
+                "douane",
+                "douanes",
+                "coutumes",
+                "traditions",
+                "droits de douane",
+                "habitudes",
+                "douanière",
+                "coutume",
+                "habitude",
+                "tradition",
+                "usage",
+                "clientèle",
+                "douanières",
+                "spécial"
+            ],
+            "examples": [
+                {
+                    "english": "I declared the goods at the customs.",
+                    "french": "J'ai déclaré les marchandises à la douane."
+                },
+                {
+                    "english": "Every culture has its own customs and traditions. ",
+                    "french": "Chaque culture a ses propres coutumes et traditions."
+                },
+                {
+                    "english": "Every country has its own customs.",
+                    "french": "Chaque pays a ses propres traditions."
+                },
+                {
+                    "english": "Throwing rice at a wedding is an old custom.",
+                    "french": "Lancer du riz à un mariage est une vieille coutume."
+                },
+                {
+                    "english": "The king issued a writ banning the custom.",
+                    "french": "Le roi a pris un décret interdisant cette coutume."
+                },
+                {
+                    "english": "It is his custom to go for a swim twice a week.",
+                    "french": "Il a l'habitude de nager deux fois par semaine.\r"
+                }
+            ]
+        },
+        {
+            "english": "booking",
+            "french": [
+                "réservation",
+                "inscription",
+                "avertissement",
+                "réserver",
+                "commander",
+                "retenir",
+                "comptabiliser"
+            ],
+            "examples": [
+                {
+                    "english": "The hotel booking may be confirmed online.",
+                    "french": "Il est possible de confirmer la réservation d'hôtel en ligne."
+                },
+                {
+                    "english": "I would like to book a table for three.",
+                    "french": "J'aimerais réserver une table pour trois. "
+                },
+                {
+                    "english": "I booked the last seats available for the show.",
+                    "french": "J'ai réservé les dernières places disponibles pour le spectacle.\r"
+                }
+            ]
+        },
+        {
+            "english": "tip",
+            "french": [
+                "pointe",
+                "conseil",
+                "extrémité",
+                "bout",
+                "astuce",
+                "pourboire",
+                "tuyau",
+                "truc",
+                "décharge",
+                "terril",
+                "incliner",
+                "donner un pourboire",
+                "basculer",
+                "verser"
+            ],
+            "examples": [
+                {
+                    "english": "The tip of my pencil is broken.",
+                    "french": "La pointe de mon crayon est cassée."
+                },
+                {
+                    "english": "The teacher gave me some tips for the exam.",
+                    "french": "L'enseignant m'a donné des conseils pour l'examen."
+                },
+                {
+                    "english": "Your practical tips have been very helpful.",
+                    "french": "Vos conseils pratiques ont été très utiles."
+                },
+                {
+                    "english": "Our goal was to reach the northern tip of the country.",
+                    "french": "Notre but était d'atteindre l'extrémité nord du pays."
+                },
+                {
+                    "english": "The tip of my nose is cold.",
+                    "french": "Le bout de mon nez est froid."
+                },
+                {
+                    "english": "This book is full of tips on how to bake the perfect cake.",
+                    "french": "Ce livre est plein d'astuces pour confectionner le gâteau parfait."
+                },
+                {
+                    "english": "The service was great, so I left the waiter a tip.",
+                    "french": "Le service était excellent, alors j'ai laissé un pourboire au serveur."
+                },
+                {
+                    "english": "The waiter tipped the bottle to fill my glass.",
+                    "french": "Le serveur a incliné la bouteille pour remplir mon verre."
+                },
+                {
+                    "english": "The waiter was nice, so I tipped him generously.",
+                    "french": "Le serveur était gentil, donc je lui ai donné un pourboire généreux.\r"
+                }
+            ]
+        },
+        {
+            "english": "stopover",
+            "french": [
+                "escale",
+                "halte",
+                "arrêt\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "luggage",
+            "french": [
+                "bagages",
+                "bagage",
+                "effets",
+                "valise"
+            ],
+            "examples": [
+                {
+                    "english": "I checked in my luggage at the airport.",
+                    "french": "J'ai enregistré mes bagages à l'aéroport."
+                },
+                {
+                    "english": "I tag my luggage when I take the train.",
+                    "french": "J'étiquette mes bagages quand je prends le train."
+                },
+                {
+                    "english": "After the flight I had to wait a long time for my luggage. ",
+                    "french": "Après le vol, j'ai dû attendre longtemps mon bagage. "
+                },
+                {
+                    "english": "After the flight I had to wait a long time to get my luggage back.",
+                    "french": "Après le vol, j'ai dû attendre longtemps pour récupérer mes effets.\r"
+                }
+            ]
+        },
+        {
+            "english": "suitcase",
+            "french": [
+                "valise",
+                "mallette",
+                "bagage"
+            ],
+            "examples": [
+                {
+                    "english": "My son dragged his large suitcase up the stairs.",
+                    "french": "Mon fils a traîné sa grande valise en haut de l'escalier."
+                },
+                {
+                    "english": "My suitcase holds all my possessions.",
+                    "french": "Ma valise contient toutes mes affaires.\r"
+                }
+            ]
+        },
+        {
+            "english": "subway",
+            "french": [
+                "métro\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "tossed salad",
+            "french": [
+                "salade mélangée\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "upstairs",
+            "french": [
+                "à l'étage",
+                "en haut",
+                "dessus",
+                "étages"
+            ],
+            "examples": [
+                {
+                    "english": "The staircase leads to two bedrooms upstairs.",
+                    "french": "L'escalier mène à deux chambres à l'étage.\r"
+                }
+            ]
+        },
+        {
+            "english": "custom",
+            "french": [
+                "coutume",
+                "habitude",
+                "tradition",
+                "clientèle",
+                "usage",
+                "douanières",
+                "spécial"
+            ],
+            "examples": [
+                {
+                    "english": "Throwing rice at a wedding is an old custom.",
+                    "french": "Lancer du riz à un mariage est une vieille coutume."
+                },
+                {
+                    "english": "The king issued a writ banning the custom.",
+                    "french": "Le roi a pris un décret interdisant cette coutume."
+                },
+                {
+                    "english": "It is his custom to go for a swim twice a week.",
+                    "french": "Il a l'habitude de nager deux fois par semaine."
+                },
+                {
+                    "english": "Every country has its own customs.",
+                    "french": "Chaque pays a ses propres traditions.\r"
+                }
+            ]
+        },
+        {
+            "english": "forbidden",
+            "french": [
+                "interdite",
+                "interdits",
+                "interdites",
+                "défendu",
+                "banni",
+                "interdire\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "wondering",
+            "french": [
+                "se demandant",
+                "se demander",
+                "réfléchir",
+                "s'étonner"
+            ],
+            "examples": [
+                {
+                    "english": "I wonder why he left without a word.",
+                    "french": "Je me demande pourquoi il est parti sans un mot."
+                },
+                {
+                    "english": "Observing the stars makes me wonder about my place in the universe.",
+                    "french": "Observer les étoiles me fait réfléchir à ma place dans l'univers.\r"
+                }
+            ]
+        },
+        {
+            "english": "rank",
+            "french": [
+                "rang",
+                "grade",
+                "standing",
+                "classement",
+                "échelon",
+                "formation",
+                "hiérarchie",
+                "se classer",
+                "disposer",
+                "aligner"
+            ],
+            "examples": [
+                {
+                    "english": "His salary corresponds with his rank in the company hierarchy.",
+                    "french": "Son salaire correspond à son rang dans la hiérarchie de l'entreprise."
+                },
+                {
+                    "english": "A man of such a rank should not swear.",
+                    "french": "Un homme d'un tel standing ne devrait pas jurer."
+                },
+                {
+                    "english": "The magazine ranks actors according to their wealth.",
+                    "french": "Le magazine classe les acteurs selon leur fortune."
+                },
+                {
+                    "english": "The champion ranked third in the competition.",
+                    "french": "Le champion s'est classé troisième de la compétition."
+                },
+                {
+                    "english": "The project manager ranked the offers according to price. ",
+                    "french": "Le chef de projet a hiérarchisé les offres selon les prix.\r"
+                }
+            ]
+        },
+        {
+            "english": "flight attendant",
+            "french": [
+                "hôtesse de l'air",
+                "agent de bord",
+                "steward",
+                "personnel de cabine",
+                "personnel navigant commercial",
+                "membre de l'équipage"
+            ],
+            "examples": [
+                {
+                    "english": "The flight attendant offered drinks to the passengers.",
+                    "french": "L'agent de bord a proposé des boissons aux passagers."
+                },
+                {
+                    "english": "The flight attendant offered blankets to the passengers.",
+                    "french": "Le steward a offert des couvertures aux passagers.\r"
+                }
+            ]
+        },
+        {
+            "english": "cab driver",
+            "french": [
+                "chauffeur de taxi\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "real estate agent",
+            "french": [
+                "agent immobilier",
+                "agente immobilière",
+                "agent immobilier"
+            ],
+            "examples": [
+                {
+                    "english": "I contacted a real estate agent to find a new house.",
+                    "french": "J'ai contacté un agent immobilier pour trouver une nouvelle maison.\r"
+                }
+            ]
+        },
+        {
+            "english": "dig",
+            "french": [
+                "bêcher",
+                "enfoncer",
+                "excaver",
+                "fouiller",
+                "percer",
+                "piger",
+                "fouilles",
+                "coup de bêche"
+            ],
+            "examples": [
+                {
+                    "english": "I used a large shovel to dig a deep hole. ",
+                    "french": "J'ai utilisé une large pelle pour creuser un trou profond."
+                },
+                {
+                    "english": "I dug a hole with a spade.",
+                    "french": "J'ai creusé un trou avec une pelle."
+                },
+                {
+                    "english": "Mining equipment will be used to dig ore from the ground.",
+                    "french": "L'équipement minier sera utilisé pour extraire les minerais du sol. "
+                },
+                {
+                    "english": "The historian conducted a dig near the pyramid.",
+                    "french": "L'historien a mené des fouilles près de la pyramide.\r"
+                }
+            ]
+        },
+        {
+            "english": "weed",
+            "french": [
+                "désherber",
+                "sarcler",
+                "herbe",
+                "mauvaise herbe",
+                "algue",
+                "demi-portion",
+                "chiendent",
+                "beuh"
+            ],
+            "examples": [
+                {
+                    "english": "I weeded the garden to give my plants more space.",
+                    "french": "J'ai désherbé le jardin pour laisser plus d'espace à mes plantes."
+                },
+                {
+                    "english": "I weeded the garden before planting flowers.",
+                    "french": "J'ai sarclé le jardin avant de planter des fleurs."
+                },
+                {
+                    "english": "Smoking weed is illegal in many countries.",
+                    "french": "Fumer de l'herbe est illégal dans beaucoup de pays."
+                },
+                {
+                    "english": "I removed the weeds from my garden.",
+                    "french": "J'ai arraché les mauvaises herbes dans mon jardin.\r"
+                }
+            ]
+        },
+        {
+            "english": "lawn",
+            "french": [
+                "pelouse",
+                "gazon",
+                "pré",
+                "parterre"
+            ],
+            "examples": [
+                {
+                    "english": "The gardener mows the lawn every week.",
+                    "french": "Le jardinier tond la pelouse chaque semaine.\r"
+                }
+            ]
+        },
+        {
+            "english": "mower",
+            "french": [
+                "tondeuse",
+                "faucheuse",
+                "tondeuse à gazon"
+            ],
+            "examples": [
+                {
+                    "english": "The mower's blades need occasional sharpening.",
+                    "french": "Les lames de la tondeuse à gazon doivent être aiguisées de temps en temps.\r"
+                }
+            ]
+        },
+        {
+            "english": "hedge",
+            "french": [
+                "haie",
+                "couverture",
+                "protection",
+                "sauvegarde",
+                "couvrir",
+                "enclore",
+                "protéger",
+                "se dérober",
+                "planter une haie",
+                "louvoyer",
+                "biaiser"
+            ],
+            "examples": [
+                {
+                    "english": "We have to trim the hedge around our garden.",
+                    "french": "Nous devons tailler la haie autour de notre jardin. "
+                },
+                {
+                    "english": "I will prune the hedge in the spring.",
+                    "french": "Je taillerai la haie au printemps."
+                },
+                {
+                    "english": "I took out insurance to hedge the loss of my valuables.",
+                    "french": "J'ai pris une assurance pour couvrir la perte de mes objets de valeur."
+                },
+                {
+                    "english": "I hedged my garden by planting shrubs all around it.",
+                    "french": "J'ai enclos mon jardin en plantant des arbustes tout autour.\r"
+                }
+            ]
+        },
+        {
+            "english": "hose pipe",
+            "french": [
+                "tuyau d'arrosage\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "drill",
+            "french": [
+                "perceuse",
+                "entraînement",
+                "simulation",
+                "exercice pratique",
+                "foret",
+                "foreuse",
+                "exercice",
+                "fraise",
+                "marche à suivre",
+                "forer",
+                "percer un trou"
+            ],
+            "examples": [
+                {
+                    "english": " The drill is one of the noisiest tools.",
+                    "french": "La perceuse est un des outils les plus bruyants."
+                },
+                {
+                    "english": "The chuck has broken on my old drill.",
+                    "french": "Le mandrin a cassé sur ma vieille perceuse."
+                },
+                {
+                    "english": "The operation was a drill designed to train the soldiers.",
+                    "french": "L'opération était un entraînement destiné à former les soldats."
+                },
+                {
+                    "english": "A drill was performed to test the evacuation procedures.",
+                    "french": "Une simulation a été réalisée pour tester les procédures d'évacuation."
+                },
+                {
+                    "english": "Daily drills prepare the team for emergency situations.",
+                    "french": "Des exercices pratiques journaliers préparent l'équipe aux situations d'urgence."
+                },
+                {
+                    "english": "My brother drilled the wall to hang up the shelf.",
+                    "french": "Mon frère a percé le mur pour accrocher l'étagère."
+                },
+                {
+                    "english": "The geologists drilled holes in the rock to collect samples.",
+                    "french": "Les géologues ont foré des trous dans la roche pour recueillir des échantillons.\r"
+                }
+            ]
+        },
+        {
+            "english": "spit",
+            "french": [
+                "broche",
+                "tournebroche",
+                "salive",
+                "crachat",
+                "pointe",
+                "postillon",
+                "cracher",
+                "vomir",
+                "postillonner",
+                "expectorer",
+                "jeter",
+                "crépiter",
+                "grésiller"
+            ],
+            "examples": [
+                {
+                    "english": "The cook roasted the chicken on a spit.",
+                    "french": "Le cuisinier a rôti le poulet à la broche."
+                },
+                {
+                    "english": "I tried to remove the stain with a bit of spit.",
+                    "french": "J'ai essayé de retirer la tache avec un peu de salive.\r"
+                }
+            ]
+        },
+        {
+            "english": "whiten",
+            "french": [
+                "blanchir\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "checkup",
+            "french": [
+                "examen",
+                "vérification",
+                "monitoring\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "cubicle",
+            "french": [
+                "cabine",
+                "compartiment",
+                "stalle"
+            ],
+            "examples": [
+                {
+                    "english": "I used the cubicle to get changed before going in the pool.",
+                    "french": "J'ai utilisé la cabine pour me changer avant d'aller dans la piscine.\r"
+                }
+            ]
+        },
+        {
+            "english": "landlord",
+            "french": [
+                "propriétaire",
+                "bailleur",
+                "patron",
+                "propriétaire-bailleur"
+            ],
+            "examples": [
+                {
+                    "english": "Every month, I pay rent to my landlord.",
+                    "french": "Tous les mois, je paie mon loyer à mon propriétaire."
+                },
+                {
+                    "english": "Our landlord was a very congenial host.",
+                    "french": "Notre propriétaire était un hôte très agréable."
+                },
+                {
+                    "english": "The landlord of this pub refuses to sell wine.",
+                    "french": "Le patron de ce pub refuse de vendre du vin.\r"
+                }
+            ]
+        },
+        {
+            "english": "blueprint",
+            "french": [
+                "plan",
+                "schéma",
+                "blueprint",
+                "schéma directeur",
+                "épure",
+                "ébauche"
+            ],
+            "examples": [
+                {
+                    "english": "The new architect requested the building's blueprints.",
+                    "french": "Le nouvel architecte a demandé les plans de l'immeuble.\r"
+                }
+            ]
+        },
+        {
+            "english": "weeding",
+            "french": [
+                "désherbage",
+                "désherber",
+                "sarcler"
+            ],
+            "examples": [
+                {
+                    "english": "I weeded the garden to give my plants more space.",
+                    "french": "J'ai désherbé le jardin pour laisser plus d'espace à mes plantes."
+                },
+                {
+                    "english": "I weeded the garden before planting flowers.",
+                    "french": "J'ai sarclé le jardin avant de planter des fleurs.\r"
+                }
+            ]
+        },
+        {
+            "english": "freeway",
+            "french": [
+                "autoroute"
+            ],
+            "examples": [
+                {
+                    "english": "I will take the freeway in order to get to my destination faster.",
+                    "french": "Je prendrai l'autoroute pour arriver plus rapidement à destination.\r"
+                }
+            ]
+        },
+        {
+            "english": "wide",
+            "french": [
+                "large",
+                "vaste",
+                "grand",
+                "ample",
+                "étendu",
+                "diversifié",
+                "général",
+                "important",
+                "varié",
+                "grand"
+            ],
+            "examples": [
+                {
+                    "english": "A wide selection of products is available online.",
+                    "french": "Un large choix de produits est disponible en ligne."
+                },
+                {
+                    "english": "The shop offers a wide range of products.",
+                    "french": "La boutique propose un large éventail de produits."
+                },
+                {
+                    "english": "The shop offers a wide selection of products.",
+                    "french": "Le magasin offre un grand choix de produits."
+                },
+                {
+                    "english": "The café offers a wide variety of pastries.",
+                    "french": "Le café offre une grande variété de pâtisseries."
+                },
+                {
+                    "english": "The dancer's movements were wide and graceful.",
+                    "french": "Les mouvements de la danseuse étaient amples et élégants."
+                },
+                {
+                    "english": "This singer has a wide vocal range.",
+                    "french": "Ce chanteur a un registre vocal étendu."
+                },
+                {
+                    "english": "The television channel offers a wide selection of shows.",
+                    "french": "La chaîne télévisée offre un choix d'émissions diversifié.\r"
+                }
+            ]
+        },
+        {
+            "english": "heavy",
+            "french": [
+                "lourd",
+                "fort",
+                "intensif",
+                "important",
+                "dense",
+                "abondant",
+                "excessif",
+                "gros",
+                "renforcé",
+                "élevé",
+                "dur",
+                "pesant",
+                "considérable",
+                "gros calibre",
+                "rôle tragique"
+            ],
+            "examples": [
+                {
+                    "english": "The man helped me lift the heavy boxes.",
+                    "french": "L'homme m'a aidé à soulever les boîtes lourdes."
+                },
+                {
+                    "english": "Tin is a heavy metal.",
+                    "french": "L'étain est un métal lourd."
+                },
+                {
+                    "english": "There is a heavy demand for faster trains.",
+                    "french": "Il y a une forte demande pour des trains plus rapides."
+                },
+                {
+                    "english": "Olympic athletes undergo heavy training sessions.",
+                    "french": "Les athlètes olympiques subissent des sessions d'entraînement intensives."
+                },
+                {
+                    "english": "We fulfilled the customer's heavy demands.",
+                    "french": "Nous avons répondu aux exigences importantes du client."
+                },
+                {
+                    "english": "A heavy workload can be a source of stress.",
+                    "french": "Une charge importante de travail peut être source de stress."
+                },
+                {
+                    "english": "The heavy fog lifted.",
+                    "french": "Le brouillard dense s'est levé."
+                },
+                {
+                    "english": "The heavy rain caused rivers to rise.",
+                    "french": "La pluie abondante a fait monter les rivières. \r"
+                }
+            ]
+        },
+        {
+            "english": "prune the tree",
+            "french": [
+                "élaguer l'arbre\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "commuter",
+            "french": [
+                "navetteur",
+                "banlieusard"
+            ],
+            "examples": [
+                {
+                    "english": "Commuters often go to work by train.",
+                    "french": "Les banlieusards prennent souvent le train pour aller au travail.\r"
+                }
+            ]
+        },
+        {
+            "english": "further",
+            "french": [
+                "autres",
+                "autre",
+                "supplémentaire",
+                "nouveau",
+                "accrue",
+                "secondaires",
+                "supplémentaires",
+                "complémentaires",
+                "complémentaire",
+                "ultérieures",
+                "plus loin",
+                "en outre",
+                "promouvoir",
+                "encourager",
+                "éloigné",
+                "lointain",
+                "distant",
+                "reculé",
+                "jusqu'à présent",
+                "jusqu'ici",
+                "jusqu'à maintenant",
+                "jusque-là",
+                "pour l'instant"
+            ],
+            "examples": [
+                {
+                    "english": "The hotel is located at the further end of the city.",
+                    "french": "L'hôtel se situe à l'autre bout de la ville."
+                },
+                {
+                    "english": "My brother will be pleased to give you further information.",
+                    "french": "Mon frère sera ravi de vous donner d'autres informations. "
+                },
+                {
+                    "english": "I will be pleased to give you further information.",
+                    "french": "Je serai ravi de vous fournir des informations supplémentaires."
+                },
+                {
+                    "english": "Any further information will be useful.",
+                    "french": "Toute nouvelle information sera utile."
+                },
+                {
+                    "english": "New markets offer opportunities for further growth.",
+                    "french": "Les nouveaux marchés offrent des possibilités de croissance accrue. "
+                },
+                {
+                    "english": "I was not tired and could have run further.",
+                    "french": "Je n'étais pas fatigué et aurais pu courir plus loin."
+                },
+                {
+                    "english": "The companies hope to further their partnership.",
+                    "french": "Les sociétés souhaitent approfondir leur partenariat."
+                },
+                {
+                    "english": "The politician launched a campaign to further his candidacy.",
+                    "french": "Le politicien a lancé une campagne pour promouvoir sa candidature."
+                },
+                {
+                    "english": "The protesters spoke to the press to further their cause.",
+                    "french": "Les manifestants ont parlé à la presse pour faire avancer leur cause."
+                },
+                {
+                    "english": "The office is too far from the car park.",
+                    "french": "Le bureau est trop éloigné du parking."
+                },
+                {
+                    "english": "Maybe humankind will live on a different planet in the far future.",
+                    "french": "L'humanité vivra peut-être sur une autre planète dans un avenir lointain."
+                },
+                {
+                    "english": "The two cities were very far from each other.",
+                    "french": "Les deux villes étaient très distantes l'une de l'autre."
+                },
+                {
+                    "english": "So far, our team has won all the matches.",
+                    "french": "Jusqu'à présent, notre équipe a gagné tous les matchs."
+                },
+                {
+                    "english": "So far, no action has been taken. ",
+                    "french": "Jusqu'ici, aucune mesure n'a été prise. "
+                },
+                {
+                    "english": "This hike has been quite easy thus far.",
+                    "french": "Cette randonnée a été plutôt facile jusqu'ici.\r"
+                }
+            ]
+        },
+        {
+            "english": "to involve",
+            "french": [
+                "entraîner",
+                "mêler"
+            ],
+            "examples": [
+                {
+                    "english": "I think it is time to involve my partners in these discussions.",
+                    "french": "Je crois qu'il est temps d'impliquer mes associés dans ces discussions."
+                },
+                {
+                    "english": "The collaborative project involves three companies.",
+                    "french": "Le projet collaboratif implique trois entreprises."
+                },
+                {
+                    "english": "We must involve all the partners in the negotiations.",
+                    "french": "Nous devons inclure tous les partenaires dans les négociations."
+                },
+                {
+                    "english": "The company's strategy involves several stages.",
+                    "french": "La stratégie de l'entreprise comprend plusieurs étapes."
+                },
+                {
+                    "english": "The inquiry involved a lot of preliminary groundwork.",
+                    "french": "L'enquête a nécessité beaucoup de travail préliminaire."
+                },
+                {
+                    "english": "The project involves the creation of new green spaces.",
+                    "french": "Ce projet suppose la création de nouveaux espaces verts.\r"
+                }
+            ]
+        },
+        {
+            "english": "inside out",
+            "french": [
+                "à l'envers"
+            ],
+            "examples": [
+                {
+                    "english": "I always turn my clothes inside out before washing.",
+                    "french": "Je mets toujours mes vêtements à l'envers avant de les laver.\r"
+                }
+            ]
+        },
+        {
+            "english": "bleach",
+            "french": [
+                "blanchiment",
+                "javel",
+                "eau de Javel",
+                "décolorant",
+                "décolorer",
+                "blanchir"
+            ],
+            "examples": [
+                {
+                    "english": "The sun bleaches my hair in the summer.",
+                    "french": "Le soleil décolore mes cheveux en été.\r"
+                }
+            ]
+        },
+        {
+            "english": "tumble dry",
+            "french": [
+                "Séchage par culbutage\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "heat",
+            "french": [
+                "chaleur",
+                "chauffage",
+                "ardeur",
+                "feu",
+                "passion",
+                "rut",
+                "thermique",
+                "chauffer"
+            ],
+            "examples": [
+                {
+                    "english": "Her ice cream melted because of the heat.",
+                    "french": "Sa glace a fondu à cause de la chaleur."
+                },
+                {
+                    "english": "The material can withstand heat and cold.",
+                    "french": "Le matériau peut résister à la chaleur et au froid."
+                },
+                {
+                    "english": "The heat of the sun increases in summer.",
+                    "french": "L'ardeur du soleil augmente en été."
+                },
+                {
+                    "english": "I heat my house when the weather is cold.",
+                    "french": "Je chauffe ma maison quand il fait froid.\r"
+                }
+            ]
+        },
+        {
+            "english": "dry",
+            "french": [
+                "sec",
+                "ennuyeux",
+                "aride",
+                "arides",
+                "séché",
+                "séchée",
+                "desséché",
+                "désert"
+            ],
+            "examples": [
+                {
+                    "english": "This region has a hot and dry climate.",
+                    "french": "Le climat de cette région est chaud et sec."
+                },
+                {
+                    "english": "My brother helped sink wells in dry places.",
+                    "french": "Mon frère a aidé à forer des puits dans des endroits secs."
+                },
+                {
+                    "english": "The first speaker's topic was dry.",
+                    "french": "Le sujet du premier conférencier était ennuyeux."
+                },
+                {
+                    "english": "The clothes are drying on the washing line.",
+                    "french": "Les vêtements sèchent sur la corde à linge."
+                },
+                {
+                    "english": "I wash the dishes and my brother dries them.",
+                    "french": "Je lave la vaisselle et mon frère l'essuie.\r"
+                }
+            ]
+        },
+        {
+            "english": "laundromat",
+            "french": [
+                "laverie\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "nodded",
+            "french": [
+                "se balancer",
+                "faire un signe de tête",
+                "somnoler",
+                "faire oui de la tête\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "nodded off",
+            "french": [
+                "a acquiescé\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "on the other hand",
+            "french": [
+                "d'autre part"
+            ],
+            "examples": [
+                {
+                    "english": "On the one hand, I'm tired; but on the other hand, I want to watch a film.",
+                    "french": "D'une part, je suis fatigué ; mais d'autre part, je veux regarder un film.\r"
+                }
+            ]
+        },
+        {
+            "english": "apart",
+            "french": [
+                "à part",
+                "de côté",
+                "à l'écart",
+                "séparément",
+                "écartées",
+                "en morceaux",
+                "hormis\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "spill",
+            "french": [
+                "déversement",
+                "fuite",
+                "chute",
+                "renverser",
+                "couler",
+                "répandre"
+            ],
+            "examples": [
+                {
+                    "english": "The accident caused an oil spill in the sea.",
+                    "french": "L'accident a provoqué un déversement de pétrole dans la mer."
+                },
+                {
+                    "english": "I spilled coffee on my shirt.",
+                    "french": "J'ai renversé du café sur ma chemise."
+                },
+                {
+                    "english": "The table is sticky because I spilled caramel everywhere.",
+                    "french": "La table est collante parce que j'ai renversé du caramel partout."
+                },
+                {
+                    "english": "Ships are not allowed to spill fuel in the sea.",
+                    "french": "Les navires n'ont pas le droit de déverser du carburant dans la mer.\r"
+                }
+            ]
+        },
+        {
+            "english": "launder",
+            "french": [
+                "laver",
+                "blanchir\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "round trip",
+            "french": [
+                "aller-retour",
+                "aller et retour",
+                "voyage aller-retour",
+                "trajet aller-retour"
+            ],
+            "examples": [
+                {
+                    "english": "I made the round trip in a day.",
+                    "french": "J'ai fait l'aller-retour en une journée.\r"
+                }
+            ]
+        },
+        {
+            "english": "track",
+            "french": [
+                "trace",
+                "piste",
+                "voie",
+                "circuit",
+                "parcours",
+                "chanson",
+                "plage",
+                "empreinte",
+                "rail",
+                "chemin",
+                "morceau",
+                "titre",
+                "route",
+                "sentier",
+                "trajectoire"
+            ],
+            "examples": [
+                {
+                    "english": "I always keep track of my purchases.",
+                    "french": "Je garde toujours une trace de mes achats."
+                },
+                {
+                    "english": "The CD of the band's latest album has ten tracks.",
+                    "french": "Le CD du dernier album du groupe contient dix pistes."
+                },
+                {
+                    "english": "The train track follows the river.",
+                    "french": "La voie ferrée longe la rivière."
+                },
+                {
+                    "english": "The young man loved to drive his car on the track.",
+                    "french": "Le jeune homme aimait piloter sa voiture sur le circuit."
+                },
+                {
+                    "english": "I learned skateboarding on a track for beginners.",
+                    "french": "J'ai appris le skate sur un parcours pour débutants."
+                },
+                {
+                    "english": "The band's latest album has ten tracks.",
+                    "french": "Le dernier album du groupe contient dix chansons."
+                },
+                {
+                    "english": "I can skip to the next track with the remote.",
+                    "french": "Je peux passer à la plage suivante avec la télécommande."
+                },
+                {
+                    "english": "The detective tracked him all the way to his house.",
+                    "french": "Le détective l'a suivi jusqu'à chez lui."
+                },
+                {
+                    "english": "The police are tracking the suspect.",
+                    "french": "La police traque le suspect."
+                },
+                {
+                    "english": "The policeman tracked the burglar all the way to his hideout.",
+                    "french": "Le policier a pisté le cambrioleur jusqu'à sa cachette."
+                },
+                {
+                    "english": "The postal service tracked the lost package and returned it to me.",
+                    "french": "Le service postal a localisé le colis perdu et me l'a renvoyé.\r"
+                }
+            ]
+        },
+        {
+            "english": "traffic jam",
+            "french": [
+                "embouteillage",
+                "bouchon",
+                "encombrement",
+                "bouchon de circulation"
+            ],
+            "examples": [
+                {
+                    "english": "His lateness was due, in part, to a traffic jam.",
+                    "french": "Son retard était dû, en partie, à un embouteillage."
+                },
+                {
+                    "english": "Despite the traffic jam, we arrived on time.",
+                    "french": "Malgré l'embouteillage, nous sommes arrivés à temps."
+                },
+                {
+                    "english": "I was late for work because of a traffic jam in town.",
+                    "french": "Je suis arrivé en retard au travail à cause d'un bouchon en ville.\r"
+                }
+            ]
+        },
+        {
+            "english": "toll",
+            "french": [
+                "péage",
+                "bilan",
+                "tribut",
+                "prix",
+                "droit de passage",
+                "effet néfaste",
+                "sonner"
+            ],
+            "examples": [
+                {
+                    "english": "The church bells will toll at noon.",
+                    "french": "Les cloches de l'église sonneront à midi.\r"
+                }
+            ]
+        },
+        {
+            "english": "carpool",
+            "french": [
+                "covoiturage",
+                "faire du covoiturage"
+            ],
+            "examples": [
+                {
+                    "english": "Three of my colleagues carpool to work.",
+                    "french": "Trois de mes collègues font du covoiturage pour venir au travail.\r"
+                }
+            ]
+        },
+        {
+            "english": "somewhat",
+            "french": [
+                "quelque peu",
+                "légèrement",
+                "assez",
+                "passablement"
+            ],
+            "examples": [
+                {
+                    "english": "I felt somewhat tired after the journey.",
+                    "french": "Je me sentais quelque peu fatigué après le voyage.\r"
+                }
+            ]
+        },
+        {
+            "english": "tend",
+            "french": [
+                "soigner",
+                "tendre"
+            ],
+            "examples": [
+                {
+                    "english": "Nurses and doctors tend to sick people.",
+                    "french": "Les infirmières et les médecins soignent les malades."
+                },
+                {
+                    "english": "The nurse tended the sick child.",
+                    "french": "L'infirmière a soigné l'enfant malade.\r"
+                }
+            ]
+        },
+        {
+            "english": "common",
+            "french": [
+                "commun",
+                "courant",
+                "répandu",
+                "général",
+                "simple",
+                "partagé",
+                "mutuel",
+                "vulgaire",
+                "mitoyen",
+                "notoire",
+                "ordinaire",
+                "ordinaires",
+                "fréquent",
+                "répandus",
+                "répandue",
+                "classique",
+                "répandues",
+                "communautaire",
+                "habituel",
+                "usuel",
+                "terrain communal"
+            ],
+            "examples": [
+                {
+                    "english": "English is often the common language in business negotiations.",
+                    "french": "L'anglais est souvent la langue commune lors des négociations commerciales."
+                },
+                {
+                    "english": "Various templates are available to create common documents.",
+                    "french": "Plusieurs modèles sont disponibles pour créer les documents courants."
+                },
+                {
+                    "english": "The rose is a common flower in Europe.",
+                    "french": "La rose est une fleur répandue en Europe."
+                },
+                {
+                    "english": "My own reaction only reflected the common feeling.",
+                    "french": "Ma propre réaction ne faisait que refléter le sentiment général."
+                },
+                {
+                    "english": "A lieutenant ranks higher than a common soldier.",
+                    "french": "Un lieutenant est plus haut gradé qu'un simple soldat."
+                },
+                {
+                    "english": "The two companies pursue a common interest. ",
+                    "french": "Les deux entreprises poursuivent un intérêt partagé. "
+                },
+                {
+                    "english": "I am sure that we can reach a common agreement.",
+                    "french": "Je suis sûr que nous pouvons parvenir à un accord mutuel."
+                },
+                {
+                    "english": "The man went from common thief to upstanding citizen.",
+                    "french": "L'homme est passé du vulgaire voleur au citoyen respectable."
+                },
+                {
+                    "english": "The common wall between the two properties is made of stone.",
+                    "french": "Le mur mitoyen entre les deux propriétés est en pierre.\r"
+                }
+            ]
+        },
+        {
+            "english": "attend",
+            "french": [
+                "soigner"
+            ],
+            "examples": [
+                {
+                    "english": "The hotel receptionist attends to the guests' requests.",
+                    "french": "Le réceptionniste de l'hôtel s'occupe des demandes des clients."
+                },
+                {
+                    "english": "The host attended to his guests during the meal.",
+                    "french": "L'hôte s'est occupé de ses invités pendant le repas."
+                },
+                {
+                    "english": "All employees must attend the meetings.",
+                    "french": "Tous les employés doivent assister aux réunions."
+                },
+                {
+                    "english": "I attended a lecture at the museum.",
+                    "french": "J'ai assisté à une conférence au musée."
+                },
+                {
+                    "english": "All employees must attend a yearly training session.",
+                    "french": "Tous les employés doivent suivre une séance de formation annuelle."
+                },
+                {
+                    "english": "The nurses attended to the patient with great dedication.",
+                    "french": "Les infirmières ont soigné le patient avec un grand dévouement.\r"
+                }
+            ]
+        },
+        {
+            "english": "nowadays",
+            "french": [
+                "aujourd'hui",
+                "actuellement",
+                "de nos jours",
+                "maintenant",
+                "à l'heure actuelle",
+                "désormais",
+                "à présent",
+                "à notre époque",
+                "par les temps qui courent",
+                "ces temps-ci",
+                "en ce moment"
+            ],
+            "examples": [
+                {
+                    "english": "Nowadays, the city is safer than it used to be.",
+                    "french": "Aujourd'hui, la ville est plus sûre qu'avant."
+                },
+                {
+                    "english": "The notion of bravery is almost forgotten nowadays.",
+                    "french": "La notion de courage est presque oubliée aujourd'hui."
+                },
+                {
+                    "english": "Paras are no longer accepted as currency nowadays.",
+                    "french": "Les paras ne sont plus acceptés comme monnaie de nos jours."
+                },
+                {
+                    "english": "Nowadays, farmers use tractors to plough their land.",
+                    "french": "De nos jours, les agriculteurs utilisent des tracteurs pour labourer leur terre.\r"
+                }
+            ]
+        },
+        {
+            "english": "get stuck",
+            "french": [
+                "se coincer",
+                "s'enliser",
+                "se retrouver coincé",
+                "se retrouver bloqué\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "cab",
+            "french": [
+                "cabine",
+                "taxi",
+                "fiacre"
+            ],
+            "examples": [
+                {
+                    "english": "The train driver sat in the cab.",
+                    "french": "Le conducteur de train s'est assis dans la cabine."
+                },
+                {
+                    "english": "He hailed a cab for his parents.",
+                    "french": "Il a arrêté un taxi pour ses parents."
+                },
+                {
+                    "english": "The horses pulling the cab were tired.",
+                    "french": "Les chevaux qui tiraient le fiacre étaient fatigués.\r"
+                }
+            ]
+        },
+        {
+            "english": "suburbs",
+            "french": [
+                "périphérie",
+                "banlieue",
+                "quartier",
+                "faubourg",
+                "périphérie\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "borading",
+            "french": [
+                "borading\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "packed full",
+            "french": [
+                "plein à craquer\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "aisle",
+            "french": [
+                "allée",
+                "couloir",
+                "bas-côté",
+                "autel",
+                "passage"
+            ],
+            "examples": [
+                {
+                    "english": "Milk is in the second aisle to the right.",
+                    "french": "Le lait se trouve dans la deuxième allée à droite.\r"
+                }
+            ]
+        },
+        {
+            "english": "flight attendant",
+            "french": [
+                "hôtesse de l'air",
+                "agent de bord",
+                "steward",
+                "personnel de cabine",
+                "personnel navigant commercial",
+                "membre de l'équipage"
+            ],
+            "examples": [
+                {
+                    "english": "The flight attendant offered drinks to the passengers.",
+                    "french": "L'agent de bord a proposé des boissons aux passagers."
+                },
+                {
+                    "english": "The flight attendant offered blankets to the passengers.",
+                    "french": "Le steward a offert des couvertures aux passagers.\r"
+                }
+            ]
+        },
+        {
+            "english": "fasten",
+            "french": [
+                "amarrer",
+                "fermer",
+                "verrouiller",
+                "ficeler"
+            ],
+            "examples": [
+                {
+                    "english": "I fastened the pin to my jacket lapel. ",
+                    "french": "J'ai fixé l'épingle sur le revers de ma veste."
+                },
+                {
+                    "english": "I fastened my safety belt before starting the car.",
+                    "french": "J'ai attaché ma ceinture de sécurité avant de démarrer la voiture."
+                },
+                {
+                    "english": "I fastened my coat before going outside.",
+                    "french": "J'ai boutonné mon manteau avant d'aller dehors.\r"
+                }
+            ]
+        },
+        {
+            "english": "fasten",
+            "french": [
+                "amarrer",
+                "fermer",
+                "verrouiller",
+                "ficeler"
+            ],
+            "examples": [
+                {
+                    "english": "I fastened the pin to my jacket lapel. ",
+                    "french": "J'ai fixé l'épingle sur le revers de ma veste."
+                },
+                {
+                    "english": "I fastened my safety belt before starting the car.",
+                    "french": "J'ai attaché ma ceinture de sécurité avant de démarrer la voiture."
+                },
+                {
+                    "english": "I fastened my coat before going outside.",
+                    "french": "J'ai boutonné mon manteau avant d'aller dehors.\r"
+                }
+            ]
+        },
+        {
+            "english": "take off",
+            "french": [
+                "décollage",
+                "essor",
+                "décoller",
+                "enlever",
+                "partir",
+                "s'envoler",
+                "déduire",
+                "imiter"
+            ],
+            "examples": [
+                {
+                    "english": "Our plane to Paris will take off tomorrow morning.",
+                    "french": "Notre avion pour Paris décolle demain matin."
+                },
+                {
+                    "english": "My plane will take off from runway number four.",
+                    "french": "Mon avion décollera de la piste numéro quatre."
+                },
+                {
+                    "english": "He took his coat off when he arrived.",
+                    "french": "Il a enlevé son manteau en arrivant."
+                },
+                {
+                    "english": "My son didn't bother to take off his muddy boots.",
+                    "french": "Mon fils n'a pas pris la peine d'enlever ses bottes boueuses."
+                },
+                {
+                    "english": "My sister took off for the beach.",
+                    "french": "Ma soeur est partie à la plage.\r"
+                }
+            ]
+        },
+        {
+            "english": "check in",
+            "french": [
+                "s'enregistrer",
+                "enregistrer",
+                "fait le point",
+                "vérification"
+            ],
+            "examples": [
+                {
+                    "english": "All visitors check in at the reception.",
+                    "french": "Tous les visiteurs s'enregistrent à la réception."
+                },
+                {
+                    "english": "I checked in my luggage at the airport.",
+                    "french": "J'ai enregistré mes bagages à l'aéroport.\r"
+                }
+            ]
+        },
+        {
+            "english": "proceed to",
+            "french": [
+                "procéder",
+                "continuer",
+                "poursuivre",
+                "aller",
+                "avancer",
+                "agir",
+                "se dérouler",
+                "commencer",
+                "opérer",
+                "progresser",
+                "aboyer"
+            ],
+            "examples": [
+                {
+                    "english": "After the introduction, we will proceed to the first presentation.",
+                    "french": "Après l'introduction, nous passerons à la première présentation."
+                },
+                {
+                    "english": "My instructor told me how to proceed.",
+                    "french": "Mon instructeur m'a indiqué comment procéder."
+                },
+                {
+                    "english": "We must proceed with the restatement of our accounting data. ",
+                    "french": "Nous devons procéder au retraitement de nos données comptables."
+                },
+                {
+                    "english": "After the interruption, the professor proceeded with her lecture.",
+                    "french": "Après l'interruption, le professeur a continué son cours.\r"
+                }
+            ]
+        },
+        {
+            "english": "stow",
+            "french": [
+                "arrimer",
+                "mettre"
+            ],
+            "examples": [
+                {
+                    "english": "During the flight, I stowed my bags under the seat.",
+                    "french": "Pendant le vol, j'ai rangé mes bagages sous le siège."
+                },
+                {
+                    "english": "I stowed the luggage on the roof of the car.",
+                    "french": "J'ai arrimé les bagages au toit de la voiture.\r"
+                }
+            ]
+        },
+        {
+            "english": "landing",
+            "french": [
+                "atterrissage",
+                "débarquement",
+                "palier",
+                "débarcadère",
+                "réception",
+                "descente",
+                "amerrissage",
+                "atterrissant",
+                "atterrir",
+                "poser",
+                "débarquer",
+                "décrocher",
+                "aborder",
+                "prendre port",
+                "terrestre",
+                "foncier"
+            ],
+            "examples": [
+                {
+                    "english": "The plane moved to the tarmac after landing.",
+                    "french": "L'avion s'est déplacé vers le tarmac après l'atterrissage."
+                },
+                {
+                    "english": "The plane has just landed at the airport.",
+                    "french": "L'avion vient d'atterrir à l'aéroport."
+                },
+                {
+                    "english": "This aircraft has the capability of landing on short runways.",
+                    "french": "Cet avion a la capacité d'atterrir sur des pistes courtes."
+                },
+                {
+                    "english": "The pilot landed the plane without difficulty.",
+                    "french": "Le pilote a posé l'avion sans difficulté."
+                },
+                {
+                    "english": "The passengers landed in Rome after a four-hour flight.",
+                    "french": "Les passagers ont débarqué à Rome après un vol de quatre heures."
+                },
+                {
+                    "english": "I finally landed my dream job.",
+                    "french": "J'ai enfin décroché l'emploi de mes rêves.\r"
+                }
+            ]
+        },
+        {
+            "english": "to lift",
+            "french": [
+                "lever"
+            ],
+            "examples": [
+                {
+                    "english": "She is strong enough to lift those heavy boxes.",
+                    "french": "Elle est assez forte pour soulever ces lourdes boîtes."
+                },
+                {
+                    "english": "The man helped me lift the heavy boxes.",
+                    "french": "L'homme m'a aidé à soulever les boîtes lourdes."
+                },
+                {
+                    "english": "A pulley helps to lift heavy weights.",
+                    "french": "Une poulie permet de soulever des charges lourdes."
+                },
+                {
+                    "english": "The government decided to lift the trade embargo. ",
+                    "french": "Le gouvernement a décidé de lever l'embargo commercial."
+                },
+                {
+                    "english": "The gymnast lifted her arms and arched her back.",
+                    "french": "La gymnaste a levé les bras et arqué le dos."
+                },
+                {
+                    "english": "My brother lifted his shirt to show me his tattoo.",
+                    "french": "Mon frère a relevé sa chemise pour me montrer son tatouage. "
+                },
+                {
+                    "english": "My friend is strong enough to lift the sack easily.",
+                    "french": "Mon ami est suffisamment costaud pour porter le sac facilement.\r"
+                }
+            ]
+        },
+        {
+            "english": "orverhead bins",
+            "french": [
+                "bacs à ordures ménagères\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "the removal",
+            "french": [
+                "la suppression\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "customs",
+            "french": [
+                "douane",
+                "douanes",
+                "coutumes",
+                "traditions",
+                "droits de douane",
+                "habitudes",
+                "douanière",
+                "coutume",
+                "habitude",
+                "tradition",
+                "usage",
+                "clientèle",
+                "douanières",
+                "spécial"
+            ],
+            "examples": [
+                {
+                    "english": "I declared the goods at the customs.",
+                    "french": "J'ai déclaré les marchandises à la douane."
+                },
+                {
+                    "english": "Every culture has its own customs and traditions. ",
+                    "french": "Chaque culture a ses propres coutumes et traditions."
+                },
+                {
+                    "english": "Every country has its own customs.",
+                    "french": "Chaque pays a ses propres traditions."
+                },
+                {
+                    "english": "Throwing rice at a wedding is an old custom.",
+                    "french": "Lancer du riz à un mariage est une vieille coutume."
+                },
+                {
+                    "english": "The king issued a writ banning the custom.",
+                    "french": "Le roi a pris un décret interdisant cette coutume."
+                },
+                {
+                    "english": "It is his custom to go for a swim twice a week.",
+                    "french": "Il a l'habitude de nager deux fois par semaine.\r"
+                }
+            ]
+        },
+        {
+            "english": "runway",
+            "french": [
+                "piste",
+                "piste atterrissage",
+                "tarmac",
+                "trajectoire"
+            ],
+            "examples": [
+                {
+                    "english": "My plane will take off from runway number four.",
+                    "french": "Mon avion décollera de la piste numéro quatre.\r"
+                }
+            ]
+        },
+        {
+            "english": "conveyor belt",
+            "french": [
+                "convoyeur",
+                "convoyeur à bande",
+                "bande transporteuse",
+                "tapis roulant",
+                "convoyeur à courroie",
+                "tapis transporteur",
+                "tapis convoyeur",
+                "courroie transporteuse",
+                "bande de transport",
+                "bande du convoyeur",
+                "tapis de transport",
+                "courroie de transport",
+                "bande convoyeuse",
+                "convoyeur à bande",
+                "tapis transporteur",
+                "courroie transporteuse"
+            ],
+            "examples": [
+                {
+                    "english": "The conveyor belt transports heavy items.",
+                    "french": "Le convoyeur transporte des articles lourds.\r"
+                }
+            ]
+        },
+        {
+            "english": "cruising",
+            "french": [
+                "naviguer",
+                "croiser",
+                "voler",
+                "être en croisière",
+                "être en maraude",
+                "rouler"
+            ],
+            "examples": [
+                {
+                    "english": "The captain has already cruised all over the world.",
+                    "french": "Le capitaine a déjà navigué partout dans le monde. "
+                },
+                {
+                    "english": "The plane is cruising at a high altitude.",
+                    "french": "L'avion vole à haute altitude."
+                },
+                {
+                    "english": "I was cruising on the Mediterranean last week.",
+                    "french": "J'étais en croisière sur la Méditerranée la semaine dernière.\r"
+                }
+            ]
+        },
+        {
+            "english": "inclement",
+            "french": [
+                "intempéries\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "weather",
+            "french": [
+                "temps",
+                "météo",
+                "météorologique"
+            ],
+            "examples": [
+                {
+                    "english": "I went to the park to enjoy the fine weather.",
+                    "french": "Je suis allé au parc pour profiter du beau temps."
+                },
+                {
+                    "english": "The weather is chilly tonight.",
+                    "french": "Le temps est frisquet ce soir."
+                },
+                {
+                    "english": "Satellites monitor the weather and climate.",
+                    "french": "Des satellites surveillent la météo et le climat."
+                },
+                {
+                    "english": "The weather was our main topic of conversation.",
+                    "french": "La météo était notre principal sujet de conversation."
+                },
+                {
+                    "english": "Weather forecasts are not always reliable.",
+                    "french": "Les prévisions météorologiques ne sont pas toujours fiables."
+                },
+                {
+                    "english": "According to the weather forecast, it will rain today.",
+                    "french": "D'après les prévisions météorologiques, il va pleuvoir aujourd'hui."
+                },
+                {
+                    "english": "The country's economy was able to weather the financial crisis.",
+                    "french": "L'économie du pays a pu survivre à la crise financière.\r"
+                }
+            ]
+        },
+        {
+            "english": "towel",
+            "french": [
+                "serviette",
+                "serviette de toilette",
+                "drap de bain"
+            ],
+            "examples": [
+                {
+                    "english": "She draped a towel around her shoulders.",
+                    "french": "Elle a drapé une serviette autour de ses épaules.\r"
+                }
+            ]
+        },
+        {
+            "english": "pillow",
+            "french": [
+                "oreiller",
+                "coussin"
+            ],
+            "examples": [
+                {
+                    "english": "The pillows on my bed are very soft.",
+                    "french": "Les oreillers sur mon lit sont très moelleux."
+                },
+                {
+                    "english": "I like to sleep on soft pillows. ",
+                    "french": "J'aime dormir sur des oreillers mous."
+                },
+                {
+                    "english": "I bought nice pillows to decorate my sofa.",
+                    "french": "J'ai acheté de beaux coussins pour décorer mon canapé.\r"
+                }
+            ]
+        },
+        {
+            "english": "vacate",
+            "french": [
+                "quitter",
+                "libérer"
+            ],
+            "examples": [
+                {
+                    "english": "I have to vacate my hotel room before noon.",
+                    "french": "Je dois quitter ma chambre d'hôtel avant midi."
+                },
+                {
+                    "english": "As soon as the dog vacates the sofa, the cat takes its spot.",
+                    "french": "Dès que le chien libère le canapé, le chat prend sa place."
+                },
+                {
+                    "english": "We had to vacate the premises because of flooding.",
+                    "french": "Nous avons dû évacuer les lieux à cause d'une inondation.\r"
+                }
+            ]
+        },
+        {
+            "english": "check out",
+            "french": [
+                "régler la note",
+                "quitter l'hôtel",
+                "clamser"
+            ],
+            "examples": [
+                {
+                    "english": "The couple checked out of the hotel at noon.",
+                    "french": "Le couple a réglé la note de l'hôtel à midi.\r"
+                }
+            ]
+        },
+        {
+            "english": "shuttle",
+            "french": [
+                "navette",
+                "faire la navette"
+            ],
+            "examples": [
+                {
+                    "english": "There is a free shuttle from the hotel to the airport. ",
+                    "french": "Il y a une navette gratuite de l'hôtel à l'aéroport."
+                },
+                {
+                    "english": "A bus shuttles between the airport and the city.",
+                    "french": "Un autobus fait la navette entre l'aéroport et la ville.\r"
+                }
+            ]
+        },
+        {
+            "english": "front desk",
+            "french": [
+                "réception\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "tank",
+            "french": [
+                "réservoir",
+                "cuve",
+                "tank",
+                "char",
+                "aquarium",
+                "citerne",
+                "bac",
+                "récipient",
+                "mettre en cuve"
+            ],
+            "examples": [
+                {
+                    "english": "The tank in the garden collects rainwater.",
+                    "french": "Le réservoir dans le jardin récupère l'eau de pluie."
+                },
+                {
+                    "english": "The government sent tanks to secure the area.",
+                    "french": "Le gouvernement a envoyé des tanks pour sécuriser la zone."
+                },
+                {
+                    "english": "The military museum exhibits three old tanks.",
+                    "french": "Le musée militaire expose trois anciens chars."
+                },
+                {
+                    "english": "I bought a larger tank for my fish.",
+                    "french": "J'ai acheté un plus grand aquarium pour mes poissons.\r"
+                }
+            ]
+        },
+        {
+            "english": "windshield",
+            "french": [
+                "pare-brise"
+            ],
+            "examples": [
+                {
+                    "english": "He repaired the cracked windshield of his car.",
+                    "french": "Il a réparé le pare-brise fissuré de sa voiture.\r"
+                }
+            ]
+        },
+        {
+            "english": "steering wheel",
+            "french": [
+                "volant",
+                "roue directrice",
+                "roue de gouvernail"
+            ],
+            "examples": [
+                {
+                    "english": "It is safer to hold the steering wheel with both hands.",
+                    "french": "Il est plus sûr de tenir le volant à deux mains.\r"
+                }
+            ]
+        },
+        {
+            "english": "dash board",
+            "french": [
+                "tableau de bord\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "brake",
+            "french": [
+                "frein",
+                "freiner"
+            ],
+            "examples": [
+                {
+                    "english": "Brakes are used to stop a moving vehicle.",
+                    "french": "Les freins servent à arrêter un véhicule en mouvement."
+                },
+                {
+                    "english": "He braked to stop at the red light.",
+                    "french": "Il a freiné pour s'arrêter au feu rouge.\r"
+                }
+            ]
+        },
+        {
+            "english": "break down",
+            "french": [
+                "décomposer",
+                "briser",
+                "tomber en panne",
+                "s'effondrer",
+                "craquer",
+                "détruire",
+                "démolir",
+                "se détériorer"
+            ],
+            "examples": [
+                {
+                    "english": "The dance teacher broke down the movement into several steps.",
+                    "french": "Le professeur de danse a décomposé le mouvement en plusieurs étapes."
+                },
+                {
+                    "english": "The association works to break down social barriers.",
+                    "french": "L'association œuvre à briser les barrières sociales."
+                },
+                {
+                    "english": "The car broke down just when I reached home.",
+                    "french": "La voiture est tombée en panne au moment où j'arrivais à la maison."
+                },
+                {
+                    "english": "After a difficult day, she broke down in tears.",
+                    "french": "Après une journée difficile, elle s'est effondrée en larmes.\r"
+                }
+            ]
+        },
+        {
+            "english": "abroad",
+            "french": [
+                "à l'étranger",
+                "d'ailleurs",
+                "l'étranger"
+            ],
+            "examples": [
+                {
+                    "english": "He returned home after years abroad.",
+                    "french": "Il est retourné chez lui après des années à l'étranger.\r"
+                }
+            ]
+        },
+        {
+            "english": "leather",
+            "french": [
+                "cuir",
+                "de cuir",
+                "en cuir"
+            ],
+            "examples": [
+                {
+                    "english": "The shoe's upper is made of leather.",
+                    "french": "L'empeigne de la chaussure est en cuir."
+                },
+                {
+                    "english": "She is wearing leather boots.",
+                    "french": "Elle porte des bottes en cuir.\r"
+                }
+            ]
+        },
+        {
+            "english": "spare",
+            "french": [
+                "de rechange",
+                "libre",
+                "supplémentaire",
+                "inutilisées",
+                "épuré",
+                "économiser",
+                "donner",
+                "double"
+            ],
+            "examples": [
+                {
+                    "english": "I keep spare parts in my toolbox.",
+                    "french": "Je garde des pièces de rechange dans ma boîte à outils."
+                },
+                {
+                    "english": "The garage owner keeps a large stock of spare parts.",
+                    "french": "Le garagiste a un stock important de pièces de rechange."
+                },
+                {
+                    "english": "I am sacrificing my spare time to work as a volunteer.",
+                    "french": "Je sacrifie mon temps libre pour travailler comme bénévole."
+                },
+                {
+                    "english": "In his spare time, my brother takes his children to the park.",
+                    "french": "Pendant son temps libre, mon frère emmène ses enfants au parc."
+                },
+                {
+                    "english": "The king spared the prisoners and let them go.",
+                    "french": "Le roi a épargné les prisonniers et les a laissés partir."
+                },
+                {
+                    "english": "Luckily, my son was spared the disease.",
+                    "french": "Heureusement, mon fils a été épargné par la maladie.\r"
+                }
+            ]
+        }
+    ],
+    "groups": []
+}

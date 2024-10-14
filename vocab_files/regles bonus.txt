@@ -1,3 +1,0 @@
-#!grammar!#
-#!br!#
-Les verbes qui suivent une préposition (of, for, to) sont à la forme <strong>-ing</strong>

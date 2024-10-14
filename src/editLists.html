@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./editLists_style.css">
+    <title>EgnlishVocabTool</title>
+</head>
+<body>
+    <script src="editLists.js"></script>
+    <div class="container">
+        <div class="tools_bar">
+            <a href="./home.html" class="button">Home</a>
+            <select class="list_selector">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+        </div>
+
+        <h1>Edit Lists</h1>
+
+        <table id="file_list_table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Group</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="file_list_table_body">
+                <tr>
+                    <td><input type="text" value="Jean Dupont"></td>
+                    <td><span>group1</span><span>group2</span></td>
+                    <td><button class="button button_edit">Edit</button></td>
+                    <td><button class="button button_groups">Groups</button></td>
+                    <td><button class="button button_delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Marie Curie</td>
+                    <td><input type="text" value="des groupes"></td>
+                    <td><button class="button">Edit</button></td>
+                    <td><button class="button">Groups</button></td>
+                    <td><button class="button">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

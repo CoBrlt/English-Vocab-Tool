@@ -1,0 +1,781 @@
+{
+    "name": "vocab inpt",
+    "words": [
+        {
+            "english": "brand",
+            "french": [
+                "marque\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "brands",
+            "french": [
+                "marques\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "above",
+            "french": [
+                "au-dessus de\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "Interbrand",
+            "french": [
+                "intermarque\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "value for money",
+            "french": [
+                "rapport qualité prix\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "upmarket",
+            "french": [
+                "haut de gamme\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "timeless",
+            "french": [
+                "intemporel\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "well-made",
+            "french": [
+                "bien fait\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "classic",
+            "french": [
+                "classique\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "durable",
+            "french": [
+                "durable\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "inexpensive",
+            "french": [
+                "peu coûteux\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "cool",
+            "french": [
+                "cool\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "reliable",
+            "french": [
+                "fiable\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "stylish",
+            "french": [
+                "élégant\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "fashionable",
+            "french": [
+                "à la mode\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "sexy",
+            "french": [
+                "sexy\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "sophisticated",
+            "french": [
+                "sophistiqué\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "fun",
+            "french": [
+                "amusant\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "brand loyalty",
+            "french": [
+                "fidélité à la marque\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "brand image",
+            "french": [
+                "image de marque\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "brand stretching",
+            "french": [
+                "étirement de la marque\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "brand awareness",
+            "french": [
+                "notoriété de la marque\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "product launch",
+            "french": [
+                "lancement de produit\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "product lifecyle",
+            "french": [
+                "cycle de vie du produit\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "beliefs",
+            "french": [
+                "croyances\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "product range",
+            "french": [
+                "gamme de prduits\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "product placement",
+            "french": [
+                "placement de produit\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "product endorsement",
+            "french": [
+                "endossement d'un produit\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "customer",
+            "french": [
+                "client\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "market leader",
+            "french": [
+                "leader du marché\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "market research",
+            "french": [
+                "étude de marché\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "market share",
+            "french": [
+                "part de marché\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "market challenger",
+            "french": [
+                "challenger du marché\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "market segment",
+            "french": [
+                "part de marché",
+                "segment de marché\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "advertising",
+            "french": [
+                "publicité\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "growth",
+            "french": [
+                "croissance\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "shareholders",
+            "french": [
+                "actionnaires\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "comfort",
+            "french": [
+                "confort\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "safety",
+            "french": [
+                "sécurité\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "price",
+            "french": [
+                "prix\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "reliability",
+            "french": [
+                "fiabilité\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "not enough leg room",
+            "french": [
+                "pas assze d'espace pour les jambes\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "lost or delayed luggage",
+            "french": [
+                "bagages perdus ou retardés\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "long queues at check-in",
+            "french": [
+                "longues files d'attente à l'enregistrement\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "poor quality food and drink",
+            "french": [
+                "nourriture et boissons de mauvaise qualité\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "no baggage allowance available",
+            "french": [
+                "aucune franchise de bagages disponible\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "no baggage trolleys available",
+            "french": [
+                "pas de chariots à bagages disponibles\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "overbooking of flight",
+            "french": [
+                "surréservation de vol\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "flight delays and cancellations",
+            "french": [
+                "retards et annulations de vols\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "tiredness and jet lag",
+            "french": [
+                "fatigue et décalage horaire\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "delays for security checks",
+            "french": [
+                "retards pour les contrôles de sécurité\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "oversized hand luggage in the cabin",
+            "french": [
+                "bagage à main surdimensionné en cabine\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "subway/underground",
+            "french": [
+                "métro\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "city centre/downtown",
+            "french": [
+                "centre ville\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "carry-on baggage/hand luggage\r",
+            "examples": []
+        },
+        {
+            "english": "one way/single",
+            "french": [
+                "sens unique\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "return/round trip",
+            "french": [
+                "aller retour\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "freeway/motorway",
+            "french": [
+                "autoroute\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "rest room/public toilet",
+            "french": [
+                "toilettes publiques\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "elevator/lift",
+            "french": [
+                "ascenseur\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "coach class/economy class",
+            "french": [
+                "classe économique\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "timetable/schedule",
+            "french": [
+                "calendrier\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "car park/parking lot",
+            "french": [
+                "parking\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "queue/line",
+            "french": [
+                "file d'attente\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "check/bill",
+            "french": [
+                "facture\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "reservation/booking",
+            "french": [
+                "réservation\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "ground floor/first floor",
+            "french": [
+                "rez de chaussée\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "business centre",
+            "french": [
+                "centre d'affaire\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "shuttle service",
+            "french": [
+                "service de navette\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "shuttle",
+            "french": [
+                "navette\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "peak travel",
+            "french": [
+                "voyage de pointe (grande affluence)\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "check in",
+            "french": [
+                "enregistrement\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "frequent-flyer points",
+            "french": [
+                "points de fidélisation\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "lounge",
+            "french": [
+                "salon\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "boarding  pass",
+            "french": [
+                "passe d'embarquement\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "ground staff",
+            "french": [
+                "personnel au sol\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "moving house",
+            "french": [
+                "déménagement\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "foreign",
+            "french": [
+                "un étranger\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "assess",
+            "french": [
+                "évaluer\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "centralise",
+            "french": [
+                "centraliser\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "date",
+            "french": [
+                "date\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "develop",
+            "french": [
+                "developper\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "grade",
+            "french": [
+                "grade/rang\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "launch",
+            "french": [
+                "lancement\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "regulate",
+            "french": [
+                "réglementer\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "train",
+            "french": [
+                "former\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "disused",
+            "french": [
+                "abandonné\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "takeover",
+            "french": [
+                "reprendre\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "It's a rip off",
+            "french": [
+                "c'est une arnaque\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "down market",
+            "french": [
+                "marché ba\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "genuine",
+            "french": [
+                "authentique\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "get the ball rolling",
+            "french": [
+                "smooth pass\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "a bid",
+            "french": [
+                "une offre\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "a tender",
+            "french": [
+                "un appel d'offres\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "a fleet",
+            "french": [
+                "une flotte (de vaisseaux)\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "fringe",
+            "french": [
+                "frange\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "perk",
+            "french": [
+                "avantage\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "bankruptcy",
+            "french": [
+                "plus de tune\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "sunburn",
+            "french": [
+                "coup de soleil\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "sun tan",
+            "french": [
+                "bronzage\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "to cast",
+            "french": [
+                "lancer\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "deregulate",
+            "french": [
+                "déréglementer\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "relocate",
+            "french": [
+                "relocaliser\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "downsize",
+            "french": [
+                "réduire la taille\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "retrain",
+            "french": [
+                "recycler\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "relaunch",
+            "french": [
+                "relancer\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "update",
+            "french": [
+                "mettre a jour\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "reassess",
+            "french": [
+                "réévaluer\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "hot desking",
+            "french": [
+                "is a flexible office arrangement where employees do not have assigned desks\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "core staff",
+            "french": [
+                "personnel de base (essentiel)\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "outsource",
+            "french": [
+                "deleguate tasks to others"
+            ],
+            "examples": []
+        }
+    ],
+    "groups": []
+}

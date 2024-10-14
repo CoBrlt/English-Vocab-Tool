@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./editWords_style.css">
+    <title>Edit Lists</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tools_bar">
+            <button class="button_tool_bar">Ajouter une ligne</button>
+            <select class="list_selector">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+        </div>
+
+        <h1>Tableau Modifiable</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Âge</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" value="Jean Dupont"></td>
+                    <td><input type="number" value="30"></td>
+                    <td><input type="email" value="jean.dupont@example.com"></td>
+                    <td><button class="button">Modifier</button></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Marie Curie"></td>
+                    <td><input type="number" value="35"></td>
+                    <td><input type="email" value="marie.curie@example.com"></td>
+                    <td><button class="button">Modifier</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

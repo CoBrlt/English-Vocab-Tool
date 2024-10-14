@@ -1,0 +1,1215 @@
+{
+    "name": "vocab5",
+    "words": [
+        {
+            "english": "have to",
+            "french": [
+                "devoir",
+                "avoir"
+            ],
+            "examples": [
+                {
+                    "english": "She has to study to pass her exams.",
+                    "french": "Elle doit étudier pour réussir ses examens."
+                },
+                {
+                    "english": "A summary has to be short and concise.",
+                    "french": "Un résumé doit être court et concis."
+                },
+                {
+                    "english": "I have long hair.",
+                    "french": "J'ai les cheveux longs."
+                },
+                {
+                    "english": "Endives have a bitter taste.",
+                    "french": "Les endives ont un goût amer."
+                },
+                {
+                    "english": "She has beautiful eyes.",
+                    "french": "Elle possède de beaux yeux."
+                },
+                {
+                    "english": "The razor has two replaceable blades.",
+                    "french": "Le rasoir possède deux lames remplaçables. "
+                },
+                {
+                    "english": "The truck has an extremely high payload.",
+                    "french": "Le camion possède une charge utile très élevée."
+                },
+                {
+                    "english": "The company has an extensive portfolio of products.",
+                    "french": "L'entreprise dispose d'une large gamme de produits."
+                },
+                {
+                    "english": "Large towns have several means of transport.",
+                    "french": "Les grandes villes disposent de plusieurs moyens de transport.\r"
+                }
+            ]
+        },
+        {
+            "english": "convenient",
+            "french": [
+                "pratiques",
+                "pratique",
+                "confortable",
+                "utile",
+                "convenable",
+                "accessible",
+                "opportun",
+                "aisé",
+                "approprié",
+                "faciles"
+            ],
+            "examples": [
+                {
+                    "english": "This box is convenient for storing large objects.",
+                    "french": "Cette boîte est pratique pour ranger les grands objets."
+                },
+                {
+                    "english": "The machine is very convenient as it is self-contained.",
+                    "french": "La machine est très pratique puisqu'elle est autonome."
+                },
+                {
+                    "english": "Renting a car is the most convenient solution for me. ",
+                    "french": "Louer une voiture est la solution la plus confortable pour moi. "
+                },
+                {
+                    "english": "An umbrella is convenient in case of rain.",
+                    "french": "Un parapluie est utile en cas de pluie. \r"
+                }
+            ]
+        },
+        {
+            "english": "furniture",
+            "french": [
+                "meubles",
+                "mobilier",
+                "ameublement"
+            ],
+            "examples": [
+                {
+                    "english": "I need to buy furniture for my new house.",
+                    "french": "J'ai besoin d'acheter des meubles pour ma nouvelle maison."
+                },
+                {
+                    "english": "Our company imports furniture from Italy.",
+                    "french": "Notre entreprise importe des meubles d'Italie."
+                },
+                {
+                    "english": "The living room furniture is very modern.",
+                    "french": "Le mobilier du salon est très moderne.\r"
+                }
+            ]
+        },
+        {
+            "english": "most",
+            "french": [
+                "très\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "none of",
+            "french": [
+                "aucun\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "to attempt",
+            "french": [
+                "essayer"
+            ],
+            "examples": [
+                {
+                    "english": "He attempted, unsuccessfully, to fix the shower. ",
+                    "french": "Il a tenté sans succès de réparer la douche."
+                },
+                {
+                    "english": "We attempted to get answers to our questions.",
+                    "french": "Nous avons tenté d'obtenir des réponses à nos questions.\r"
+                }
+            ]
+        },
+        {
+            "english": "handing",
+            "french": [
+                "donner",
+                "passer"
+            ],
+            "examples": [
+                {
+                    "english": "The president handed a trophy to the winner of the race.",
+                    "french": "Le président a donné un trophée au gagnant de la course. \r"
+                }
+            ]
+        },
+        {
+            "english": "careless",
+            "french": [
+                "imprudent",
+                "négligent",
+                "distrait",
+                "étourdi",
+                "insouciant",
+                "négligeant",
+                "inconsidéré",
+                "bâclé",
+                "irréfléchi",
+                "importer"
+            ],
+            "examples": [
+                {
+                    "english": "The careless driver caused an accident.",
+                    "french": "Le conducteur imprudent a causé un accident."
+                },
+                {
+                    "english": "The manager held the careless employee responsible for the issue.",
+                    "french": "Le patron a tenu l'employé négligent responsable du problème."
+                },
+                {
+                    "english": "The careless driver almost caused an accident.",
+                    "french": "Le conducteur distrait a failli causer un accident. "
+                },
+                {
+                    "english": "The careless driver left his keys in his car.",
+                    "french": "Le conducteur étourdi a laissé ses clés dans sa voiture.\r"
+                }
+            ]
+        },
+        {
+            "english": "whether",
+            "french": [
+                "si"
+            ],
+            "examples": [
+                {
+                    "english": "I do not know whether I won or not.",
+                    "french": "Je ne sais pas si j'ai gagné ou pas."
+                },
+                {
+                    "english": "We do not know whether musical ability is innate or acquired.",
+                    "french": "Nous ne savons pas si l'aptitude musicale est innée ou acquise.\r"
+                }
+            ]
+        },
+        {
+            "english": "stapler",
+            "french": [
+                "agrafeuse\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "plant",
+            "french": [
+                "usine",
+                "installation",
+                "plante",
+                "centrale",
+                "matériel",
+                "végétal",
+                "végétale",
+                "planter"
+            ],
+            "examples": [
+                {
+                    "english": "The mayor exerted his authority to get the plant rebuilt.",
+                    "french": "Le maire a exercé son autorité pour faire rebâtir l'usine."
+                },
+                {
+                    "english": "The plant has reached its maximal level of production.",
+                    "french": "L'usine a atteint son niveau maximum de production."
+                },
+                {
+                    "english": "I have many different plants in my garden. ",
+                    "french": "J'ai de nombreuses plantes différentes dans mon jardin. "
+                },
+                {
+                    "english": "Plants need sunlight and water to grow well.",
+                    "french": "Les plantes ont besoin de soleil et d'eau pour bien pousser."
+                },
+                {
+                    "english": "The company has built a new nuclear plant.",
+                    "french": "L'entreprise a construit une nouvelle centrale nucléaire."
+                },
+                {
+                    "english": "The power plant supplies electricity to the entire city. ",
+                    "french": "La centrale électrique fournit de l'électricité à toute la ville. "
+                },
+                {
+                    "english": "She planted flowers in her garden.",
+                    "french": "Elle a planté des fleurs dans son jardin.\r"
+                }
+            ]
+        },
+        {
+            "english": "yours",
+            "french": [
+                "le vôtre",
+                "à toi",
+                "le tien\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "mine",
+            "french": [
+                "mine",
+                "source",
+                "à moi",
+                "minière",
+                "exploiter",
+                "extraire",
+                "miner"
+            ],
+            "examples": [
+                {
+                    "english": "Coal is extracted from mines.",
+                    "french": "Le charbon est extrait des mines."
+                },
+                {
+                    "english": "The last slice of cake is mine.",
+                    "french": "La dernière part de gâteau est à moi."
+                },
+                {
+                    "english": "They used to mine coal in this mountain.",
+                    "french": "Avant, on exploitait le charbon dans cette montagne."
+                },
+                {
+                    "english": "Coal used to be mined in many mountains.",
+                    "french": "Du charbon était autrefois extrait de nombreuses montagnes."
+                },
+                {
+                    "english": "The company mines coal in the area.",
+                    "french": "L'entreprise mine du charbon dans la région.\r"
+                }
+            ]
+        },
+        {
+            "english": "his",
+            "french": [
+                "le sien",
+                "la sienne",
+                "les siens",
+                "les siennes"
+            ],
+            "examples": [
+                {
+                    "english": "The child said the toy was his.",
+                    "french": "L'enfant a dit que le jouet était le sien.\r"
+                }
+            ]
+        },
+        {
+            "english": "hears",
+            "french": [
+                "percevoir",
+                "ouïr"
+            ],
+            "examples": [
+                {
+                    "english": "He cannot hear her because she speaks too quietly.",
+                    "french": "Il ne l'entend pas bien parce qu'elle parle trop doucement."
+                },
+                {
+                    "english": "I only heard snippets of conversation.",
+                    "french": "Je n'ai entendu que des bribes de conversation."
+                },
+                {
+                    "english": "I start singing whenever I hear this song.",
+                    "french": "Je me mets à chanter chaque fois que j'entends cette chanson."
+                },
+                {
+                    "english": "I hear Mass every Sunday.",
+                    "french": "J'assiste à la messe tous les dimanches.\r"
+                }
+            ]
+        },
+        {
+            "english": "ours",
+            "french": [
+                "le nôtre",
+                "la nôtre",
+                "les nôtres\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "theirs",
+            "french": [
+                "leurs\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "whose",
+            "french": [
+                "dont",
+                "à qui",
+                "de qui",
+                "duquel"
+            ],
+            "examples": [
+                {
+                    "english": "She is an artist whose work I admire.",
+                    "french": "C'est une artiste dont j'admire l'œuvre."
+                },
+                {
+                    "english": "Whose pen is this?",
+                    "french": "À qui est ce stylo ?\r"
+                }
+            ]
+        },
+        {
+            "english": "Ms",
+            "french": [
+                "Mme\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "its",
+            "french": [
+                "son"
+            ],
+            "examples": [
+                {
+                    "english": "The dog plays with its toy.",
+                    "french": "Le chien joue avec son jouet.\r"
+                }
+            ]
+        },
+        {
+            "english": "crate",
+            "french": [
+                "caisse",
+                "cageot",
+                "casier",
+                "boîte"
+            ],
+            "examples": [
+                {
+                    "english": "The bottles are transported in a wooden crate. ",
+                    "french": "Les bouteilles sont transportées dans une caisse en bois. "
+                },
+                {
+                    "english": "She bought a crate of oranges at the market.",
+                    "french": "Elle a acheté un cageot d'oranges au marché."
+                },
+                {
+                    "english": "The farm workers crate the apples after picking them.",
+                    "french": "Les employés agricoles mettent les pommes en caisse après la cueillette.\r"
+                }
+            ]
+        },
+        {
+            "english": "tender",
+            "french": [
+                "tendre",
+                "tendres",
+                "doux",
+                "délicat",
+                "sensible",
+                "affectueux",
+                "fragile",
+                "offre",
+                "soumission",
+                "ravitailleur",
+                "offrir",
+                "donner",
+                "présenter"
+            ],
+            "examples": [
+                {
+                    "english": "I like it when meat is tender and juicy.",
+                    "french": "J'aime quand la viande est tendre et juteuse."
+                },
+                {
+                    "english": "This fish has a very tender flesh; it is delicious.",
+                    "french": "Ce poisson a une chair très tendre ; il est délicieux."
+                },
+                {
+                    "english": "Pork loin is usually very tender.",
+                    "french": "Le filet de porc est généralement très tendre."
+                },
+                {
+                    "english": "My wife has always been tender with me.",
+                    "french": "Ma femme a toujours été douce avec moi."
+                },
+                {
+                    "english": "He has a tender disposition and does not like criticism.",
+                    "french": "Il a un tempérament délicat et n'aime pas les critiques."
+                },
+                {
+                    "english": "The cheapest tender was awarded the contract.",
+                    "french": "L'offre la moins chère a remporté le marché."
+                },
+                {
+                    "english": "I tendered my resignation this morning.",
+                    "french": "J'ai offert ma démission ce matin."
+                },
+                {
+                    "english": "The employee tendered his resignation to his manager.",
+                    "french": "L'employé a donné sa démission à son responsable.\r"
+                }
+            ]
+        },
+        {
+            "english": "whose",
+            "french": [
+                "dont",
+                "à qui",
+                "de qui",
+                "duquel"
+            ],
+            "examples": [
+                {
+                    "english": "She is an artist whose work I admire.",
+                    "french": "C'est une artiste dont j'admire l'œuvre."
+                },
+                {
+                    "english": "Whose pen is this?",
+                    "french": "À qui est ce stylo ?\r"
+                }
+            ]
+        },
+        {
+            "english": "thief",
+            "french": [
+                "voleur",
+                "larron",
+                "cambrioleur",
+                "brigand",
+                "bandit",
+                "pillard",
+                "chapardeur",
+                "crocheteur"
+            ],
+            "examples": [
+                {
+                    "english": "The police caught the thief.",
+                    "french": "La police a attrapé le voleur."
+                },
+                {
+                    "english": "The thief thought of a cunning plan.",
+                    "french": "Le voleur a imaginé un plan sournois."
+                },
+                {
+                    "english": "The police arrested the thief after a series of robberies.",
+                    "french": "La police a arrêté le larron après une série de vols."
+                },
+                {
+                    "english": "The thief only stole a worthless painting.",
+                    "french": "Le cambrioleur n'a volé qu'un tableau sans valeur.\r"
+                }
+            ]
+        },
+        {
+            "english": "be ill",
+            "french": [
+                "être malade\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "trainees",
+            "french": [
+                "stagiaires",
+                "apprentis",
+                "apprenants",
+                "personnes en formation",
+                "stagiaire",
+                "apprenti",
+                "apprenant"
+            ],
+            "examples": [
+                {
+                    "english": "My colleague takes on the mentoring of the trainees.",
+                    "french": "Ma collègue s'occupe du parrainage des stagiaires."
+                },
+                {
+                    "english": "Trainees learn how a company operates.",
+                    "french": "Les stagiaires apprennent le fonctionnement d'une entreprise."
+                },
+                {
+                    "english": "The trainee works under my supervision.",
+                    "french": "L'apprenti travaille sous ma supervision.\r"
+                }
+            ]
+        },
+        {
+            "english": "the mess",
+            "french": [
+                "le désordre\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "copier",
+            "french": [
+                "photocopieur",
+                "photocopieuse",
+                "copieur",
+                "reproduire",
+                "photocopier",
+                "calquer"
+            ],
+            "examples": [
+                {
+                    "english": "Many men copy the actor's style.",
+                    "french": "Beaucoup d'hommes copient le style de l'acteur."
+                },
+                {
+                    "english": "I copied the figures in a chart.",
+                    "french": "J'ai recopié les chiffres dans un tableau. "
+                },
+                {
+                    "english": "The students had to copy the list by hand.",
+                    "french": "Les élèves ont dû reproduire la liste à la main."
+                },
+                {
+                    "english": "The printer can also scan and copy documents.",
+                    "french": "L'imprimante peut aussi scanner et photocopier des documents."
+                },
+                {
+                    "english": "The computer copied the files onto another device.",
+                    "french": "L'ordinateur a dupliqué les fichiers sur un autre périphérique."
+                },
+                {
+                    "english": "The girl often copies her mother's style. ",
+                    "french": "La fille imite souvent le style de sa mère.\r"
+                }
+            ]
+        },
+        {
+            "english": "voicemail",
+            "french": [
+                "messagerie",
+                "messagerie vocale",
+                "répondeur",
+                "boîte vocale"
+            ],
+            "examples": [
+                {
+                    "english": "I listened to all the messages on my voicemail.",
+                    "french": "J'ai écouté tous les messages sur ma messagerie vocale.\r"
+                }
+            ]
+        },
+        {
+            "english": "swipe",
+            "french": [
+                "balayer\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "plug in",
+            "french": [
+                "plugin",
+                "module",
+                "plugiciel",
+                "module d'extension",
+                "module externe",
+                "greffon",
+                "se brancher",
+                "connecter",
+                "empocher"
+            ],
+            "examples": [
+                {
+                    "english": "An additional plug-in is required to open encrypted files.",
+                    "french": "Un module complémentaire est requis pour ouvrir les fichiers cryptés.\r"
+                }
+            ]
+        },
+        {
+            "english": "unplug",
+            "french": [
+                "débrancher"
+            ],
+            "examples": [
+                {
+                    "english": "I unplug my laptop when the battery is full.",
+                    "french": "Je débranche mon ordinateur portable quand la batterie est pleine.\r"
+                }
+            ]
+        },
+        {
+            "english": "provide someon with something",
+            "french": [
+                "fournir quelque chose à quelqu'un\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "eye-strain",
+            "french": [
+                "fatigue oculaire",
+                "tension oculaire",
+                "fatigue des yeux",
+                "fatigue visuelle\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "hand-held",
+            "french": [
+                "à main\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "wire",
+            "french": [
+                "fil",
+                "câble",
+                "télégramme",
+                "dépêche",
+                "métallique",
+                "grillagé",
+                "télégraphique",
+                "télégraphier",
+                "relier avec du fil de fer"
+            ],
+            "examples": [
+                {
+                    "english": "The light bulb contains a tungsten wire.",
+                    "french": "L'ampoule électrique contient un fil de tungstène."
+                },
+                {
+                    "english": "The blue wire connects the computer to the television.",
+                    "french": "Le câble bleu relie l'ordinateur à la télévision."
+                },
+                {
+                    "english": "My grandparents used to send a wire rather than an e-mail.",
+                    "french": "Autrefois, mes grand-parents envoyaient un télégramme plutôt qu'un courriel."
+                },
+                {
+                    "english": "The field is bordered by a wire fence.",
+                    "french": "Le champ est délimité par une clôture métallique."
+                },
+                {
+                    "english": "The ship wired a message to the nearest port.",
+                    "french": "Le bateau a télégraphié un message au port le plus proche.\r"
+                }
+            ]
+        },
+        {
+            "english": "wireless",
+            "french": [
+                "sans fil",
+                "mobile",
+                "hertziens",
+                "métallique",
+                "grillagé",
+                "télégraphique",
+                "télégraphier",
+                "relier avec du fil de fer"
+            ],
+            "examples": [
+                {
+                    "english": "I use the internet via a wireless network.",
+                    "french": "J'utilise l'internet via un réseau sans fil."
+                },
+                {
+                    "english": "I have a new wireless router for my office.",
+                    "french": "J'ai un nouveau routeur sans fil pour mon bureau. "
+                },
+                {
+                    "english": "The field is bordered by a wire fence.",
+                    "french": "Le champ est délimité par une clôture métallique."
+                },
+                {
+                    "english": "The ship wired a message to the nearest port.",
+                    "french": "Le bateau a télégraphié un message au port le plus proche.\r"
+                }
+            ]
+        },
+        {
+            "english": "slide show",
+            "french": [
+                "diaporama\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "mouse pad",
+            "french": [
+                "tapis de souris\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "hyphen",
+            "french": [
+                "trait d'union",
+                "tiret"
+            ],
+            "examples": [
+                {
+                    "english": "A hyphen is a punctuation mark that links two words together.",
+                    "french": "Un trait d'union est un signe de ponctuation qui relie deux mots.\r"
+                }
+            ]
+        },
+        {
+            "english": "banner",
+            "french": [
+                "bannière",
+                "bandeau",
+                "banderole",
+                "drapeau",
+                "enseigne",
+                "étendard",
+                "slogan",
+                "calicot",
+                "pavillon",
+                "manchette"
+            ],
+            "examples": [
+                {
+                    "english": "The company logo appears on the banner.",
+                    "french": "Le logo de l'entreprise apparaît sur la bannière."
+                },
+                {
+                    "english": "The company logo appears on the website banner.",
+                    "french": "Le logo de l'entreprise apparaît sur le bandeau du site web."
+                },
+                {
+                    "english": "The demonstrators carried banners with different slogans.",
+                    "french": "Les manifestants portaient des banderoles affichant divers slogans.\r"
+                }
+            ]
+        },
+        {
+            "english": "sign in",
+            "french": [
+                "s'identifier",
+                "s'authentifier",
+                "s'enregistrer"
+            ],
+            "examples": [
+                {
+                    "english": "Users must sign in to access the website.",
+                    "french": "Les utilisateurs doivent s'identifier pour accéder au site web."
+                },
+                {
+                    "english": "Users must sign in to access their account.",
+                    "french": "Les utilisateurs doivent s'authentifier pour accéder à leur compte."
+                },
+                {
+                    "english": "I signed in to my account to pay my bill.",
+                    "french": "Je me suis connecté à mon compte pour payer ma facture.\r"
+                }
+            ]
+        },
+        {
+            "english": "eye-catching",
+            "french": [
+                "attrayant",
+                "attractif\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "vacancy",
+            "french": [
+                "poste vacant\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "forbid",
+            "french": [
+                "interdire\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "tenant",
+            "french": [
+                "locataire"
+            ],
+            "examples": [
+                {
+                    "english": "My new tenant pays the rent on time.",
+                    "french": "Mon nouveau locataire paie le loyer à temps."
+                },
+                {
+                    "english": "He lets the house to two tenants.",
+                    "french": "Il loue la maison à deux locataires.\r"
+                }
+            ]
+        },
+        {
+            "english": "to stick",
+            "french": [
+                "adhérer",
+                "rester",
+                "se coincer",
+                "fourrer"
+            ],
+            "examples": [
+                {
+                    "english": "I stuck to the speed limit.",
+                    "french": "J'ai respecté la limite de vitesse."
+                },
+                {
+                    "english": "The two teams must stick to the rules of the game.",
+                    "french": "Les deux équipes doivent s'en tenir aux règles du jeu."
+                },
+                {
+                    "english": "I stuck a label on the box to indicate its content.",
+                    "french": "J'ai collé une étiquette sur la boîte pour indiquer son contenu."
+                },
+                {
+                    "english": "Magnets stick to most metal surfaces.",
+                    "french": "Les aimants adhèrent à la plupart des surfaces métalliques."
+                },
+                {
+                    "english": "I stuck with the group instead of walking alone.",
+                    "french": "Je suis resté avec le groupe plutôt que de marcher seul."
+                },
+                {
+                    "english": "If the lever sticks, I just pull harder.",
+                    "french": "Si le levier se coince, je tire simplement plus fort. \r"
+                }
+            ]
+        },
+        {
+            "english": "postcard",
+            "french": [
+                "carte postale"
+            ],
+            "examples": [
+                {
+                    "english": "She bought a stamp and put it on her postcard.",
+                    "french": "Elle a acheté un timbre et l'a mis sur sa carte postale."
+                },
+                {
+                    "english": "Only one sentence was written on the postcard.",
+                    "french": "Une seule phrase était écrite sur la carte postale.\r"
+                }
+            ]
+        },
+        {
+            "english": "postage",
+            "french": [
+                "port",
+                "affranchissement",
+                "courrier"
+            ],
+            "examples": [
+                {
+                    "english": "The sender of the letter must pay the postage.",
+                    "french": "L'expéditeur de la lettre doit en payer le port. "
+                },
+                {
+                    "english": "I paid for postage before sending my letter.",
+                    "french": "J'ai payé l'affranchissement avant d'envoyer ma lettre.\r"
+                }
+            ]
+        },
+        {
+            "english": "inbox",
+            "french": [
+                "boîte de réception"
+            ],
+            "examples": [
+                {
+                    "english": "I have replied to every e-mail in my inbox.",
+                    "french": "J'ai répondu à chaque e-mail dans ma boîte de réception.\r"
+                }
+            ]
+        },
+        {
+            "english": "junk mail",
+            "french": [
+                "courrier indésirable",
+                "pourriel",
+                "spam",
+                "courrier-poubelle",
+                "courrier publicitaire\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "stamp",
+            "french": [
+                "timbre",
+                "tampon",
+                "sceau",
+                "poinçon",
+                "étampe",
+                "pistil",
+                "cachet",
+                "empreinte",
+                "timbre-poste",
+                "timbrer",
+                "estampiller",
+                "affranchir",
+                "piétiner",
+                "taper du pied",
+                "trépigner"
+            ],
+            "examples": [
+                {
+                    "english": "She bought a stamp and put it on her postcard.",
+                    "french": "Elle a acheté un timbre et l'a mis sur sa carte postale."
+                },
+                {
+                    "english": "I almost forgot to put a stamp on the envelope.",
+                    "french": "J'ai presque oublié de mettre un timbre sur l'enveloppe."
+                },
+                {
+                    "english": "Prior to use, you must ink the stamp.",
+                    "french": "Il faut encrer le tampon avant de l'utiliser."
+                },
+                {
+                    "english": "The stamp left an imprint on the paper.",
+                    "french": "Le tampon a laissé une impression sur le papier."
+                },
+                {
+                    "english": "The notary will affix a stamp on the document.",
+                    "french": "Le notaire apposera un sceau sur le document."
+                },
+                {
+                    "english": "The stamp on this ring guarantees its authenticity.",
+                    "french": "Le poinçon sur cette bague garantit son authenticité."
+                },
+                {
+                    "english": "The stamp printed a seal on the official document.",
+                    "french": "L'étampe a imprimé un sceau sur le document officiel."
+                },
+                {
+                    "english": "The customs officer stamped my passport and let me through.",
+                    "french": "Le douanier a tamponné mon passeport et m'a laissé passer."
+                },
+                {
+                    "english": "I almost forgot to stamp my letter.",
+                    "french": "J'ai presque oublié de timbrer ma lettre."
+                },
+                {
+                    "english": "The bank clerk stamped and dated the document.",
+                    "french": "L'employé de banque a estampillé et daté le document."
+                },
+                {
+                    "english": "The parcel was stamped correctly and arrived on time.",
+                    "french": "Le colis a été affranchi correctement et est arrivé à temps."
+                },
+                {
+                    "english": "I stamped on the embers to put them out.",
+                    "french": "J'ai piétiné les braises pour les éteindre."
+                },
+                {
+                    "english": "The children stamped their feet to the rhythm of the music.",
+                    "french": "Les enfants tapaient du pied en suivant le rythme de la musique. \r"
+                }
+            ]
+        },
+        {
+            "english": "mail carrier",
+            "french": [
+                "postière",
+                "transporteur postal\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "mailbox",
+            "french": [
+                "boîte à lettres",
+                "boîte aux lettres",
+                "messagerie",
+                "boîte postale"
+            ],
+            "examples": [
+                {
+                    "english": "There is a letter in my mailbox.",
+                    "french": "Il y a une lettre dans ma boîte aux lettres."
+                },
+                {
+                    "english": "I had several messages in my mailbox.",
+                    "french": "J'avais plusieurs messages dans ma messagerie.\r"
+                }
+            ]
+        },
+        {
+            "english": "weight",
+            "french": [
+                "poids",
+                "charge",
+                "importance",
+                "pondération",
+                "force",
+                "pesanteur",
+                "haltère",
+                "lester"
+            ],
+            "examples": [
+                {
+                    "english": "Some athletes can lift several times their weight.",
+                    "french": "Certains athlètes peuvent soulever plusieurs fois leur poids."
+                },
+                {
+                    "english": "The pound is a unit for measuring weight.",
+                    "french": "La livre est une unité de mesure du poids."
+                },
+                {
+                    "english": "A pulley helps to lift heavy weights.",
+                    "french": "Une poulie permet de soulever des charges lourdes.\r"
+                }
+            ]
+        },
+        {
+            "english": "attachment",
+            "french": [
+                "attachement",
+                "pièce jointe",
+                "fixation",
+                "attache",
+                "annexe",
+                "accessoire",
+                "saisie",
+                "fichier joint",
+                "lien",
+                "connexion",
+                "raccordement",
+                "ancrage",
+                "rattachement",
+                "affection",
+                "joindre",
+                "fixer",
+                "appliquer",
+                "apposer",
+                "lier",
+                "affecter",
+                "attribuer"
+            ],
+            "examples": [
+                {
+                    "english": "I have a very strong attachment to my family.",
+                    "french": "J'ai un attachement très fort envers ma famille."
+                },
+                {
+                    "english": "She included the report as an email attachment.",
+                    "french": "Elle a inclus le rapport en pièce jointe du courrier électronique."
+                },
+                {
+                    "english": "I will attach the document to my email.",
+                    "french": "Je vais joindre le document à mon courrier électronique."
+                },
+                {
+                    "english": "I attached a rope to the tree.",
+                    "french": "J'ai attaché une corde à l'arbre."
+                },
+                {
+                    "english": "She attached the painting to the wall. ",
+                    "french": "Elle a fixé le tableau au mur. "
+                },
+                {
+                    "english": "I attached a copy of my diploma to my job application.",
+                    "french": "J'ai annexé une copie de mon diplôme à ma demande d'emploi."
+                },
+                {
+                    "english": "The public servant attached a note to my file.",
+                    "french": "Le fonctionnaire a inséré une note dans mon dossier."
+                },
+                {
+                    "english": "The job seeker attached a photo to his CV.",
+                    "french": "Le demandeur d'emploi a collé une photo à son CV."
+                },
+                {
+                    "english": "The bank attaches strict conditions to large loans.",
+                    "french": "La banque applique des conditions strictes aux gros emprunts."
+                },
+                {
+                    "english": "I will attach a copy of the report to the email.",
+                    "french": "Je vais inclure une copie du rapport dans l'email.\r"
+                }
+            ]
+        },
+        {
+            "english": "zip code",
+            "french": [
+                "code zip\r"
+            ],
+            "examples": []
+        },
+        {
+            "english": "recipient",
+            "french": [
+                "destinataire",
+                "bénéficiaire",
+                "récipiendaire",
+                "receveur",
+                "receveuse",
+                "réceptionnaire",
+                "acquéreur",
+                "donataire",
+                "attributaire",
+                "destinataire",
+                "récepteur"
+            ],
+            "examples": [
+                {
+                    "english": "The name of the recipient should appear clearly on the envelope.",
+                    "french": "Le nom du destinataire doit être clairement indiqué sur l'enveloppe."
+                },
+                {
+                    "english": "The recipient kept a copy of the delivery note.",
+                    "french": "Le destinataire a gardé une copie du bordereau de livraison."
+                },
+                {
+                    "english": "This year, the recipient of our donation will be a school.",
+                    "french": "Cette année, le bénéficiaire de notre don sera une école.\r"
+                }
+            ]
+        },
+        {
+            "english": "submit",
+            "french": [
+                "se soumettre",
+                "présenter",
+                "se rendre"
+            ],
+            "examples": [
+                {
+                    "english": "The application can also be submitted via e-mail.",
+                    "french": "La candidature peut également être soumise par e-mail."
+                },
+                {
+                    "english": "The journalist submitted an enquiry to the company.",
+                    "french": "Le journaliste a soumis une demande à l'entreprise."
+                },
+                {
+                    "english": "I submitted my income statement to the tax authorities.",
+                    "french": "J'ai soumis ma déclaration de revenus à l'administration fiscale."
+                },
+                {
+                    "english": "I submitted new ideas to my boss. ",
+                    "french": "J'ai présenté de nouvelles idées à mon chef. "
+                },
+                {
+                    "english": "I will review my job application before submitting it. ",
+                    "french": "Je vais revoir ma demande d'emploi avant de l'envoyer."
+                },
+                {
+                    "english": "The candidate submitted his application to the hiring manager.",
+                    "french": "Le candidat a adressé sa candidature au responsable de l'embauche. "
+                },
+                {
+                    "english": "I submitted my dissertation at the end of the school year.",
+                    "french": "J'ai rendu mon mémoire à la fin de l'année scolaire."
+                },
+                {
+                    "english": "The soldiers were forced to submit at the end of the battle.",
+                    "french": "Les soldats ont été contraints de se rendre à la fin de la bataille.\r"
+                }
+            ]
+        }
+    ],
+    "groups": []
+}

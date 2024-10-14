@@ -1,0 +1,118 @@
+html {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    color: #f0f0f0; /* Couleur de texte douce pour un bon contraste avec le fond sombre */
+}
+
+body {
+    background-color: #1b1b1b; /* Fond noir pour un thème sombre élégant */
+    margin: 0;
+}
+
+.button_tool_bar {
+    background-color: #6C63FF; /* Violet doux et moderne */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre renforcée pour un effet sur fond noir */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.button_tool_bar:hover {
+    background-color: #574bdb; /* Variation plus sombre au survol */
+    transform: translateY(-3px); /* Effet de survol dynamique */
+}
+
+.tools_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: #2b2b2b; /* Fond gris foncé pour la barre d'outils */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée pour mieux ressortir sur fond sombre */
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.list_selector {
+    min-width: 180px;
+    height: 35px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #ddd; /* Texte clair sur fond sombre */
+    background-color: #333; /* Fond gris foncé pour les sélecteurs */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#pannel_words {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70vh;
+    background-color: #333; /* Fond gris foncé pour le conteneur */
+    border-radius: 15px;
+    border: 1px solid #555;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Ombre plus forte pour un effet sur fond sombre */
+    margin: 0 10%;
+    padding: 1%;
+}
+
+#pannel_words > div {
+    width: 45%;
+    font-size: 150%;
+    font-weight: 900;
+    color: #333; /* Texte foncé pour un bon contraste avec le fond clair */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* Fond clair dans les panneaux pour le contraste */
+    border-radius: 10px;
+    padding: 30px;
+    overflow-y: auto; /* Ajoute le défilement vertical à chaque panneau */
+    max-height: 100%; /* Assure que chaque div prend toute la hauteur disponible */
+}
+
+#english_word {
+    border: 2px solid #444;
+    margin-right: 0.5%;
+}
+
+#french_word {
+    border: 2px solid #444;
+    margin-left: 0.5%;
+}
+
+#french_word > p{
+    margin: 0;
+    max-height: 100%;
+}
+
+/* Personnaliser la scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Largeur de la scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Couleur de la piste */
+    border-radius: 10px; /* Coins arrondis de la piste */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Couleur du pouce */
+    border-radius: 10px; /* Coins arrondis du pouce */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Couleur du pouce au survol */
+}
