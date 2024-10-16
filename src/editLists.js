@@ -114,8 +114,25 @@ function createLineGroup(groupName, checked=false){
     let tdGroupName = document.createElement("td")
     tdGroupName.textContent = groupName
 
+    let tdDeleteGroup = document.createElement("td")
+    let buttonDeleteGroup = createButton("Delete")
+    buttonDeleteGroup.addEventListener("click", async ()=>{
+        if(await askServerToRemoveGroup(groupName)){
+            newTr.remove()
+            let allSpanGroupsHtml = document.querySelectorAll("td.groups > span")
+            console.log(allSpanGroupsHtml)
+            for(let spanGroupHtml of allSpanGroupsHtml){
+                if(spanGroupHtml.textContent == groupName){
+                    spanGroupHtml.remove()
+                }
+            }
+        }
+    })
+    tdDeleteGroup.append(buttonDeleteGroup)
+
     newTr.appendChild(tdCheckbox)
     newTr.appendChild(tdGroupName)
+    newTr.appendChild(tdDeleteGroup)
 
     table.appendChild(newTr)
 
@@ -188,13 +205,13 @@ function createLine(name, groupsForName){
     tdEdit.append(confirm, edit)
     
     confirm.addEventListener("click", async () => {
+        confirm.style.display = "none"
+        edit.style.display = "inline"
+        inputName.style.display = "none"
+        spanName.style.display = "inline"
         const response = await askServerToChangeListName(spanName.textContent, inputName.value)
         if(name != inputName.value && response){
-            confirm.style.display = "none"
-            edit.style.display = "inline"
-            inputName.style.display = "none"
             spanName.textContent = inputName.value
-            spanName.style.display = "inline"
             newTr.id = inputName.value
         }
     })
@@ -334,3 +351,13 @@ async function askServerToEditGroupsForListName(listConcernedByPopGroups, listGr
 }
 
 
+async function askServerToRemoveGroup(groupName){
+    ipcRenderer.send("remove-group", groupName)
+
+    let response = await new Promise((resolve)=>{
+        ipcRenderer.on('response-remove-group', (event, data) => {
+            resolve(data)
+        });
+    })
+    return  response
+}

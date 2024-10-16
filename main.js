@@ -190,3 +190,17 @@ ipcMain.on("change-list-name-groups", (event, data)=>{
     }
     event.sender.send("response-change-list-name-groups", response)
 })
+
+ipcMain.on("remove-group", (event, data)=>{
+    let response = false
+    let groupsData = readFile("./groupsData.json")
+    if(groupsData){
+        groupsData = JSON.parse(groupsData)
+        delete groupsData[data]
+        console.log(groupsData)
+        groupsData = JSON.stringify(groupsData, null, 4)
+        writeFile("./groupsData.json", groupsData)
+        response = true
+    }
+    event.sender.send("response-remove-group", response)
+})
