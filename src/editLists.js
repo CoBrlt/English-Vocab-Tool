@@ -1,4 +1,6 @@
 const { ipcRenderer } = require('electron');
+// const deasync = require('deasync');
+
 var listNames = null;
 var groups = null;
 var checkboxCounter = 0;
@@ -19,9 +21,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     ipcRenderer.on('response-groups', (event, data) =>{
         groups = JSON.parse(data)
-        console.log(groups)
+        // console.log(groups)
         checkAndUpdate()
     });
+    
 
     handleAddList()
     handleGroups()
@@ -38,7 +41,18 @@ function handleGroups(){
 
     let buttonConfirmPopup = document.getElementById("button_confirm_popup")
     buttonConfirmPopup.addEventListener("click", ()=>{
-        popup.style.display = "none"
+        listGroupsToAdd = []
+        allCheckboxs = document.querySelectorAll(".checkbox-group")
+        for(checkbox of allCheckboxs){
+            if(checkbox.checked){
+                listGroupsToAdd.push(checkbox.name)
+            }
+        }
+        let newGroups = askServerToEditGroupsForListName(listConcernedByPopGroups, listGroupsToAdd)
+        if(newGroups != null){
+            popup.style.display = "none"
+            groups = newGroups
+        }
     })
 
     let buttonAddGroup = document.getElementById("button_add_group")
@@ -49,8 +63,7 @@ function handleGroups(){
             input.value = ""
             groups[newGroupName] = []
             createLineGroup(newGroupName)
-        }
-        
+        }  
     })
 }
 
@@ -79,6 +92,8 @@ function createLineGroup(groupName, checked=false){
     newCheckbox.type = "checkbox"
     newCheckbox.id = "checkbox" + checkboxCounter.toString()
     newCheckbox.checked = checked
+    newCheckbox.name = groupName
+    newCheckbox.className = "checkbox-group"
 
     let newLabel = document.createElement("label")
     newLabel.htmlFor = "checkbox" + checkboxCounter.toString()
@@ -162,14 +177,15 @@ function createLine(name, groupsForName){
     let edit = createButton("Edit")
     tdEdit.append(confirm, edit)
     
-    confirm.addEventListener("click", () => {
-        confirm.style.display = "none"
-        edit.style.display = "inline"
-        inputName.style.display = "none"
-        spanName.textContent = inputName.value
-        newTr.id = inputName.value
-        if(name != inputName){
-            askServerToChangeName(name, inputName.value)
+    confirm.addEventListener("click", async () => {
+        const response = await askServerToChangeListName(spanName.textContent, inputName.value)
+        if(name != inputName.value && response){
+            confirm.style.display = "none"
+            edit.style.display = "inline"
+            inputName.style.display = "none"
+            spanName.textContent = inputName.value
+            spanName.style.display = "inline"
+            newTr.id = inputName.value
         }
     })
 
@@ -177,7 +193,7 @@ function createLine(name, groupsForName){
         edit.style.display = "none"
         confirm.style.display = "inline"
         inputName.style.display = "inline-block"
-        spanName.textContent = ""
+        spanName.style.display = "none"
     })
 
     let tdCopy = document.createElement("td")
@@ -223,13 +239,6 @@ function createLine(name, groupsForName){
     tbody.appendChild(newTr)
 }
 
-function createButtonInLine(buttonName){
-    let td = document.createElement("td")
-    let button = createButton(buttonName)
-    td.append(button)
-    return td
-}
-
 function createButton(buttonName){
     let button = document.createElement("button")
     button.textContent = buttonName
@@ -237,22 +246,75 @@ function createButton(buttonName){
     return button
 }
 
-function askServerToChangeName(oldName, newName){
-    console.log("chaaannngeeement !!!")
+async function askServerToChangeListName(oldName, newName) {
+    let data = { "oldName": oldName, "newName": newName };
+    ipcRenderer.send("change-list-name", data);
+
+    // Attendre la réponse avec une promesse simplifiée
+    const response = await new Promise((resolve) => {
+        ipcRenderer.once('response-change-list-name', (event, data) => {
+            resolve(data);
+        });
+    });
+
+    console.log(response);
+    return response;
 }
 
 function askServerToCopyList(listNameToCopy){
-    return listNameToCopy + " - Copy"
+    
+    ipcRenderer.send("copy-list", listNameToCopy)
+
+    let newNameResponse = null
+    ipcRenderer.on('response-copy-list', (event, data) => {
+        newNameResponse = data
+    });
+    return newNameResponse
+    // return listNameToCopy + " - Copy"
 }
 
 function askServerToRemoveList(listNameToRemove){
-    return true
+    ipcRenderer.send("remove-list", listNameToRemove)
+
+    let response = null
+    ipcRenderer.on('response-remove-list', (event, data) => {
+        response = data
+    });
+    return response
+    // return true
 }
 
 function askServerToAddNewList(name){
-    return true
+    ipcRenderer.send("add-list", listNameToRemove)
+
+    let response = null
+    ipcRenderer.on('response-add-list', (event, data) => {
+        response = data
+    });
+    return response
+    // return true
 }
 
 function askServerToAddNewGroup(name){
-    return true
+    ipcRenderer.send("add-group", listNameToRemove)
+
+    let response = null
+    ipcRenderer.on('response-add-group', (event, data) => {
+        response = data
+    });
+    return response
+    // return true
 }
+
+function askServerToEditGroupsForListName(listConcernedByPopGroups, listGroupsToAdd){
+    let data = {"listName":listConcernedByPopGroups, "listGroups":listGroupsToAdd}
+    ipcRenderer.send("change-list-name-groups", data)
+
+    let response = null
+    ipcRenderer.on('response-change-list-name-groups', (event, data) => {
+        response = data
+    });
+    return  response
+}
+
+
