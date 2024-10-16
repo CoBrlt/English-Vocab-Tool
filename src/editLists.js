@@ -40,7 +40,7 @@ function handleGroups(){
     })
 
     let buttonConfirmPopup = document.getElementById("button_confirm_popup")
-    buttonConfirmPopup.addEventListener("click", ()=>{
+    buttonConfirmPopup.addEventListener("click", async ()=>{
         listGroupsToAdd = []
         allCheckboxs = document.querySelectorAll(".checkbox-group")
         for(checkbox of allCheckboxs){
@@ -48,18 +48,27 @@ function handleGroups(){
                 listGroupsToAdd.push(checkbox.name)
             }
         }
-        let newGroups = askServerToEditGroupsForListName(listConcernedByPopGroups, listGroupsToAdd)
-        if(newGroups != null){
+        let newGroups = await askServerToEditGroupsForListName(listConcernedByPopGroups, listGroupsToAdd)
+        if(newGroups){
             popup.style.display = "none"
             groups = newGroups
+            let trListConcerned = document.getElementById(listConcernedByPopGroups)
+            let tdGroups = trListConcerned.querySelector("td.groups")
+            tdGroups.innerHTML = ""
+            for(groupName of listGroupsToAdd){
+                span = document.createElement("span")
+                span.textContent = groupName
+                tdGroups.append(span)
+            }
+
         }
     })
 
     let buttonAddGroup = document.getElementById("button_add_group")
-    buttonAddGroup.addEventListener("click", ()=>{
+    buttonAddGroup.addEventListener("click", async ()=>{
         let input = document.getElementById("input_add_group")
         newGroupName = input.value
-        if(askServerToAddNewGroup(newGroupName)){
+        if(await askServerToAddNewGroup(newGroupName)){
             input.value = ""
             groups[newGroupName] = []
             createLineGroup(newGroupName)
@@ -117,10 +126,10 @@ function createLineGroup(groupName, checked=false){
 function handleAddList(){
     let input = document.getElementById("input_list_name_add")
     let button = document.getElementById("button_Add_list")
-    button.addEventListener('click', ()=>{
+    button.addEventListener('click', async ()=>{
         let newName = input.value
         input.value = ""
-        if(askServerToAddNewList(newName)){
+        if(await askServerToAddNewList(newName)){
             createLine(newName, [])
         }
     })
@@ -165,6 +174,7 @@ function createLine(name, groupsForName){
     tdName.append(inputName, spanName)
 
     let tdGroups = document.createElement("td")
+    tdGroups.className = "groups"
     for(let group of groupsForName){
         let spanGroupName = document.createElement("span")
         spanGroupName.textContent = group
@@ -198,16 +208,18 @@ function createLine(name, groupsForName){
 
     let tdCopy = document.createElement("td")
     let copyButton = createButton("Copy")
-    copyButton.addEventListener("click", ()=>{
-        let newListName = askServerToCopyList(spanName.textContent)
-        createLine(newListName, getGroupsOfListByName(newListName))
+    copyButton.addEventListener("click", async ()=>{
+        let newListName = await askServerToCopyList(spanName.textContent)
+        if(newListName){
+            createLine(newListName, getGroupsOfListByName(newListName))
+        }
     })
     tdCopy.append(copyButton)
 
 
     let tdDelete = document.createElement("td")
     let deleteButton = createButton("Delete")
-    deleteButton.addEventListener("click", ()=>{
+    deleteButton.addEventListener("click", async ()=>{
         if(askServerToRemoveList(name)){
             newTr.remove()
         }
@@ -261,59 +273,63 @@ async function askServerToChangeListName(oldName, newName) {
     return response;
 }
 
-function askServerToCopyList(listNameToCopy){
+async function askServerToCopyList(listNameToCopy){
     
     ipcRenderer.send("copy-list", listNameToCopy)
 
-    let newNameResponse = null
-    ipcRenderer.on('response-copy-list', (event, data) => {
-        newNameResponse = data
-    });
+    let newNameResponse = await new Promise((resolve)=>{
+        ipcRenderer.once('response-copy-list', (event, data) => {
+            resolve(data)
+        });
+    })
     return newNameResponse
-    // return listNameToCopy + " - Copy"
 }
 
-function askServerToRemoveList(listNameToRemove){
+async function askServerToRemoveList(listNameToRemove){
     ipcRenderer.send("remove-list", listNameToRemove)
 
-    let response = null
-    ipcRenderer.on('response-remove-list', (event, data) => {
-        response = data
-    });
+    let response = await new Promise((resolve)=>{
+        ipcRenderer.on('response-remove-list', (event, data) => {
+            resolve(data)
+        });
+    })
     return response
     // return true
 }
 
-function askServerToAddNewList(name){
-    ipcRenderer.send("add-list", listNameToRemove)
+async function askServerToAddNewList(name){
+    ipcRenderer.send("add-list", name)
 
-    let response = null
-    ipcRenderer.on('response-add-list', (event, data) => {
-        response = data
-    });
+    let response = await new Promise((resolve)=>{
+        ipcRenderer.on('response-add-list', (event, data) => {
+            resolve(data)
+        });
+    })
     return response
     // return true
 }
 
-function askServerToAddNewGroup(name){
-    ipcRenderer.send("add-group", listNameToRemove)
+async function askServerToAddNewGroup(name){
+    ipcRenderer.send("add-group", name)
 
-    let response = null
-    ipcRenderer.on('response-add-group', (event, data) => {
-        response = data
-    });
+    let response = await new Promise((resolve)=>{
+        ipcRenderer.on('response-add-group', (event, data) => {
+            resolve(data)
+        });
+    })
     return response
     // return true
 }
 
-function askServerToEditGroupsForListName(listConcernedByPopGroups, listGroupsToAdd){
+async function askServerToEditGroupsForListName(listConcernedByPopGroups, listGroupsToAdd){
     let data = {"listName":listConcernedByPopGroups, "listGroups":listGroupsToAdd}
     ipcRenderer.send("change-list-name-groups", data)
 
-    let response = null
-    ipcRenderer.on('response-change-list-name-groups', (event, data) => {
-        response = data
-    });
+    let response = await new Promise((resolve)=>{
+        ipcRenderer.on('response-change-list-name-groups', (event, data) => {
+            resolve(data)
+        });
+    })
     return  response
 }
 

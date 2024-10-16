@@ -1,4 +1,46 @@
 {
-    "vocabX":["vocab0", "vocab1", "vocab2"],
-    "vocabY":["vocab1", "vocab5", "vocab7", "verbes a particule"]
+    "vocabX": [
+        "vocab0",
+        "vocab1",
+        "vocab2",
+        "vocab6"
+    ],
+    "vocabY": [
+        "vocab1",
+        "vocab5",
+        "vocab7",
+        "verbes a particule",
+        "mkjeeeeeeeh",
+        "testaze - Copy",
+        "vocab inpt",
+        "vocab7 - Copy",
+        "vocab6"
+    ],
+    "zegrzege": [
+        "mkjeeeeeeeh",
+        "testaze - Copy",
+        "vocab6"
+    ],
+    "ezzz": [
+        "mkjeeeeeeeh",
+        "vocab bonus",
+        "zerrgzrzee",
+        "vocab6"
+    ],
+    "newg": [
+        "testaze",
+        "testaze - Copy - Copy - Copy - Copy",
+        "testaze - Copy - Copy",
+        "vocab inpt",
+        "vocab7 - Copy",
+        "vocab6"
+    ],
+    "<strong>": [
+        "testaze",
+        "testaze - Copy - Copy",
+        "zerrgzrzee"
+    ],
+    "aaa": [
+        "vocab6"
+    ]
 }
