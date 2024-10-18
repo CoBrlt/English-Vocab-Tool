@@ -16,7 +16,7 @@ const createWindow = () => {
       }
     })
     // win.maximize();
-    win.loadFile('./src/home.html')
+    win.loadFile('./src/editWords.html')
 }
 
 function getListFiles(){

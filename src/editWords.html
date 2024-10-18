@@ -7,39 +7,103 @@
     <title>Edit Lists</title>
 </head>
 <body>
+    <script src="editWords.js"></script>
     <div class="container">
-        <div class="tools_bar">
-            <button class="button_tool_bar">Ajouter une ligne</button>
-            <select class="list_selector">
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-            </select>
-        </div>
-
-        <h1>Tableau Modifiable</h1>
-
-        <table>
+        <h1 id="title_table"></h1>
+        <table class="word-table">
             <thead>
                 <tr>
-                    <th>Nom</th>
-                    <th>Âge</th>
-                    <th>Email</th>
-                    <th>Action</th>
+                    <th>English</th>
+                    <th>Translation</th>
+                    <th>Examples</th>
+                    <th></th>
+                    <th></th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="tbody_words">
                 <tr>
-                    <td><input type="text" value="Jean Dupont"></td>
-                    <td><input type="number" value="30"></td>
-                    <td><input type="email" value="jean.dupont@example.com"></td>
-                    <td><button class="button">Modifier</button></td>
+                    <td class="english"><input type="text" class="editable" placeholder="Enter English word"></td>
+                    <td class="translations">
+                        <div class="translation-item">
+                            <input type="text" class="editable" placeholder="Enter translation">
+                            <button class="btn-remove">×</button>
+                        </div>
+                        <button class="btn-add">Add translation</button>
+                    </td>
+                    <td class="examples">
+                        <div class="example-item">
+                            <textarea class="editable" placeholder="Enter English example"></textarea>
+                            <textarea class="editable" placeholder="Enter example translation "></textarea>
+                            <button class="btn-remove">×</button>
+                        </div>
+                        <button class="btn-add">Add example</button>
+                    </td>
+                    <td></td>
+                    <td><button class="button">Add</button></td>
                 </tr>
                 <tr>
-                    <td><input type="text" value="Marie Curie"></td>
-                    <td><input type="number" value="35"></td>
-                    <td><input type="email" value="marie.curie@example.com"></td>
-                    <td><button class="button">Modifier</button></td>
+                    <td><input type="text" class="editable" value="until"></td>
+                    <td class="translations">
+                        <div class="translation-item">
+                            <input type="text" class="editable" value="jusqu'à">
+                            <button class="btn-remove">×</button>
+                        </div>
+                        <div class="translation-item">
+                            <input type="text" class="editable" value="avant">
+                            <button class="btn-remove">×</button>
+                        </div>
+                        <!-- Ajout d'autres traductions ici -->
+                        <button class="btn-add">Add translation</button>
+                    </td>
+                    <td class="examples">
+                        <div class="example-item">
+                            <textarea class="editable">He has until ten to deliver his work.</textarea>
+                            <textarea class="editable">Il a jusqu'à dix heures pour envoyer son travail.</textarea>
+                            <button class="btn-remove">×</button>
+                        </div>
+                        <div class="example-item">
+                            <textarea class="editable">I pulled the rope until it was taut.</textarea>
+                            <textarea class="editable">J'ai tiré la corde jusqu'à ce qu'elle soit tendue.</textarea>
+                            <button class="btn-remove">×</button>
+                        </div>
+                        <!-- Ajout d'autres exemples ici -->
+                        <button class="btn-add">Add example</button>
+                    </td>
+                    <td><button class="button">Save</button></td>
+                    <td><button class="button">Delete</button></td>
                 </tr>
+                <tr>
+                    <td><input type="text" class="editable" value="until"></td>
+                    <td class="translations">
+                        <div class="translation-item">
+                            <input type="text" class="editable" value="jusqu'à">
+                            <button class="btn-remove">×</button>
+                        </div>
+                        <div class="translation-item">
+                            <input type="text" class="editable" value="avant">
+                            <button class="btn-remove">×</button>
+                        </div>
+                        <!-- Ajout d'autres traductions ici -->
+                        <button class="btn-add">Add translation</button>
+                    </td>
+                    <td class="examples">
+                        <div class="example-item">
+                            <textarea class="editable">He has until ten to deliver his work.</textarea>
+                            <textarea class="editable">Il a jusqu'à dix heures pour envoyer son travail.</textarea>
+                            <button class="btn-remove">×</button>
+                        </div>
+                        <div class="example-item">
+                            <textarea class="editable">I pulled the rope until it was taut.</textarea>
+                            <textarea class="editable">J'ai tiré la corde jusqu'à ce qu'elle soit tendue.</textarea>
+                            <button class="btn-remove">×</button>
+                        </div>
+                        <!-- Ajout d'autres exemples ici -->
+                        <button class="btn-add">Add example</button>
+                    </td>
+                    <td></td>
+                    <td><button class="button">Delete</button></td>
+                </tr>
+                <!-- Ajout d'autres mots ici -->
             </tbody>
         </table>
     </div>

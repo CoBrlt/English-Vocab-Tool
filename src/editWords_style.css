@@ -1,0 +1,190 @@
+/* Style général */
+html {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    color: #f0f0f0;
+}
+
+body {
+    background-color: #1b1b1b;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Titre */
+h1 {
+    text-align: center;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+/* Style du tableau */
+.word-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2b2b2b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.word-table thead {
+    background-color: #6C63FF;
+    color: white;
+}
+
+.word-table th, .word-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    vertical-align: top;
+}
+
+.word-table th {
+    font-size: 16px;
+}
+
+/* Style pour les champs de texte */
+.editable {
+    background-color: #333;
+    color: #f0f0f0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+/* Personnalisation du textarea */
+textarea.editable {
+    width: calc(100% - 24px);
+    min-height: 80px;
+    resize: vertical;
+    overflow-y: auto;
+}
+
+/* Personnalisation de la scrollbar pour les textarea */
+textarea.editable::-webkit-scrollbar {
+    width: 10px; /* Largeur de la scrollbar */
+}
+
+textarea.editable::-webkit-scrollbar-track {
+    background: #444; /* Couleur de la piste */
+    border-radius: 10px; /* Coins arrondis de la piste */
+}
+
+textarea.editable::-webkit-scrollbar-thumb {
+    background: #888; /* Couleur du pouce */
+    border-radius: 10px; /* Coins arrondis du pouce */
+}
+
+textarea.editable::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Couleur du pouce au survol */
+}
+
+/* Eviter le coin blanc dans le resize */
+textarea.editable::-webkit-resizer {
+    background: #333;
+}
+
+/* Effet focus pour les champs de texte */
+.editable:focus {
+    outline: none;
+    border-color: #6C63FF;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.6);
+}
+
+/* Style des traductions et exemples */
+.translation-item, .example-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.translation-item input, .example-item textarea {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Boutons d'ajout et de suppression */
+.btn-add {
+    background-color: #6C63FF;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #574bdb;
+}
+
+.btn-remove {
+    background-color: transparent;
+    border: none;
+    color: #999;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-remove:hover {
+    color: #FF4C4C;
+    background-color: rgba(255, 76, 76, 0.1);
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+    .word-table th, .word-table td {
+        padding: 10px;
+    }
+
+    .editable {
+        font-size: 12px;
+    }
+
+    textarea.editable {
+        min-height: 60px;
+    }
+}
+
+
+.button {
+    background-color: #6C63FF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #574bdb;
+    transform: translateY(-3px);
+}

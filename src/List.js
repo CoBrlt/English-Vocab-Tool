@@ -47,6 +47,10 @@ class List{
         return JSON.stringify(this, null, 4);
     }
 
+    getWords(){
+        return this.words
+    }
+
     
 
 }
