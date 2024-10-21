@@ -1,5 +1,6 @@
 const { ipcRenderer } = require('electron');
 const List = require("./List.js");
+const Word = require("./Word.js")
 const Example = require('./Example.js');
 var currentList = null;
 
@@ -14,7 +15,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     ipcRenderer.on('response-content-file', (event, data) => {
         currentList = new List()
         currentList.fromJson(data)
-        console.log(currentList)
+        // console.log(currentList)
         handleLineAdd()
         createAllLines()
     });
@@ -23,10 +24,90 @@ document.addEventListener("DOMContentLoaded", (event) => {
 function handleLineAdd(){
     let btnAddWord = document.getElementById("btn-add-word")
     btnAddWord.addEventListener("click", ()=>{
-        let tr = document.getElementById("tr-add-word")
-        let word = htmlTrToObjectWord(tr)
-        // askServerToAdd
+        let trAdd = document.getElementById("tr-add-word")
+        let word = htmlTrToObjectWord(trAdd)
+        if(askServerToAddWord(word)){
+            clearInputsAdd(trAdd)
+            let newTr = createLine(word)
+            trAdd.insertAdjacentElement("afterend", newTr)
+        }
     })
+
+    let btnAddTranslation = document.querySelector("#tr-add-word > td.translations > button.btn-add")
+    let div = createEmptyTranslationInput()
+    btnAddTranslation.insertAdjacentElement("beforebegin", div)
+    btnAddTranslation.addEventListener("click", ()=>{
+        
+        let div = createEmptyTranslationInput()
+        btnAddTranslation.insertAdjacentElement("beforebegin", div)
+    })
+
+    let btnAddExample = document.querySelector("#tr-add-word > td.examples > button.btn-add")
+    div = createEmptyExempleInput()
+    btnAddExample.insertAdjacentElement("beforebegin", div)
+    btnAddExample.addEventListener("click", ()=>{
+        
+        let div = createEmptyExempleInput()
+        btnAddExample.insertAdjacentElement("beforebegin", div)
+    })
+}
+
+function createEmptyTranslationInput(){
+    let div = document.createElement("div")
+    div.className = "translation-item"
+
+    let input = document.createElement("input")
+    input.type = "text"
+    input.className = "editable"
+    input.value = ""
+    input.placeholder = "Enter translation"
+
+
+    let buttonRemove = document.createElement("button")
+    buttonRemove.className = "btn-remove"
+    buttonRemove.textContent = "×"
+    buttonRemove.addEventListener("click", ()=>{
+        div.remove()
+    })
+
+    div.appendChild(input)
+    div.appendChild(buttonRemove)
+    return div
+}
+
+function createEmptyExempleInput(){
+    let div = document.createElement("div")
+    div.className = "example-item"
+
+    let createTextArea = (content, placeholder="", className="")=>{
+        let textArea = document.createElement("textarea")
+        textArea.className = "editable " + className
+        textArea.textContent = content
+        textArea.placeholder = placeholder
+        return textArea
+    }  
+    
+    let englishTextArea = createTextArea("", "Enter English Exemple", "englishExample")
+    let frenchTextArea = createTextArea("", "Enter example translation", "frenchExample")
+
+    let buttonRemove = document.createElement("button")
+    buttonRemove.className = "btn-remove"
+    buttonRemove.textContent = "×"
+    buttonRemove.addEventListener("click", ()=>{
+        div.remove()
+    })
+
+    div.appendChild(englishTextArea)
+    div.appendChild(frenchTextArea)
+    div.appendChild(buttonRemove)
+    return div
+}
+
+function clearInputsAdd(trAdd){
+    //il faut rétirer les inputs en trop
+    //il faut clear l'intérieur des inputs
+    let inputs = trAdd.querySelectorAll("input[type=text]")
+
 }
 
 function createAllLines(){
@@ -40,6 +121,7 @@ function createAllLines(){
 
 function createLine(word){
     let newTr = document.createElement("tr")
+    newTr.id = word.getEnglish()
     
     let tdDelete = document.createElement("td")
     let buttonDelete = document.createElement("button")
@@ -60,8 +142,9 @@ function createLine(word){
     buttonSave.textContent = "Save"
     buttonSave.style.display = "none"
     buttonSave.addEventListener("click", ()=>{
-        let word = htmlTrToObjectWord(newTr)
-        if(askServerToSaveWord(word)){
+        let wordToSave = htmlTrToObjectWord(newTr)
+        let oldNameWord = newTr.id
+        if(askServerToSaveWord(oldNameWord, wordToSave)){
             buttonSave.style.display = "none"
             buttonDelete.style.display = "inline-block"
         }
@@ -114,7 +197,7 @@ function createTranslationField(translationsList, showSaveAndHideDelete){
     td.className = "translations"
 
     for(let translation of translationsList){
-        let div = createInputTranslation(showSaveAndHideDelete, translation)
+        let div = createInputTranslation(showSaveAndHideDelete, translation, "Enter translation")
         td.appendChild(div)
     }
 
@@ -157,9 +240,9 @@ function createInputExample(showSaveAndHideDelete, example=null){
     let div = document.createElement("div")
     div.className = "example-item"
 
-    let createTextArea = (content, placeholder="")=>{
+    let createTextArea = (content, placeholder="", className="")=>{
         let textArea = document.createElement("textarea")
-        textArea.className = "editable"
+        textArea.className = "editable " + className
         textArea.textContent = content
         textArea.placeholder = placeholder
         textArea.addEventListener("input", ()=>{
@@ -168,8 +251,8 @@ function createInputExample(showSaveAndHideDelete, example=null){
         return textArea
     }  
     
-    let englishTextArea = createTextArea(example.getEnglish(), "Enter English Exemple")
-    let frenchTextArea = createTextArea(example.getFrench(), "Enter example translation")
+    let englishTextArea = createTextArea(example.getEnglish(), "Enter English Exemple", "englishExample")
+    let frenchTextArea = createTextArea(example.getFrench(), "Enter example translation", "frenchExample")
 
     let buttonRemove = document.createElement("button")
     buttonRemove.className = "btn-remove"
@@ -214,11 +297,48 @@ function createInputTranslation(showSaveAndHideDelete, translation="", placehole
 
 
 function htmlTrToObjectWord(tr){
-    return null
+    let word = new Word()
+    let inputEnglish = tr.querySelector("td.english > input")
+    if(inputEnglish){
+        word.english = inputEnglish.value
+    }else{
+        word.english = ""
+    }
+
+    let translations = tr.querySelectorAll("td.translations > div.translation-item > input") 
+    for(let translation of translations){
+        if(translation){
+            word.french.push(translation.value)
+        }else{
+            word.french.push("")
+        }
+    }
+
+    let exampleItems = tr.querySelectorAll("td.examples > div.example-item")
+    for(let exampleItem of exampleItems){
+        if(exampleItem){
+            let textAreaEnglish = exampleItem.querySelector(".englishExample")
+            let textAreaFrench = exampleItem.querySelector(".frenchExample")
+
+            let englishExample = ""
+            if(textAreaEnglish){
+                englishExample = textAreaEnglish.value
+            }
+
+            let frenchExample = ""
+            if(textAreaFrench){
+                frenchExample = textAreaFrench.value
+            }
+
+            let example = new Example(englishExample, frenchExample)
+            word.examples.push(example)
+        }
+    }
+    return word
 }
 
 
-function askServerToSaveWord(word){
+function askServerToSaveWord(oldNameWord, Newword){
     return true
 }
 
@@ -226,6 +346,9 @@ function askServerToRemoveWord(word){
     return true
 }
 
+function askServerToAddWord(word){
+    return true
+}
 
 function getListToEdit(){
     return "all"
