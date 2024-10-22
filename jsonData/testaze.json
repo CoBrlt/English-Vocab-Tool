@@ -1,25 +1,20 @@
 {
-    "name": "test",
+    "name": "testaze",
     "words": [
         {
-            "english": "put on",
+            "english": "aaaaddddcccbbaaaaaaput ooyfuyun",
             "french": [
                 "mettre",
-                "simuler",
-                "contrefaire"
+                "raf"
             ],
             "examples": [
                 {
-                    "english": "He put on his hat and went outside.",
-                    "french": "Il a mis son chapeau et est sorti."
+                    "english": "ubqg",
+                    "french": "jja"
                 },
                 {
-                    "english": "I put my coat on when it started to rain.",
-                    "french": "J'ai enfilé mon manteau quand il a commencé à pleuvoir."
-                },
-                {
-                    "english": "My mother put on a funny accent to make us laugh. ",
-                    "french": "Ma maman a simulé un accent amusant pour nous faire rire.\r"
+                    "english": "",
+                    "french": ""
                 }
             ]
         },

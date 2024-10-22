@@ -2,6 +2,9 @@ const { app, BrowserWindow, screen} = require('electron')
 const { ipcMain } = require("electron")
 const fs = require('fs');
 const path = require('path');
+const List = require("./src/List.js");
+const Word = require("./src/Word.js")
+const Example = require('./src/Example.js');
 
 const path_folder_vocab = "./jsonData"
 
@@ -97,6 +100,13 @@ function renameFile(oldName, newName){
 
 }
 
+function getObjectListFromFile(listName){
+    let listString = readFile(fileNameToPath(listName))
+    let list = new List() 
+    list.fromJson(listString)
+    return list
+}
+
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
@@ -134,7 +144,12 @@ ipcMain.on("change-list-name", (event, data)=>{
 })
 
 ipcMain.on("copy-list", (event, data)=>{
-    const response = copyFile(data, data+" - Copy")
+    let copyName = data + " - Copy"
+    const response = copyFile(data, copyName)
+    if(response){
+        let copiedList = getObjectListFromFile(copyName)
+        copiedList.setName(copyName)        
+    }
     event.sender.send("response-copy-list", response)
 })
 
@@ -203,4 +218,23 @@ ipcMain.on("remove-group", (event, data)=>{
         response = true
     }
     event.sender.send("response-remove-group", response)
+})
+
+ipcMain.on("edit-word", (event, data)=>{
+    let oldNameWord = data["oldNameWord"]
+    let newWord = data["newWord"]
+    let listName = data["listName"]
+
+    let list = getObjectListFromFile(listName)    
+    if(list.setWordByName(oldNameWord, newWord)){
+        let stringList = JSON.stringify(list, null, 4)
+        if(writeFile(fileNameToPath(listName), stringList)){
+            response = true
+        }else{
+            response = false
+        }
+    }else{
+        response = false
+    }
+    event.sender.send("response-edit-word", response)
 })

@@ -51,6 +51,21 @@ class List{
         return this.words
     }
 
+    setName(newName){
+        this.name = newName
+    }
+
+    setWordByName(oldNameWord, newWord){
+        for(let i = 0; i<this.words.length; i++){
+            if(this.words[i].getEnglish() == oldNameWord){
+                this.words[i] = new Word()
+                this.words[i].fromJson(newWord)
+                return true
+            }
+        }
+        return false
+    }
+
     
 
 }

@@ -6,18 +6,20 @@ var currentList = null;
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
-
+    let html = document.getElementsByTagName("table")[0]
+    html.style.display = "none"
     let listToEdit = getListToEdit()
     document.getElementById("title_table").textContent = "List Name : " + listToEdit
 
     ipcRenderer.send("ask-content-file", listToEdit)
 
     ipcRenderer.on('response-content-file', (event, data) => {
+        
         currentList = new List()
         currentList.fromJson(data)
-        // console.log(currentList)
         handleLineAdd()
         createAllLines()
+        html.style.display = "block"
     });
 })
 
@@ -106,7 +108,26 @@ function createEmptyExempleInput(){
 function clearInputsAdd(trAdd){
     //il faut rétirer les inputs en trop
     //il faut clear l'intérieur des inputs
-    let inputs = trAdd.querySelectorAll("input[type=text]")
+    let inputs = trAdd.querySelector("td.english > input")
+    inputs.value = ""
+
+    inputs = trAdd.querySelectorAll("td.translations > div.translation-item")
+    for(let input of inputs){
+        input.remove()
+    }
+
+    inputs = trAdd.querySelectorAll("td.examples > div.example-item")
+    for(let input of inputs){
+        input.remove()
+    }
+
+    let btnAddExample = trAdd.querySelector("td.examples > button.btn-add")
+    let div = createEmptyExempleInput()
+    btnAddExample.insertAdjacentElement("beforebegin", div)
+
+    let btnAddTranslation = document.querySelector("td.translations > button.btn-add")
+    div = createEmptyTranslationInput()
+    btnAddTranslation.insertAdjacentElement("beforebegin", div)
 
 }
 
@@ -141,12 +162,13 @@ function createLine(word){
     buttonSave.className = "button"
     buttonSave.textContent = "Save"
     buttonSave.style.display = "none"
-    buttonSave.addEventListener("click", ()=>{
+    buttonSave.addEventListener("click", async ()=>{
         let wordToSave = htmlTrToObjectWord(newTr)
         let oldNameWord = newTr.id
-        if(askServerToSaveWord(oldNameWord, wordToSave)){
+        if(await askServerToEditWord(oldNameWord, wordToSave)){
             buttonSave.style.display = "none"
             buttonDelete.style.display = "inline-block"
+            newTr.id = wordToSave.getEnglish()
         }
     })
     tdSave.append(buttonSave)
@@ -338,8 +360,17 @@ function htmlTrToObjectWord(tr){
 }
 
 
-function askServerToSaveWord(oldNameWord, Newword){
-    return true
+async function askServerToEditWord(oldNameWord, newWord){
+    
+    let data = {"oldNameWord":oldNameWord, "newWord":newWord, "listName":currentList.name}
+    ipcRenderer.send("edit-word", data)
+
+    let newNameResponse = await new Promise((resolve)=>{
+        ipcRenderer.once('response-edit-word', (event, data) => {
+            resolve(data)
+        });
+    })
+    return newNameResponse
 }
 
 function askServerToRemoveWord(word){
@@ -351,5 +382,5 @@ function askServerToAddWord(word){
 }
 
 function getListToEdit(){
-    return "all"
+    return "testaze"
 }
