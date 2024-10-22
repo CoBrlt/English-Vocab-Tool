@@ -238,3 +238,22 @@ ipcMain.on("edit-word", (event, data)=>{
     }
     event.sender.send("response-edit-word", response)
 })
+
+ipcMain.on("remove-word", (event, data)=>{
+    let wordName = data["wordName"]
+    let listName = data["listName"]
+    console.log(wordName)
+
+    let list = getObjectListFromFile(listName)    
+    if(list.removeWordByName(wordName)){
+        let stringList = JSON.stringify(list, null, 4)
+        if(writeFile(fileNameToPath(listName), stringList)){
+            response = true
+        }else{
+            response = false
+        }
+    }else{
+        response = false
+    }
+    event.sender.send("response-remove-word", response)
+})

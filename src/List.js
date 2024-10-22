@@ -66,7 +66,15 @@ class List{
         return false
     }
 
-    
+    removeWordByName(wordName){
+        for(let i = 0; i<this.words.length; i++){
+            if(this.words[i].getEnglish() == wordName){
+                this.words.splice(i, i)
+                return true
+            }
+        }
+        return false
+    }
 
 }
 

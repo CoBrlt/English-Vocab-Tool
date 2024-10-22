@@ -148,9 +148,9 @@ function createLine(word){
     let buttonDelete = document.createElement("button")
     buttonDelete.className = "button"
     buttonDelete.textContent = "Delete"
-    buttonDelete.addEventListener("click", ()=>{
-        let word = null
-        if(askServerToRemoveWord(word)){
+    buttonDelete.addEventListener("click", async ()=>{
+        let wordName = newTr.id
+        if(await askServerToRemoveWord(wordName)){
             newTr.remove()
         }
     })
@@ -365,16 +365,24 @@ async function askServerToEditWord(oldNameWord, newWord){
     let data = {"oldNameWord":oldNameWord, "newWord":newWord, "listName":currentList.name}
     ipcRenderer.send("edit-word", data)
 
-    let newNameResponse = await new Promise((resolve)=>{
+    let response = await new Promise((resolve)=>{
         ipcRenderer.once('response-edit-word', (event, data) => {
             resolve(data)
         });
     })
-    return newNameResponse
+    return response
 }
 
-function askServerToRemoveWord(word){
-    return true
+async function askServerToRemoveWord(wordName){
+    let data = {"wordName":wordName, "listName":currentList.name}
+    ipcRenderer.send("remove-word", data)
+
+    let response = await new Promise((resolve)=>{
+        ipcRenderer.once('response-remove-word', (event, data) => {
+            resolve(data)
+        });
+    })
+    return response
 }
 
 function askServerToAddWord(word){

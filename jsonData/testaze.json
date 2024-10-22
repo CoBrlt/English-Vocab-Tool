@@ -19,32 +19,6 @@
             ]
         },
         {
-            "english": "hang",
-            "french": [
-                "être suspendu",
-                "être accroché",
-                "planement"
-            ],
-            "examples": [
-                {
-                    "english": "I hung a mirror on the wall with a mounting bracket.",
-                    "french": "J'ai accroché un miroir au mur avec un support de montage."
-                },
-                {
-                    "english": "I will hang my clothes out to dry.",
-                    "french": "Je vais suspendre mes vêtements pour les sécher."
-                },
-                {
-                    "english": "A swing hangs from the tree in the garden.",
-                    "french": "Une balançoire pend à l'arbre dans le jardin."
-                },
-                {
-                    "english": "A beautiful chandelier hung from the ceiling.",
-                    "french": "Un beau lustre était suspendu au plafond.\r"
-                }
-            ]
-        },
-        {
             "english": "fold",
             "french": [
                 "pli",
@@ -97,76 +71,6 @@
                 {
                     "english": "I asked my son to put away his toys.",
                     "french": "J'ai demandé à mon fils de ranger ses jouets.\r"
-                }
-            ]
-        },
-        {
-            "english": "to tie",
-            "french": [
-                "lacer",
-                "s'attacher"
-            ],
-            "examples": [
-                {
-                    "english": "She tied a ribbon around the gift.",
-                    "french": "Elle a noué un ruban autour du cadeau."
-                },
-                {
-                    "english": "We tied a red ribbon around the box.",
-                    "french": "Nous avons attaché un ruban rouge autour de la boîte."
-                },
-                {
-                    "english": "Yesterday, my son tied his own shoes for the first time.",
-                    "french": "Hier, mon fils a lacé ses chaussures tout seul pour la première fois.\r"
-                }
-            ]
-        },
-        {
-            "english": "wrap",
-            "french": [
-                "enveloppement",
-                "emballage",
-                "châle",
-                "langer"
-            ],
-            "examples": [
-                {
-                    "english": "The child wrapped the birthday gift with great care.",
-                    "french": "L'enfant a emballé le cadeau d'anniversaire avec grand soin."
-                },
-                {
-                    "english": "The mother wrapped her baby in a warm blanket.",
-                    "french": "La mère a couvert son bébé avec une couverture chaude.\r"
-                }
-            ]
-        },
-        {
-            "english": "sweep",
-            "french": [
-                "ramoner",
-                "emporter",
-                "s'étendre",
-                "basculer",
-                "balayage",
-                "coup de balai",
-                "courbe"
-            ],
-            "examples": [
-                {
-                    "english": "I dusted the bookshelves and swept the floor.",
-                    "french": "J'ai épousseté les étagères et balayé le sol."
-                },
-                {
-                    "english": "She used a broom to sweep the floor.",
-                    "french": "Elle a utilisé un balai pour balayer le sol."
-                },
-                {
-                    "english": "I will sweep the chimney before winter comes.",
-                    "french": "Je vais ramoner la cheminée avant l'arrivée de l'hiver."
-                },
-                {
-                    "english": "I give the terrace a sweep every morning. ",
-                    "french": "Je donne un coup de balai à la terrasse chaque matin. \r"
                 }
             ]
         },
