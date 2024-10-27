@@ -19,7 +19,7 @@ const createWindow = () => {
       }
     })
     // win.maximize();
-    win.loadFile('./src/editWords.html')
+    win.loadFile('./src/home.html')
 }
 
 function getListFiles(){
@@ -242,7 +242,7 @@ ipcMain.on("edit-word", (event, data)=>{
 ipcMain.on("remove-word", (event, data)=>{
     let wordName = data["wordName"]
     let listName = data["listName"]
-    console.log(wordName)
+    // console.log(wordName)
 
     let list = getObjectListFromFile(listName)    
     if(list.removeWordByName(wordName)){
@@ -256,4 +256,24 @@ ipcMain.on("remove-word", (event, data)=>{
         response = false
     }
     event.sender.send("response-remove-word", response)
+})
+
+ipcMain.on("add-word", (event, data)=>{
+    let wordData = data["wordData"]
+    let listName = data["listName"]
+    
+    
+
+    let list = getObjectListFromFile(listName)    
+    if(list.addWord(wordData)){
+        let stringList = JSON.stringify(list, null, 4)
+        if(writeFile(fileNameToPath(listName), stringList)){
+            response = true
+        }else{
+            response = false
+        }
+    }else{
+        response = false
+    }
+    event.sender.send("response-add-word", response)
 })

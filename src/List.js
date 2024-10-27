@@ -76,6 +76,13 @@ class List{
         return false
     }
 
+    addWord(wordData){
+        let word = new Word()
+        word.fromJson(wordData)
+        this.words.push(word)
+        return true
+    }
+
 }
 
 module.exports = List;

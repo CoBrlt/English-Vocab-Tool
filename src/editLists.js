@@ -181,7 +181,11 @@ function createLine(name, groupsForName){
 
     let tdName = document.createElement("td")
     let spanName = document.createElement("span")
+    spanName.className = "listName"
     spanName.textContent = name
+    spanName.addEventListener("click", ()=>{
+        window.location.href ="./editWords.html?listName="+spanName.textContent
+    })
 
     let inputName = document.createElement("input")
     inputName.type = "text"

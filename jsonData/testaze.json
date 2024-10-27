@@ -4353,6 +4353,47 @@
                     "french": "La musique forte me dérange quand je lis."
                 }
             ]
+        },
+        {
+            "english": "agrze",
+            "french": [
+                ""
+            ],
+            "examples": [
+                {
+                    "english": "",
+                    "french": ""
+                }
+            ]
+        },
+        {
+            "english": "coucou les petits loups",
+            "french": [
+                "zz",
+                "agre"
+            ],
+            "examples": [
+                {
+                    "english": "aerae",
+                    "french": "fz"
+                },
+                {
+                    "english": "eee",
+                    "french": "q"
+                }
+            ]
+        },
+        {
+            "english": "\"",
+            "french": [
+                ""
+            ],
+            "examples": [
+                {
+                    "english": "",
+                    "french": ""
+                }
+            ]
         }
     ],
     "groups": []

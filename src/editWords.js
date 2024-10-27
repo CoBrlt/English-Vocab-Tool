@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 function handleLineAdd(){
     let btnAddWord = document.getElementById("btn-add-word")
-    btnAddWord.addEventListener("click", ()=>{
+    btnAddWord.addEventListener("click", async ()=>{
         let trAdd = document.getElementById("tr-add-word")
         let word = htmlTrToObjectWord(trAdd)
-        if(askServerToAddWord(word)){
+        if(await askServerToAddWord(word)){
             clearInputsAdd(trAdd)
             let newTr = createLine(word)
             trAdd.insertAdjacentElement("afterend", newTr)
@@ -385,10 +385,25 @@ async function askServerToRemoveWord(wordName){
     return response
 }
 
-function askServerToAddWord(word){
-    return true
+async function askServerToAddWord(word){
+    let data = {"wordData":word, "listName":currentList.name}
+    ipcRenderer.send("add-word", data)
+
+    let response = await new Promise((resolve)=>{
+        ipcRenderer.once('response-add-word', (event, data) => {
+            resolve(data)
+        });
+    })
+    return response
 }
 
 function getListToEdit(){
-    return "testaze"
+    // Récupérer l'URL actuelle
+    const currentUrl = window.location.href;
+
+    // Créer un objet URL à partir de l'URL actuelle
+    const url = new URL(currentUrl);
+
+    return url.searchParams.get('listName');
+    // return currentList
 }
