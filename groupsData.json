@@ -3,12 +3,18 @@
         "vocab0",
         "vocab1",
         "vocab2",
-        "vocab6"
+        "vocab6",
+        "gerondif",
+        "gerondif bonjour test",
+        "zerrgzrzee"
     ],
     "zegrzege": [
         "mkjeeeeeeeh",
         "testaze - Copy",
-        "vocab6"
+        "vocab6",
+        "gerondif",
+        "gerondif bonjour test",
+        "zerrgzrzee"
     ],
     "newg": [
         "testaze",
@@ -18,16 +24,33 @@
         "vocab7 - Copy",
         "vocab6",
         "gerondif bonjour",
-        "mkjeeeeeeeh"
+        "mkjeeeeeeeh",
+        "gerondif",
+        "testaze - Copy - ezaCopy",
+        "gerondif bonjour test"
     ],
     "<strong>": [
         "testaze",
         "testaze - Copy - Copy",
-        "zerrgzrzee",
-        "mkjeeeeeeeh"
+        "mkjeeeeeeeh",
+        "gerondif",
+        "testaze - Copy - ezaCopy",
+        "gerondif bonjour test"
     ],
     "aaa": [
         "vocab6",
-        "gerondif bonjour"
+        "gerondif bonjour",
+        "gerondif",
+        "testaze - Copy - ezaCopy",
+        "gerondif bonjour test",
+        "zerrgzrzee",
+        "gerondif - Copy"
+    ],
+    "pour": [
+        "testesttesttesttest",
+        "gerondif - Copy"
+    ],
+    "lu": [
+        "gerondif - Copy"
     ]
 }

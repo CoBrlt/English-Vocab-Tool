@@ -32,7 +32,7 @@ function readFile(path){
         const data = fs.readFileSync(path, "utf8")
         return data
     }catch(err){
-        console.error("Error trying read file")
+        console.error("Error trying read file : ", err)
         return false
     }
 }
@@ -42,26 +42,27 @@ function copyFile(fileNameSrc, fileNameDest){
     pathDest = fileNameToPath(fileNameDest)
     
     let response = fileNameDest
-    
-    fs.copyFile(pathSrc, pathDest, (err) => {
-        if (err) {
-            console.error('Error copying the file:', err);
-            response = false
-        }
-    });
-    return response
+    try{
+
+        fs.copyFileSync(pathSrc, pathDest)
+        return response
+    }catch(err){
+        console.error('Error copying the file:', err);
+        // response = false
+        return false
+    }
 }
 
 function writeFile(path, content){
     let success = true
 
-    fs.writeFile(path, content, (err) => {
-        if (err) {
-            console.error('Erreur lors de l\'écriture dans le fichier:', err);
-            success = false
-        }
-    })
-    return success
+    try{
+        let data = fs.writeFileSync(path, content)
+        return success
+    }catch(err){
+        console.log("Error during writing file : ", err)
+        return false
+    }
 }
 
 function removeFile(fileName){
@@ -89,18 +90,17 @@ function renameFile(oldName, newName){
 
     let success = true
 
-    fs.rename(oldName, newName, (err) => {
-        if (err) {
-            console.error('Erreur lors du renommage du fichier:', err);
-            success = false
-        }
-    })
-    
-    return success
-
+    try{
+        fs.renameSync(oldName, newName)
+        return true
+    }catch(err){
+        console.error('Erreur lors du renommage du fichier:', err);
+        return false
+    }
 }
 
 function getObjectListFromFile(listName){
+    console.log(listName)
     let listString = readFile(fileNameToPath(listName))
     let list = new List() 
     list.fromJson(listString)
@@ -140,16 +140,21 @@ ipcMain.on("ask-content-file", (event, data) =>{
 
 ipcMain.on("change-list-name", (event, data)=>{
     const response = renameFile(data["oldName"], data["newName"])
+    let listRenamed = getObjectListFromFile(data["newName"])
+    listRenamed.setName(data["newName"])
+    writeFile(fileNameToPath(data["newName"]), JSON.stringify(listRenamed, null, 4))
     event.sender.send("response-change-list-name", response)
 })
 
 ipcMain.on("copy-list", (event, data)=>{
     let copyName = data + " - Copy"
     const response = copyFile(data, copyName)
+    let copiedList = null
     if(response){
-        let copiedList = getObjectListFromFile(copyName)
+        copiedList = getObjectListFromFile(copyName)
         copiedList.setName(copyName)        
     }
+    writeFile(fileNameToPath(copyName), JSON.stringify(copiedList, null, 4))
     event.sender.send("response-copy-list", response)
 })
 
@@ -191,9 +196,15 @@ ipcMain.on("change-list-name-groups", (event, data)=>{
     if(groupsData){
         groupsData = JSON.parse(groupsData)
 
-        for(group in groupsData){
+        for(let group in groupsData){
             if(listGroups.includes(group) && !groupsData[group].includes(listName)){
                 groupsData[group].push(listName)
+            }
+            if(groupsData[group].includes(listName) && !listGroups.includes(group)){
+                let index = groupsData[group].indexOf(listName);
+                if (index !== -1) {
+                    groupsData[group].splice(index, 1);
+                }
             }
         }
         
@@ -276,4 +287,22 @@ ipcMain.on("add-word", (event, data)=>{
         response = false
     }
     event.sender.send("response-add-word", response)
+})
+
+ipcMain.on("get-groups-for-one-list", (event, data)=>{
+    let listGroups = []
+    let listName = data
+
+    let groupsData = readFile("./groupsData.json")
+    if(groupsData){
+        groupsData = JSON.parse(groupsData)
+
+        for(let group in groupsData){
+            if(groupsData[group].includes(listName)){
+                listGroups.push(group)
+            }
+        }
+    }
+    console.log(listGroups)
+    event.sender.send("response-get-groups-for-one-list", listGroups)
 })

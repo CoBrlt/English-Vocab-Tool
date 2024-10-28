@@ -53,12 +53,12 @@ function handleGroups(){
             popup.style.display = "none"
             groups = newGroups
             let trListConcerned = document.getElementById(listConcernedByPopGroups)
-            let tdGroups = trListConcerned.querySelector("td.groups")
-            tdGroups.innerHTML = ""
+            let divGroups = trListConcerned.querySelector("td.groups > div.divGroups")
+            divGroups.innerHTML = ""
             for(groupName of listGroupsToAdd){
                 span = document.createElement("span")
                 span.textContent = groupName
-                tdGroups.append(span)
+                divGroups.append(span)
             }
 
         }
@@ -119,7 +119,7 @@ function createLineGroup(groupName, checked=false){
     buttonDeleteGroup.addEventListener("click", async ()=>{
         if(await askServerToRemoveGroup(groupName)){
             newTr.remove()
-            let allSpanGroupsHtml = document.querySelectorAll("td.groups > span")
+            let allSpanGroupsHtml = document.querySelectorAll("td.groups > div.divGroups > span")
             console.log(allSpanGroupsHtml)
             for(let spanGroupHtml of allSpanGroupsHtml){
                 if(spanGroupHtml.textContent == groupName){
@@ -196,11 +196,14 @@ function createLine(name, groupsForName){
 
     let tdGroups = document.createElement("td")
     tdGroups.className = "groups"
+    let divGroups = document.createElement("div")
+    divGroups.className = "divGroups"
     for(let group of groupsForName){
         let spanGroupName = document.createElement("span")
         spanGroupName.textContent = group
-        tdGroups.append(spanGroupName)
+        divGroups.append(spanGroupName)
     }
+    tdGroups.append(divGroups)
 
     let tdEdit = document.createElement("td")
     let confirm = createButton("Confirm")
@@ -250,11 +253,12 @@ function createLine(name, groupsForName){
 
     let tdGroupsButton = document.createElement("td")
     let groupsButton = createButton("Groups")
-    groupsButton.addEventListener("click", ()=>{
+    groupsButton.addEventListener("click", async ()=>{
         removeAllLinesGroup()
         let popup = document.getElementById("popup")
         popup.style.display = "flex"
-        createAllLinesGroup(groupsForName)
+        let groupsToCheck = await askServerToGetGroupsForOneList(spanName.textContent)
+        createAllLinesGroup(groupsToCheck)
         let popup_checkbox = document.getElementById("popup_checkbox")
         popup_checkbox.scrollTop = 0
         listConcernedByPopGroups = spanName.textContent
@@ -344,6 +348,7 @@ async function askServerToAddNewGroup(name){
 
 async function askServerToEditGroupsForListName(listConcernedByPopGroups, listGroupsToAdd){
     let data = {"listName":listConcernedByPopGroups, "listGroups":listGroupsToAdd}
+    console.log(listGroupsToAdd)
     ipcRenderer.send("change-list-name-groups", data)
 
     let response = await new Promise((resolve)=>{
@@ -360,6 +365,18 @@ async function askServerToRemoveGroup(groupName){
 
     let response = await new Promise((resolve)=>{
         ipcRenderer.on('response-remove-group', (event, data) => {
+            resolve(data)
+        });
+    })
+    return  response
+}
+
+async function askServerToGetGroupsForOneList(listName){
+    ipcRenderer.send("get-groups-for-one-list", listName)
+    console.log("envoye")
+
+    let response = await new Promise((resolve)=>{
+        ipcRenderer.on('response-get-groups-for-one-list', (event, data) => {
             resolve(data)
         });
     })
