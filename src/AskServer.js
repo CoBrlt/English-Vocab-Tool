@@ -15,19 +15,19 @@ class AskServer{
             });
         });
 
-        return response;
+        return handleResponse(response);
     }
 
     static async askServerToCopyList(listNameToCopy){
         
         ipcRenderer.send("copy-list", listNameToCopy)
 
-        let newNameResponse = await new Promise((resolve)=>{
+        let response = await new Promise((resolve)=>{
             ipcRenderer.once('response-copy-list', (event, data) => {
                 resolve(data)
             });
         })
-        return newNameResponse
+        return handleResponse(response)
     }
 
     static async askServerToRemoveList(listNameToRemove){
@@ -38,7 +38,7 @@ class AskServer{
                 resolve(data)
             });
         })
-        return response
+        return handleResponse(response)
         // return true
     }
 
@@ -50,7 +50,7 @@ class AskServer{
                 resolve(data)
             });
         })
-        return response
+        return handleResponse(response)
         // return true
     }
 
@@ -62,7 +62,7 @@ class AskServer{
                 resolve(data)
             });
         })
-        return response
+        return handleResponse(response)
         // return true
     }
 
@@ -76,7 +76,7 @@ class AskServer{
                 resolve(data)
             });
         })
-        return  response
+        return  handleResponse(response)
     }
 
 
@@ -88,7 +88,7 @@ class AskServer{
                 resolve(data)
             });
         })
-        return  response
+        return  handleResponse(response)
     }
 
     static async askServerToGetGroupsForOneList(listName){
@@ -100,7 +100,7 @@ class AskServer{
                 resolve(data)
             });
         })
-        return  response
+        return  handleResponse(response)
     }
 
     static async askServerToEditWord(oldNameWord, newWord){
@@ -113,7 +113,7 @@ class AskServer{
                 resolve(data)
             });
         })
-        return response
+        return handleResponse(response)
     }
     
     static async askServerToRemoveWord(wordName){
@@ -125,7 +125,7 @@ class AskServer{
                 resolve(data)
             });
         })
-        return response
+        return handleResponse(response)
     }
     
     static async askServerToAddWord(word){
@@ -137,7 +137,7 @@ class AskServer{
                 resolve(data)
             });
         })
-        return response
+        return handleResponse(response)
     }
 
     static async askServerToGetGroups(){
@@ -149,7 +149,7 @@ class AskServer{
                 resolve(data)
             });
         })
-        return response
+        return handleResponse(response)
     }
 
     static async askServerToGetListNames(){
@@ -161,7 +161,7 @@ class AskServer{
                 resolve(data)
             });
         })
-        return response
+        return handleResponse(response)
     }
 
     static async askServerToGetListContent(listName){
@@ -172,7 +172,7 @@ class AskServer{
                 resolve(data)
             });
         })
-        return response
+        return handleResponse(response)
     }
 
     static async askServerToGetListsInGroup(groupName){
@@ -184,8 +184,22 @@ class AskServer{
             });
         })
 
-        return response
+        return handleResponse(response)
     }
+
+}
+
+function handleResponse(response){
+    if(response.notify){
+        let typeNotif = null 
+        if(response.success){
+            typeNotif = "success"
+        }else{
+            typeNotif = "error"
+        }
+        notifier.show(response.message, typeNotif)
+    }
+    return response.data
 }
 
 module.exports = AskServer;

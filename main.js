@@ -5,6 +5,8 @@ const path = require('path');
 const List = require("./src/List.js");
 const Word = require("./src/Word.js")
 const Example = require('./src/Example.js');
+const Response = require("./src/Response.js")
+const response = new Response()
 
 const path_folder_vocab = "./jsonData"
 
@@ -23,8 +25,13 @@ const createWindow = () => {
 }
 
 function getListFiles(){
-    let fichiers = fs.readdirSync(path_folder_vocab)
-    return fichiers
+    try{
+        let fichiers = fs.readdirSync(path_folder_vocab)
+        return fichiers
+    }catch(err){
+        console.error("Error reading Diretory : ", err)
+        return false
+    }
 }
 
 function readFile(path){
@@ -318,30 +325,40 @@ ipcMain.on("get-groups-for-one-list", (event, data)=>{
 
     let groupsData = readFile("./groupsData.json")
     if(groupsData){
-        groupsData = JSON.parse(groupsData)
-
-        for(let group in groupsData){
-            if(groupsData[group].includes(listName)){
-                listGroups.push(group)
+        try{
+            groupsData = JSON.parse(groupsData)
+            for(let group in groupsData){
+                if(groupsData[group].includes(listName)){
+                    listGroups.push(group)
+                }
             }
+        }catch(err){
+            response.set(false,  false, "Error parsing JSON group data")
         }
+
+    }else{
+        response.set(false, false, "Error reading file", true)
     }
-    console.log(listGroups)
     event.sender.send("response-get-groups-for-one-list", listGroups)
 })
 
 ipcMain.on("get-lists-in-group", (event, data)=>{
-    console.log("test")
-    let response = false
     let groupName = data
     let groupsData = readFile("./groupsData.json")
     if(groupsData){
-        groupsData = JSON.parse(groupsData)
-
-        if(groupName in groupsData){
-            response = groupsData[groupName]
+        try{
+            groupsData = JSON.parse(groupsData)
+            if(groupName in groupsData){
+                response.set(groupsData[groupName], true, "Success", false)
+            }else{
+                response.set(false, false, "Group name : " + groupName + " not found", true)
+            }
+        }catch(err){
+            response.set(false,  false, "Error parsing JSON group data")
         }
         
+    }else{
+        response.set(false, false, "Error reading file", true)
     }
     event.sender.send("response-get-lists-in-group", response)
 })
