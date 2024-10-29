@@ -1,12 +1,12 @@
 const { ipcRenderer } = require('electron');
 const List = require("./List.js");
 const AskServer = require('./AskServer.js');
-// var selectOptionChoosen = null
 var english_hidden = false
 var wordChoosen = null
 var counter = 0
 var isListOption = true
 var listChoosen = null
+
 
 
 document.addEventListener("DOMContentLoaded", (event) => {

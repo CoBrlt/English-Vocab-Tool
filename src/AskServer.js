@@ -1,4 +1,6 @@
 const { ipcRenderer } = require('electron');
+const NotificationManager = require("./NotificationManager.js")
+var notifier = new NotificationManager()
 
 class AskServer{
 
@@ -13,7 +15,6 @@ class AskServer{
             });
         });
 
-        console.log(response);
         return response;
     }
 
@@ -182,6 +183,7 @@ class AskServer{
                 resolve(data)
             });
         })
+
         return response
     }
 }
