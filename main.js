@@ -121,19 +121,19 @@ app.whenReady().then(() => {
 })
 
 
-ipcMain.on('ask-data', (event, data) => {
+ipcMain.on('get-data', (event, data) => {
     // console.log('Données reçues du front :', data);
     let response
-    if(data == "file-list"){
+    if(data == "list-names"){
         response = getListFiles();
-        event.sender.send('response-file-list', response);
+        event.sender.send('response-list-names', response);
     }else if(data == "groups"){
         response = readFile("./groupsData.json");
         event.sender.send("response-groups", response)
     }
 });
 
-ipcMain.on("ask-content-file", (event, data) =>{
+ipcMain.on("get-content-file", (event, data) =>{
     const response = readFile(path_folder_vocab + "/" + data + ".json")
     event.sender.send("response-content-file", response)
 })
@@ -160,6 +160,29 @@ ipcMain.on("copy-list", (event, data)=>{
 
 ipcMain.on("remove-list", (event, data)=>{
     const response = removeFile(data)
+    
+    let listName = data
+    let groupsData = readFile("./groupsData.json")
+    if(groupsData){
+        groupsData = JSON.parse(groupsData)
+
+        for(let group in groupsData){
+
+            if(groupsData[group].includes(listName)){
+                let index = groupsData[group].indexOf(listName);
+                if (index !== -1) {
+                    groupsData[group].splice(index, 1);
+                }
+            }
+        }
+        
+        groupsData = JSON.stringify(groupsData, null, 4)
+        if(!writeFile("./groupsData.json", groupsData)){
+            response = false
+        }
+    }
+
+
     event.sender.send("response-remove-list", response)
 })
 
@@ -305,4 +328,20 @@ ipcMain.on("get-groups-for-one-list", (event, data)=>{
     }
     console.log(listGroups)
     event.sender.send("response-get-groups-for-one-list", listGroups)
+})
+
+ipcMain.on("get-lists-in-group", (event, data)=>{
+    console.log("test")
+    let response = false
+    let groupName = data
+    let groupsData = readFile("./groupsData.json")
+    if(groupsData){
+        groupsData = JSON.parse(groupsData)
+
+        if(groupName in groupsData){
+            response = groupsData[groupName]
+        }
+        
+    }
+    event.sender.send("response-get-lists-in-group", response)
 })

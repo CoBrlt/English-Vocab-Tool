@@ -116,3 +116,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; /* Couleur du pouce au survol */
 }
+
+#button_use_lists{
+    display: none;
+}

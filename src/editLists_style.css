@@ -115,6 +115,19 @@ td input {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.divGroups{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.divGroups > span{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #453bff31;
+}
 
 
 

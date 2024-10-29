@@ -83,6 +83,13 @@ class List{
         return true
     }
 
+    mergeList(list){
+        let newWords = list.getWords()
+        for(let newWord of newWords){
+            this.words.push(newWord)
+        }
+    }
+
 }
 
 module.exports = List;

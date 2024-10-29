@@ -2,25 +2,33 @@ const { ipcRenderer } = require('electron');
 const List = require("./List.js");
 const Word = require("./Word.js")
 const Example = require('./Example.js');
+const AskServer = require("./AskServer.js")
 var currentList = null;
 
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", async (event) => {
     let html = document.getElementsByTagName("table")[0]
     html.style.display = "none"
     let listToEdit = getListToEdit()
     document.getElementById("title_table").textContent = "List Name : " + listToEdit
 
-    ipcRenderer.send("ask-content-file", listToEdit)
+    
+    content = await AskServer.askServerToGetListContent(listToEdit)
+    currentList = new List()
+    currentList.fromJson(content)
+    handleLineAdd()
+    createAllLines()
+    html.style.display = "block"
+    // ipcRenderer.send("ask-content-file", listToEdit)
 
-    ipcRenderer.on('response-content-file', (event, data) => {
+    // ipcRenderer.on('response-content-file', (event, data) => {
         
-        currentList = new List()
-        currentList.fromJson(data)
-        handleLineAdd()
-        createAllLines()
-        html.style.display = "block"
-    });
+    //     currentList = new List()
+    //     currentList.fromJson(data)
+    //     handleLineAdd()
+    //     createAllLines()
+    //     html.style.display = "block"
+    // });
 })
 
 function handleLineAdd(){
@@ -28,7 +36,7 @@ function handleLineAdd(){
     btnAddWord.addEventListener("click", async ()=>{
         let trAdd = document.getElementById("tr-add-word")
         let word = htmlTrToObjectWord(trAdd)
-        if(await askServerToAddWord(word)){
+        if(await AskServer.askServerToAddWord(word)){
             clearInputsAdd(trAdd)
             let newTr = createLine(word)
             trAdd.insertAdjacentElement("afterend", newTr)
@@ -150,7 +158,7 @@ function createLine(word){
     buttonDelete.textContent = "Delete"
     buttonDelete.addEventListener("click", async ()=>{
         let wordName = newTr.id
-        if(await askServerToRemoveWord(wordName)){
+        if(await AskServer.askServerToRemoveWord(wordName)){
             newTr.remove()
         }
     })
@@ -165,7 +173,7 @@ function createLine(word){
     buttonSave.addEventListener("click", async ()=>{
         let wordToSave = htmlTrToObjectWord(newTr)
         let oldNameWord = newTr.id
-        if(await askServerToEditWord(oldNameWord, wordToSave)){
+        if(await AskServer.askServerToEditWord(oldNameWord, wordToSave)){
             buttonSave.style.display = "none"
             buttonDelete.style.display = "inline-block"
             newTr.id = wordToSave.getEnglish()
@@ -357,44 +365,6 @@ function htmlTrToObjectWord(tr){
         }
     }
     return word
-}
-
-
-async function askServerToEditWord(oldNameWord, newWord){
-    
-    let data = {"oldNameWord":oldNameWord, "newWord":newWord, "listName":currentList.name}
-    ipcRenderer.send("edit-word", data)
-
-    let response = await new Promise((resolve)=>{
-        ipcRenderer.once('response-edit-word', (event, data) => {
-            resolve(data)
-        });
-    })
-    return response
-}
-
-async function askServerToRemoveWord(wordName){
-    let data = {"wordName":wordName, "listName":currentList.name}
-    ipcRenderer.send("remove-word", data)
-
-    let response = await new Promise((resolve)=>{
-        ipcRenderer.once('response-remove-word', (event, data) => {
-            resolve(data)
-        });
-    })
-    return response
-}
-
-async function askServerToAddWord(word){
-    let data = {"wordData":word, "listName":currentList.name}
-    ipcRenderer.send("add-word", data)
-
-    let response = await new Promise((resolve)=>{
-        ipcRenderer.once('response-add-word', (event, data) => {
-            resolve(data)
-        });
-    })
-    return response
 }
 
 function getListToEdit(){

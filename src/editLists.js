@@ -1,29 +1,42 @@
 const { ipcRenderer } = require('electron');
-// const deasync = require('deasync');
+const AskServer = require('./AskServer');
 
 var listNames = null;
 var groups = null;
 var checkboxCounter = 0;
 var listConcernedByPopGroups = null
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", async (event) => {
 
-    ipcRenderer.send("ask-data", "file-list")
-    ipcRenderer.send("ask-data", "groups")
+    let data = await AskServer.askServerToGetGroups()
+    groups = JSON.parse(data)
+    // console.log(groups)
+    checkAndUpdate()
 
-    ipcRenderer.on('response-file-list', (event, data) => {
-        for (let i = 0; i<data.length; i++) {
-            data[i] = data[i].replace(".json", "")
-        }
-        listNames = data
-        checkAndUpdate()
-    });
+    data = await AskServer.askServerToGetListNames()
+    for (let i = 0; i<data.length; i++) {
+        data[i] = data[i].replace(".json", "")
+    }
+    listNames = data
+    checkAndUpdate()
 
-    ipcRenderer.on('response-groups', (event, data) =>{
-        groups = JSON.parse(data)
-        // console.log(groups)
-        checkAndUpdate()
-    });
+
+    // ipcRenderer.send("ask-data", "file-list")
+    // ipcRenderer.send("ask-data", "groups")
+
+    // ipcRenderer.on('response-file-list', (event, data) => {
+    //     for (let i = 0; i<data.length; i++) {
+    //         data[i] = data[i].replace(".json", "")
+    //     }
+    //     listNames = data
+    //     checkAndUpdate()
+    // });
+
+    // ipcRenderer.on('response-groups', (event, data) =>{
+    //     groups = JSON.parse(data)
+    //     // console.log(groups)
+    //     checkAndUpdate()
+    // });
     
 
     handleAddList()
@@ -48,7 +61,7 @@ function handleGroups(){
                 listGroupsToAdd.push(checkbox.name)
             }
         }
-        let newGroups = await askServerToEditGroupsForListName(listConcernedByPopGroups, listGroupsToAdd)
+        let newGroups = await AskServer.askServerToEditGroupsForListName(listConcernedByPopGroups, listGroupsToAdd)
         if(newGroups){
             popup.style.display = "none"
             groups = newGroups
@@ -68,7 +81,7 @@ function handleGroups(){
     buttonAddGroup.addEventListener("click", async ()=>{
         let input = document.getElementById("input_add_group")
         newGroupName = input.value
-        if(await askServerToAddNewGroup(newGroupName)){
+        if(await AskServer.askServerToAddNewGroup(newGroupName)){
             input.value = ""
             groups[newGroupName] = []
             createLineGroup(newGroupName)
@@ -117,7 +130,7 @@ function createLineGroup(groupName, checked=false){
     let tdDeleteGroup = document.createElement("td")
     let buttonDeleteGroup = createButton("Delete")
     buttonDeleteGroup.addEventListener("click", async ()=>{
-        if(await askServerToRemoveGroup(groupName)){
+        if(await AskServer.askServerToRemoveGroup(groupName)){
             newTr.remove()
             let allSpanGroupsHtml = document.querySelectorAll("td.groups > div.divGroups > span")
             console.log(allSpanGroupsHtml)
@@ -146,7 +159,7 @@ function handleAddList(){
     button.addEventListener('click', async ()=>{
         let newName = input.value
         input.value = ""
-        if(await askServerToAddNewList(newName)){
+        if(await AskServer.askServerToAddNewList(newName)){
             createLine(newName, [])
         }
     })
@@ -216,7 +229,7 @@ function createLine(name, groupsForName){
         edit.style.display = "inline"
         inputName.style.display = "none"
         spanName.style.display = "inline"
-        const response = await askServerToChangeListName(spanName.textContent, inputName.value)
+        const response = await AskServer.askServerToChangeListName(spanName.textContent, inputName.value)
         if(name != inputName.value && response){
             spanName.textContent = inputName.value
             newTr.id = inputName.value
@@ -233,7 +246,7 @@ function createLine(name, groupsForName){
     let tdCopy = document.createElement("td")
     let copyButton = createButton("Copy")
     copyButton.addEventListener("click", async ()=>{
-        let newListName = await askServerToCopyList(spanName.textContent)
+        let newListName = await AskServer.askServerToCopyList(spanName.textContent)
         if(newListName){
             createLine(newListName, getGroupsOfListByName(newListName))
         }
@@ -244,7 +257,7 @@ function createLine(name, groupsForName){
     let tdDelete = document.createElement("td")
     let deleteButton = createButton("Delete")
     deleteButton.addEventListener("click", async ()=>{
-        if(askServerToRemoveList(name)){
+        if(AskServer.askServerToRemoveList(name)){
             newTr.remove()
         }
     })
@@ -257,7 +270,7 @@ function createLine(name, groupsForName){
         removeAllLinesGroup()
         let popup = document.getElementById("popup")
         popup.style.display = "flex"
-        let groupsToCheck = await askServerToGetGroupsForOneList(spanName.textContent)
+        let groupsToCheck = await AskServer.askServerToGetGroupsForOneList(spanName.textContent)
         createAllLinesGroup(groupsToCheck)
         let popup_checkbox = document.getElementById("popup_checkbox")
         popup_checkbox.scrollTop = 0
@@ -283,102 +296,3 @@ function createButton(buttonName){
     return button
 }
 
-async function askServerToChangeListName(oldName, newName) {
-    let data = { "oldName": oldName, "newName": newName };
-    ipcRenderer.send("change-list-name", data);
-
-    // Attendre la réponse avec une promesse simplifiée
-    const response = await new Promise((resolve) => {
-        ipcRenderer.once('response-change-list-name', (event, data) => {
-            resolve(data);
-        });
-    });
-
-    console.log(response);
-    return response;
-}
-
-async function askServerToCopyList(listNameToCopy){
-    
-    ipcRenderer.send("copy-list", listNameToCopy)
-
-    let newNameResponse = await new Promise((resolve)=>{
-        ipcRenderer.once('response-copy-list', (event, data) => {
-            resolve(data)
-        });
-    })
-    return newNameResponse
-}
-
-async function askServerToRemoveList(listNameToRemove){
-    ipcRenderer.send("remove-list", listNameToRemove)
-
-    let response = await new Promise((resolve)=>{
-        ipcRenderer.on('response-remove-list', (event, data) => {
-            resolve(data)
-        });
-    })
-    return response
-    // return true
-}
-
-async function askServerToAddNewList(name){
-    ipcRenderer.send("add-list", name)
-
-    let response = await new Promise((resolve)=>{
-        ipcRenderer.on('response-add-list', (event, data) => {
-            resolve(data)
-        });
-    })
-    return response
-    // return true
-}
-
-async function askServerToAddNewGroup(name){
-    ipcRenderer.send("add-group", name)
-
-    let response = await new Promise((resolve)=>{
-        ipcRenderer.on('response-add-group', (event, data) => {
-            resolve(data)
-        });
-    })
-    return response
-    // return true
-}
-
-async function askServerToEditGroupsForListName(listConcernedByPopGroups, listGroupsToAdd){
-    let data = {"listName":listConcernedByPopGroups, "listGroups":listGroupsToAdd}
-    console.log(listGroupsToAdd)
-    ipcRenderer.send("change-list-name-groups", data)
-
-    let response = await new Promise((resolve)=>{
-        ipcRenderer.on('response-change-list-name-groups', (event, data) => {
-            resolve(data)
-        });
-    })
-    return  response
-}
-
-
-async function askServerToRemoveGroup(groupName){
-    ipcRenderer.send("remove-group", groupName)
-
-    let response = await new Promise((resolve)=>{
-        ipcRenderer.on('response-remove-group', (event, data) => {
-            resolve(data)
-        });
-    })
-    return  response
-}
-
-async function askServerToGetGroupsForOneList(listName){
-    ipcRenderer.send("get-groups-for-one-list", listName)
-    console.log("envoye")
-
-    let response = await new Promise((resolve)=>{
-        ipcRenderer.on('response-get-groups-for-one-list', (event, data) => {
-            resolve(data)
-        });
-    })
-    return  response
-}

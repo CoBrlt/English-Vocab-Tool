@@ -1,42 +1,68 @@
 const { ipcRenderer } = require('electron');
-const List = require("./List.js")
-var listChoosen = null
+const List = require("./List.js");
+const AskServer = require('./AskServer.js');
+// var selectOptionChoosen = null
 var english_hidden = false
 var wordChoosen = null
-var counter = 0 
+var counter = 0
+var isListOption = true
+var listChoosen = null
+
 
 document.addEventListener("DOMContentLoaded", (event) => {
 
-
     // Envoi de données au processus principal
-    ipcRenderer.send('ask-data', 'file-list');
+    // ipcRenderer.send('ask-data', 'file-list');
 
-    // Réception de données depuis le processus principal
-    ipcRenderer.on('response-file-list', (event, data) => {
-        // console.log('Données reçues du main :', data);
-        const select = document.getElementById("list_selector")
-        for (let file_name of data) {
-            file_name = file_name.replace(".json", "")
-            const newOption = document.createElement("option")
-            newOption.value = file_name
-            newOption.textContent = file_name
-            select.appendChild(newOption);
-        }
-    });
-
-    ipcRenderer.on("response-content-file", (event, data) => {
-        listChoosen = new List()
-        listChoosen.fromJson(data)
-        counter = 0
-        counterHtml = document.getElementById("counter")
-        counterHtml.textContent = counter.toString() + "/" + listChoosen.length().toString()
-    })
-
+    // // Réception de données depuis le processus principal
+    // ipcRenderer.on('response-file-list', (event, data) => {
+    //     // console.log('Données reçues du main :', data);
+    //     const select = document.getElementById("list_selector")
+    //     for (let file_name of data) {
+    //         file_name = file_name.replace(".json", "")
+    //         const newOption = document.createElement("option")
+    //         newOption.value = file_name
+    //         newOption.textContent = file_name
+    //         select.appendChild(newOption);
+    //     }
+    // });
+    
     const select = document.getElementById("list_selector")
-    select.addEventListener("change", function (event) {
-        let listNameChoosen = event.target.value
-        ipcRenderer.send("ask-content-file", listNameChoosen)
+    select.addEventListener("change", async (event)=> {
+        let selectOptionChoosen = event.target.value
+        if(isListOption){
+            let content = await AskServer.askServerToGetListContent(selectOptionChoosen)
+            listChoosen = new List()
+            listChoosen.fromJson(content)
+            counter = 0
+            counterHtml = document.getElementById("counter")
+            counterHtml.textContent = counter.toString() + "/" + listChoosen.length().toString()
+        }else{
+            let listsForGroup = await AskServer.askServerToGetListsInGroup(selectOptionChoosen)
+            listChoosen = new List("listChoosen", [], [])
+            let content = null
+            let tmpList = null
+            for(let listName of listsForGroup){
+                content = await AskServer.askServerToGetListContent(listName)
+                tmpList = new List()
+                tmpList.fromJson(content)
+                listChoosen.mergeList(tmpList)
+            } 
+        }
     })
+
+    // ipcRenderer.on("response-content-file", (event, data) => {
+    //     listChoosen = new List()
+    //     listChoosen.fromJson(data)
+    //     counter = 0
+    //     counterHtml = document.getElementById("counter")
+    //     counterHtml.textContent = counter.toString() + "/" + listChoosen.length().toString()
+    // })
+
+    handleButtonUseList()
+    handleButtonUseGroups()
+    handleSelectForList()
+
 
     document.addEventListener("keydown", (event) =>{
         if(event.key == "Enter" && listChoosen.length() > 0){
@@ -81,8 +107,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
             }
         }
     })
-
-
 });
 
 function getRandomInt(min, max) {
@@ -100,3 +124,62 @@ function escapeHTML(unsafe) {
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
 }
+
+function handleButtonUseList(){
+    let button_use_lists = document.getElementById("button_use_lists")
+    button_use_lists.addEventListener("click", ()=>{
+        let button_use_groups = document.getElementById("button_use_groups")
+        button_use_groups.style.display = "block"
+        button_use_lists.style.display = "none"
+        handleSelectForList()
+        isListOption = true
+    })
+}
+
+function handleButtonUseGroups(){
+    let button_use_groups = document.getElementById("button_use_groups")
+    button_use_groups.addEventListener("click", ()=>{
+        let button_use_lists = document.getElementById("button_use_lists")
+        button_use_lists.style.display = "block"
+        button_use_groups.style.display = "none"
+        handleSelectForGroups()
+        isListOption = false
+    })
+}
+
+async function handleSelectForGroups(){
+    const select = document.getElementById("list_selector")
+    select.innerHTML = ""
+    let data = await AskServer.askServerToGetGroups()
+    data = JSON.parse(data)
+    let defaultOption = document.createElement("option")
+    defaultOption.value = "Please choose a group"
+    defaultOption.textContent = "Please choose a group"
+    select.appendChild(defaultOption)
+    for (let group of Object.keys(data)) {
+        const newOption = document.createElement("option")
+        newOption.value = group
+        newOption.textContent = group
+        select.appendChild(newOption);
+    }
+}
+
+async function handleSelectForList(){
+    const select = document.getElementById("list_selector")
+    select.innerHTML = ""
+    let data = await AskServer.askServerToGetListNames()
+    let defaultOption = document.createElement("option")
+    defaultOption.value = "Please choose a list"
+    defaultOption.textContent = "Please choose a list"
+    select.appendChild(defaultOption)
+    for (let file_name of data) {
+        file_name = file_name.replace(".json", "")
+        const newOption = document.createElement("option")
+        newOption.value = file_name
+        newOption.textContent = file_name
+        select.appendChild(newOption);
+    }
+}
+
+//voir si on a pas déjà des fonctions pour faire les trucs
+// et centraliser les contacts serveur dans un fichier
