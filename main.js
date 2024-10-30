@@ -24,9 +24,14 @@ const createWindow = () => {
     win.loadFile('./src/home.html')
 }
 
-function getListFiles(){
+function getListFiles(path=true){
     try{
         let fichiers = fs.readdirSync(path_folder_vocab)
+        if(!path){
+            for(let i = 0; i<fichiers.length;i++){
+                fichiers[i] = fichiers[i].replace(".json", "")
+            }
+        }
         return fichiers
     }catch(err){
         console.error("Error reading Diretory : ", err)
@@ -107,11 +112,14 @@ function renameFile(oldName, newName){
 }
 
 function getObjectListFromFile(listName){
-    console.log(listName)
-    let listString = readFile(fileNameToPath(listName))
-    let list = new List() 
-    list.fromJson(listString)
-    return list
+    try{
+        let listString = readFile(fileNameToPath(listName))
+        let list = new List() 
+        list.fromJson(listString)
+        return list
+    }catch(err){
+        return false
+    }
 }
 
 
@@ -130,64 +138,119 @@ app.whenReady().then(() => {
 
 ipcMain.on('get-data', (event, data) => {
     // console.log('Données reçues du front :', data);
-    let response
+    let dataToSend
     if(data == "list-names"){
-        response = getListFiles();
+        dataToSend = getListFiles()
+        if(dataToSend){
+            response.set(dataToSend, true, "Lists got successfuly")
+        }else{
+            response.set(false, false, "Error while getting lists")    
+        }
         event.sender.send('response-list-names', response);
     }else if(data == "groups"){
-        response = readFile("./groupsData.json");
+        dataToSend = readFile("./groupsData.json");
+        if(dataToSend){
+            response.set(dataToSend, true, "Groups got successfuly")
+        }else{
+            response.set(false, false, "Error while getting groups")    
+        }
         event.sender.send("response-groups", response)
     }
 });
 
 ipcMain.on("get-content-file", (event, data) =>{
-    const response = readFile(path_folder_vocab + "/" + data + ".json")
+    let dataToSend = readFile(path_folder_vocab + "/" + data + ".json")
+    if(dataToSend){
+        response.set(data, true, "content file got successfuly")
+    }else{
+        response.set(false, false, "Error while getting content file")    
+    }
     event.sender.send("response-content-file", response)
 })
 
 ipcMain.on("change-list-name", (event, data)=>{
-    const response = renameFile(data["oldName"], data["newName"])
-    let listRenamed = getObjectListFromFile(data["newName"])
-    listRenamed.setName(data["newName"])
-    writeFile(fileNameToPath(data["newName"]), JSON.stringify(listRenamed, null, 4))
+    let listLists = getListFiles()
+    if(listLists){
+        if(!listLists.includes(data["newName"])){
+            try{
+                if(renameFile(data["oldName"], data["newName"])){
+                    let listRenamed = getObjectListFromFile(data["newName"])
+                    listRenamed.setName(data["newName"])
+                    if(writeFile(fileNameToPath(data["newName"]), JSON.stringify(listRenamed, null, 4))){
+                        response.set(true, true, "List name successfuly changed")
+                    }else{
+                        response.set(false, false, "Error while changing list name")
+                    }
+                }else{
+                    response.set(false, false, "Error while changing list name")
+                }
+            }catch(err){
+                response.set(false, false, "Error while changing list name")
+            }
+        }else{
+            response.set(false, false, "Can't change name because a list named "+data["newName"]+" already exists")
+        }
+    }else{
+        response.set(false, false, "Error while changing list name")
+    }
     event.sender.send("response-change-list-name", response)
 })
 
 ipcMain.on("copy-list", (event, data)=>{
     let copyName = data + " - Copy"
-    const response = copyFile(data, copyName)
-    let copiedList = null
-    if(response){
-        copiedList = getObjectListFromFile(copyName)
-        copiedList.setName(copyName)        
+    let listLists = getListFiles()
+    if(!listLists.includes(copyName)){
+        if(copyFile(data, copyName)){
+            try{
+                let copiedList = null
+                if(response){
+                    copiedList = getObjectListFromFile(copyName)
+                    copiedList.setName(copyName)        
+                }
+                writeFile(fileNameToPath(copyName), JSON.stringify(copiedList, null, 4))
+                response.set(copyName, true, "List successfuly copied")
+            }catch(err){
+                response.set(false, false, "Error while copying the list")
+            }
+        }else{
+            response.set(false, false, "Error while copying the list")
+        }
+    }else{
+        response.set(false, false, "Can't copy the list because list "+ copyName +" already exists")
     }
-    writeFile(fileNameToPath(copyName), JSON.stringify(copiedList, null, 4))
     event.sender.send("response-copy-list", response)
 })
 
 ipcMain.on("remove-list", (event, data)=>{
-    const response = removeFile(data)
-    
-    let listName = data
-    let groupsData = readFile("./groupsData.json")
-    if(groupsData){
-        groupsData = JSON.parse(groupsData)
-
-        for(let group in groupsData){
-
-            if(groupsData[group].includes(listName)){
-                let index = groupsData[group].indexOf(listName);
-                if (index !== -1) {
-                    groupsData[group].splice(index, 1);
+    if(removeFile(data)){
+        let listName = data
+        let groupsData = readFile("./groupsData.json")
+        if(groupsData){
+            try{
+                groupsData = JSON.parse(groupsData)
+        
+                for(let group in groupsData){
+        
+                    if(groupsData[group].includes(listName)){
+                        let index = groupsData[group].indexOf(listName);
+                        if (index !== -1) {
+                            groupsData[group].splice(index, 1);
+                        }
+                    }
                 }
+                
+                groupsData = JSON.stringify(groupsData, null, 4)
+                if(writeFile("./groupsData.json", groupsData)){
+                    response.set(true, true, "List successfuly removed")
+                }else{
+                    response.set(false, false, "Error while removing list")
+                }
+            }catch(err){
+                response.set(false, false, "Error while removing list")
             }
         }
-        
-        groupsData = JSON.stringify(groupsData, null, 4)
-        if(!writeFile("./groupsData.json", groupsData)){
-            response = false
-        }
     }
+    
 
 
     event.sender.send("response-remove-list", response)
@@ -200,63 +263,111 @@ ipcMain.on("add-list", (event, data)=>{
         "words":[],
         "groups":[]
     }
-    const response = writeFile(path, JSON.stringify(content, null, 4))
+
+    let listLists = getListFiles()
+    try{
+        if(listLists){
+            if(listLists.includes(data)){
+                if(writeFile(path, JSON.stringify(content, null, 4))){
+                    response.set(true, true, "List successfuly added")
+                }else{
+                    response.set(false, false, "Error while adding list")
+                }
+            }else{
+                response.set(false, false, "Error, list name given already exists")
+            }
+        }else{
+            response.set(false, false, "Error while adding list")
+        }
+    }catch(err){
+        response.set(false, false, "Error while adding list")
+    }
+    
+    
     event.sender.send("response-add-list", response)
 })
 
 ipcMain.on("add-group", (event, data)=>{
-    let response = false
     let groupsData = readFile("./groupsData.json")
     if(groupsData){
         groupsData = JSON.parse(groupsData)
-        groupsData[data] = []
-        groupsData = JSON.stringify(groupsData, null, 4)
-        writeFile("./groupsData.json", groupsData)
-        response = true
+        if(!data in groupsData){
+            try{
+                groupsData[data] = []
+                groupsData = JSON.stringify(groupsData, null, 4)
+            }catch(err){
+                response.set(false, false, "Error while adding group")
+            }
+        }else{
+            response.set(false, false, "Error, group already exist")
+        }
+        if(writeFile("./groupsData.json", groupsData)){
+            response.set(true, true, "Groups successfuly added")
+        }else{
+            response.set(false, false, "Error while adding group")
+        }
+    }else{
+        response.set(false, false, "Error while adding group")
     }
     event.sender.send("response-add-group", response)
 })
 
 
 ipcMain.on("change-list-name-groups", (event, data)=>{
-    let response = false
     listName = data["listName"]
     listGroups = data["listGroups"]
     let groupsData = readFile("./groupsData.json")
     if(groupsData){
-        groupsData = JSON.parse(groupsData)
+        try{
+            groupsData = JSON.parse(groupsData)
 
-        for(let group in groupsData){
-            if(listGroups.includes(group) && !groupsData[group].includes(listName)){
-                groupsData[group].push(listName)
-            }
-            if(groupsData[group].includes(listName) && !listGroups.includes(group)){
-                let index = groupsData[group].indexOf(listName);
-                if (index !== -1) {
-                    groupsData[group].splice(index, 1);
+            for(let group in groupsData){
+                if(listGroups.includes(group) && !groupsData[group].includes(listName)){
+                    groupsData[group].push(listName)
+                }
+                if(groupsData[group].includes(listName) && !listGroups.includes(group)){
+                    let index = groupsData[group].indexOf(listName);
+                    if (index !== -1) {
+                        groupsData[group].splice(index, 1);
+                    }
                 }
             }
+            
+            response = groupsData
+            groupsData = JSON.stringify(groupsData, null, 4)
+            if(!writeFile("./groupsData.json", groupsData)){
+                response.set(true, true, "Successfuly editing groups")
+            }else{
+                response.set(false, false, "Error while editing groups")
+            }
+        }catch(err){
+            response.set(false, false, "Error while editing groups")
         }
         
-        response = groupsData
-        groupsData = JSON.stringify(groupsData, null, 4)
-        if(!writeFile("./groupsData.json", groupsData)){
-            response = false
-        }
+    }else{
+        response.set(false, false, "Error while editing groups")
     }
     event.sender.send("response-change-list-name-groups", response)
 })
 
 ipcMain.on("remove-group", (event, data)=>{
-    let response = false
     let groupsData = readFile("./groupsData.json")
     if(groupsData){
         groupsData = JSON.parse(groupsData)
-        delete groupsData[data]
-        console.log(groupsData)
-        groupsData = JSON.stringify(groupsData, null, 4)
-        writeFile("./groupsData.json", groupsData)
-        response = true
+        if(data in groupsData){
+            try{
+                delete groupsData[data]
+                groupsData = JSON.stringify(groupsData, null, 4)
+                writeFile("./groupsData.json", groupsData)
+                response.set(true, true, "Group successfuly removed")
+            }catch(err){
+                response.set(false, false, "Error while removing the group")
+            }
+        }else{
+            response.set(false, false, "Group to remove not found")
+        }
+    }else{
+        response.set(false, false, "Error while removing the group")
     }
     event.sender.send("response-remove-group", response)
 })
@@ -266,16 +377,20 @@ ipcMain.on("edit-word", (event, data)=>{
     let newWord = data["newWord"]
     let listName = data["listName"]
 
-    let list = getObjectListFromFile(listName)    
-    if(list.setWordByName(oldNameWord, newWord)){
-        let stringList = JSON.stringify(list, null, 4)
-        if(writeFile(fileNameToPath(listName), stringList)){
-            response = true
+    let list = getObjectListFromFile(listName) 
+    if(list){
+        if(list.setWordByName(oldNameWord, newWord)){
+            let stringList = JSON.stringify(list, null, 4)
+            if(writeFile(fileNameToPath(listName), stringList)){
+                response.set(true, true, "Word successfuly edited")
+            }else{
+                response.set(false, false, "Error while editing the word")
+            }
         }else{
-            response = false
+            response.set(false, false, "Error word not foud")
         }
     }else{
-        response = false
+        response.set(false, false, "Error while editing the word")
     }
     event.sender.send("response-edit-word", response)
 })
@@ -285,16 +400,20 @@ ipcMain.on("remove-word", (event, data)=>{
     let listName = data["listName"]
     // console.log(wordName)
 
-    let list = getObjectListFromFile(listName)    
-    if(list.removeWordByName(wordName)){
-        let stringList = JSON.stringify(list, null, 4)
-        if(writeFile(fileNameToPath(listName), stringList)){
-            response = true
+    let list = getObjectListFromFile(listName)  
+    if(list){
+        if(list.removeWordByName(wordName)){
+            let stringList = JSON.stringify(list, null, 4)
+            if(writeFile(fileNameToPath(listName), stringList)){
+                response.set(true, true, "Word successfuly removed")
+            }else{
+                response.set(false, false, "Error while removing the word")
+            }
         }else{
-            response = false
+            response.set(false, false, "Error word not found")
         }
     }else{
-        response = false
+        response.set(false, false, "Error while removing the word")
     }
     event.sender.send("response-remove-word", response)
 })
@@ -303,19 +422,25 @@ ipcMain.on("add-word", (event, data)=>{
     let wordData = data["wordData"]
     let listName = data["listName"]
     
-    
-
     let list = getObjectListFromFile(listName)    
-    if(list.addWord(wordData)){
-        let stringList = JSON.stringify(list, null, 4)
-        if(writeFile(fileNameToPath(listName), stringList)){
-            response = true
+    if(list){
+        if(!list.checkIfWordExist(wordData.english)){
+            if(list.addWord(wordData)){
+                let stringList = JSON.stringify(list, null, 4)
+                if(writeFile(fileNameToPath(listName), stringList)){
+                    response.set(true, true, "Word added", true)
+                }else{
+                    response.set(false, false, "Error while adding the word", true)
+                }
+            }else{
+                response.set(false, false, "Error while adding the word", true)
+            }
         }else{
-            response = false
+            response.set(false, false, "Can't add word already exist", true)
         }
     }else{
-        response = false
-    }
+        response.set(false, false, "Error while adding the word")
+    }   
     event.sender.send("response-add-word", response)
 })
 
@@ -332,14 +457,15 @@ ipcMain.on("get-groups-for-one-list", (event, data)=>{
                     listGroups.push(group)
                 }
             }
+            response.set(listGroups, true, "Success getting groups for one list", false)
         }catch(err){
-            response.set(false,  false, "Error parsing JSON group data")
+            response.set(false,  false, "Error parsing JSON group data", true)
         }
 
     }else{
         response.set(false, false, "Error reading file", true)
     }
-    event.sender.send("response-get-groups-for-one-list", listGroups)
+    event.sender.send("response-get-groups-for-one-list", response)
 })
 
 ipcMain.on("get-lists-in-group", (event, data)=>{

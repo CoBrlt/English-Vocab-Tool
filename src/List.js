@@ -90,6 +90,15 @@ class List{
         }
     }
 
+    checkIfWordExist(englishWord){
+        for(let word in this.words){
+            if(englishWord == word){
+                return true
+            }
+        }
+        return false
+    }
+
 }
 
 module.exports = List;
