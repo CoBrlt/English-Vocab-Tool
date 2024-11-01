@@ -68,7 +68,6 @@ class AskServer{
 
     static async askServerToEditGroupsForListName(listConcernedByPopGroups, listGroupsToAdd){
         let data = {"listName":listConcernedByPopGroups, "listGroups":listGroupsToAdd}
-        console.log(listGroupsToAdd)
         ipcRenderer.send("change-list-name-groups", data)
 
         let response = await new Promise((resolve)=>{
