@@ -1,0 +1,14 @@
+{
+    "name": "gerondif",
+    "words": [
+        {
+            "english": "hello",
+            "french": [
+                "bonjour",
+                "salut"
+            ],
+            "examples": []
+        }
+    ],
+    "groups": []
+}

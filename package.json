@@ -2,27 +2,30 @@
   "name": "englishvocabtool",
   "version": "1.0.0",
   "main": "main.js",
+  "author": "CoBrlt",
+  "description": "Tools for review vocab and grammar",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "start": "electron .",
+    "dist": "electron-builder"
   },
-  "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "@electron-forge/cli": "^7.5.0",
-    "@electron-forge/maker-deb": "^7.5.0",
-    "@electron-forge/maker-rpm": "^7.5.0",
-    "@electron-forge/maker-squirrel": "^7.5.0",
-    "@electron-forge/maker-zip": "^7.5.0",
-    "@electron-forge/plugin-auto-unpack-natives": "^7.5.0",
-    "@electron-forge/plugin-fuses": "^7.5.0",
-    "@electron/fuses": "^1.8.0",
-    "electron": "^32.1.2"
+    "electron": "^32.1.2",
+    "electron-builder": "^25.1.8"
   },
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.1"
+  "build": {
+    "appId": "com.CoBrlt.EnglishVocabTool",
+    "productName": "EnglishVocabTool",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "icon": "./asset/toeicImage.ico",
+      "target": "nsis"
+    },
+    "nsis": {
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  }
   }
 }

@@ -1,0 +1,1 @@
+Pour générer l'installeur, lancer la commande en admin : npm run dist

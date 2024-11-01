@@ -1,4 +1,4 @@
-const { app, BrowserWindow, screen} = require('electron')
+const { app, BrowserWindow, screen, Menu} = require('electron')
 const { ipcMain } = require("electron")
 const fs = require('fs');
 const path = require('path');
@@ -8,7 +8,10 @@ const Example = require('./src/Example.js');
 const Response = require("./src/Response.js")
 const response = new Response()
 
-const path_folder_vocab = "./jsonData"
+const path_folder_vocab = "./EnglishVocabToolDataBase/vocab"
+const path_file_groups = "./EnglishVocabToolDataBase/groups/groups.json"
+
+
 
 
 const createWindow = () => {
@@ -20,8 +23,32 @@ const createWindow = () => {
         contextIsolation: false 
       }
     })
-    // win.maximize();
+    win.maximize();
     win.loadFile('./src/home.html')
+}
+
+// Supprime la barre de menu
+Menu.setApplicationMenu(null);
+
+createDirectoryIfNotExists("./EnglishVocabToolDataBase")
+createDirectoryIfNotExists("./EnglishVocabToolDataBase/groups")
+createDirectoryIfNotExists(path_folder_vocab)
+createFileIfNotExists(path_file_groups)
+
+function createFileIfNotExists(filePath, content = "{}") {
+    if (!fs.existsSync(filePath)) {
+        fs.writeFileSync(filePath, content);
+        console.log(`Fichier '${filePath}' créé avec succès.`);
+    } else {
+        console.log(`Le fichier '${filePath}' existe déjà.`);
+    }
+}
+
+function createDirectoryIfNotExists(directoryPath) {
+    if (!fs.existsSync(directoryPath)) {
+        fs.mkdirSync(directoryPath, { recursive: true });
+        console.log(`Dossier '${directoryPath}' créé avec succès.`);
+    }
 }
 
 function getListFiles(path=true){
@@ -148,7 +175,7 @@ ipcMain.on('get-data', (event, data) => {
         }
         event.sender.send('response-list-names', response);
     }else if(data == "groups"){
-        dataToSend = readFile("./groupsData.json");
+        dataToSend = readFile(path_file_groups)
         if(dataToSend){
             response.set(dataToSend, true, "Groups got successfuly")
         }else{
@@ -224,7 +251,7 @@ ipcMain.on("copy-list", (event, data)=>{
 ipcMain.on("remove-list", (event, data)=>{
     if(removeFile(data)){
         let listName = data
-        let groupsData = readFile("./groupsData.json")
+        let groupsData = readFile(path_file_groups)
         if(groupsData){
             try{
                 groupsData = JSON.parse(groupsData)
@@ -240,7 +267,7 @@ ipcMain.on("remove-list", (event, data)=>{
                 }
                 
                 groupsData = JSON.stringify(groupsData, null, 4)
-                if(writeFile("./groupsData.json", groupsData)){
+                if(writeFile(path_file_groups, groupsData)){
                     response.set(true, true, "List successfuly removed")
                 }else{
                     response.set(false, false, "Error while removing list")
@@ -288,14 +315,14 @@ ipcMain.on("add-list", (event, data)=>{
 })
 
 ipcMain.on("add-group", (event, data)=>{
-    let groupsData = readFile("./groupsData.json")
+    let groupsData = readFile(path_file_groups)
     if(groupsData){
         groupsData = JSON.parse(groupsData)
         if(!Object.keys(groupsData).includes(data)){
             try{
                 groupsData[data] = []
                 groupsData = JSON.stringify(groupsData, null, 4)
-                if(writeFile("./groupsData.json", groupsData)){
+                if(writeFile(path_file_groups, groupsData)){
                     response.set(true, true, "Groups successfuly added")
                 }else{
                     console.log(groupsData)
@@ -317,7 +344,7 @@ ipcMain.on("add-group", (event, data)=>{
 ipcMain.on("change-list-name-groups", (event, data)=>{
     listName = data["listName"]
     listGroups = data["listGroups"]
-    let groupsData = readFile("./groupsData.json")
+    let groupsData = readFile(path_file_groups)
     if(groupsData){
         try{
             groupsData = JSON.parse(groupsData)
@@ -335,7 +362,7 @@ ipcMain.on("change-list-name-groups", (event, data)=>{
             }
             
             groupsDataString = JSON.stringify(groupsData, null, 4)
-            if(writeFile("./groupsData.json", groupsDataString)){
+            if(writeFile(path_file_groups, groupsDataString)){
                 response.set(groupsData, true, "Successfuly editing groups")
             }else{
                 response.set(false, false, "Error while editing groups")
@@ -351,14 +378,14 @@ ipcMain.on("change-list-name-groups", (event, data)=>{
 })
 
 ipcMain.on("remove-group", (event, data)=>{
-    let groupsData = readFile("./groupsData.json")
+    let groupsData = readFile(path_file_groups)
     if(groupsData){
         groupsData = JSON.parse(groupsData)
         if(data in groupsData){
             try{
                 delete groupsData[data]
                 groupsData = JSON.stringify(groupsData, null, 4)
-                writeFile("./groupsData.json", groupsData)
+                writeFile(path_file_groups, groupsData)
                 response.set(true, true, "Group successfuly removed")
             }catch(err){
                 response.set(false, false, "Error while removing the group")
@@ -448,7 +475,7 @@ ipcMain.on("get-groups-for-one-list", (event, data)=>{
     let listGroups = []
     let listName = data
 
-    let groupsData = readFile("./groupsData.json")
+    let groupsData = readFile(path_file_groups)
     if(groupsData){
         try{
             groupsData = JSON.parse(groupsData)
@@ -470,7 +497,7 @@ ipcMain.on("get-groups-for-one-list", (event, data)=>{
 
 ipcMain.on("get-lists-in-group", (event, data)=>{
     let groupName = data
-    let groupsData = readFile("./groupsData.json")
+    let groupsData = readFile(path_file_groups)
     if(groupsData){
         try{
             groupsData = JSON.parse(groupsData)
