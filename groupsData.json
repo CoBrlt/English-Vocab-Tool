@@ -1,15 +1,12 @@
 {
     "vocabX": [
-        "all - Copy - Copy",
         "vocab0",
-        "all - Copy - Copy - Copy",
-        "all - Copy - Copy - Copy - Copy",
-        "all - Copy - Copy - Copy - Copy - Copy"
-    ],
-    "vocabY": [],
-    "vocabJ": [],
-    "new": [],
-    "bonjour": [],
-    "test": [],
-    "salut": []
+        "vocab1",
+        "vocab2",
+        "vocab3",
+        "vocab4",
+        "vocab5",
+        "vocab6",
+        "vocab7"
+    ]
 }

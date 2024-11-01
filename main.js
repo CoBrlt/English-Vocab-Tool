@@ -161,7 +161,7 @@ ipcMain.on('get-data', (event, data) => {
 ipcMain.on("get-content-file", (event, data) =>{
     let dataToSend = readFile(path_folder_vocab + "/" + data + ".json")
     if(dataToSend){
-        response.set(data, true, "content file got successfuly")
+        response.set(dataToSend, true, "content file got successfuly")
     }else{
         response.set(false, false, "Error while getting content file")    
     }
@@ -169,7 +169,7 @@ ipcMain.on("get-content-file", (event, data) =>{
 })
 
 ipcMain.on("change-list-name", (event, data)=>{
-    let listLists = getListFiles()
+    let listLists = getListFiles(false)
     if(listLists){
         if(!listLists.includes(data["newName"])){
             try{
@@ -198,7 +198,7 @@ ipcMain.on("change-list-name", (event, data)=>{
 
 ipcMain.on("copy-list", (event, data)=>{
     let copyName = data + " - Copy"
-    let listLists = getListFiles()
+    let listLists = getListFiles(false)
     if(!listLists.includes(copyName)){
         if(copyFile(data, copyName)){
             try{
@@ -264,10 +264,10 @@ ipcMain.on("add-list", (event, data)=>{
         "groups":[]
     }
 
-    let listLists = getListFiles()
+    let listLists = getListFiles(false)
     try{
         if(listLists){
-            if(listLists.includes(data)){
+            if(!listLists.includes(data)){
                 if(writeFile(path, JSON.stringify(content, null, 4))){
                     response.set(true, true, "List successfuly added")
                 }else{
@@ -291,20 +291,21 @@ ipcMain.on("add-group", (event, data)=>{
     let groupsData = readFile("./groupsData.json")
     if(groupsData){
         groupsData = JSON.parse(groupsData)
-        if(!data in groupsData){
+        if(!Object.keys(groupsData).includes(data)){
             try{
                 groupsData[data] = []
                 groupsData = JSON.stringify(groupsData, null, 4)
+                if(writeFile("./groupsData.json", groupsData)){
+                    response.set(true, true, "Groups successfuly added")
+                }else{
+                    console.log(groupsData)
+                    response.set(false, false, "Error while adding group")
+                }
             }catch(err){
                 response.set(false, false, "Error while adding group")
             }
         }else{
             response.set(false, false, "Error, group already exist")
-        }
-        if(writeFile("./groupsData.json", groupsData)){
-            response.set(true, true, "Groups successfuly added")
-        }else{
-            response.set(false, false, "Error while adding group")
         }
     }else{
         response.set(false, false, "Error while adding group")
@@ -333,10 +334,9 @@ ipcMain.on("change-list-name-groups", (event, data)=>{
                 }
             }
             
-            response = groupsData
-            groupsData = JSON.stringify(groupsData, null, 4)
-            if(!writeFile("./groupsData.json", groupsData)){
-                response.set(true, true, "Successfuly editing groups")
+            groupsDataString = JSON.stringify(groupsData, null, 4)
+            if(writeFile("./groupsData.json", groupsDataString)){
+                response.set(groupsData, true, "Successfuly editing groups")
             }else{
                 response.set(false, false, "Error while editing groups")
             }

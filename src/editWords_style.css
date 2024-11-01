@@ -188,3 +188,8 @@ textarea.editable::-webkit-resizer {
     background-color: #574bdb;
     transform: translateY(-3px);
 }
+
+
+#div_spacer_save{
+    width: 118px;
+}

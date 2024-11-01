@@ -1,5 +1,5 @@
 const { ipcRenderer } = require('electron');
-const AskServer = require('./AskServer');
+const AskServer = require('./AskServer.js');
 
 var listNames = null;
 var groups = null;

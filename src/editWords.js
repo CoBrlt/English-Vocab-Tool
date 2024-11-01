@@ -226,6 +226,7 @@ function createTranslationField(translationsList, showSaveAndHideDelete){
     let td = document.createElement("td")
     td.className = "translations"
 
+    console.log(translationsList)
     for(let translation of translationsList){
         let div = createInputTranslation(showSaveAndHideDelete, translation, "Enter translation")
         td.appendChild(div)
